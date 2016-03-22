@@ -1,0 +1,36 @@
+#include "SceneManager.h"
+
+
+#include <GameInterface_JCS\SceneFactory.h>
+
+namespace JCS_GameTool
+{
+	SceneManager* SceneManager::_instance = nullptr;
+
+	SceneManager::SceneManager(API_Type api, SceneType scene)
+        : m_pScene(nullptr)
+        , m_apiType(api)
+        , m_sceneType(scene)
+	{
+        // Ceate Scene Type
+        m_pScene = SceneFactory::CreateScene(api, scene);
+	}
+
+	SceneManager::~SceneManager()
+	{
+        SafeDeleteObject(m_pScene);
+		_instance = nullptr;
+	}
+
+	void SceneManager::update(float32 gameTime)
+	{
+        m_pScene->update(gameTime);
+	}
+
+	void SceneManager::draw()
+	{
+        m_pScene->draw();
+	}
+
+}// end namespace "JCS_GameTool"
+
