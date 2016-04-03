@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Support">
+      <UniqueIdentifier>{bc8b9dee-21ea-4c12-b1c0-99f2023761de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{b66d0e73-5e74-4d4c-9a9f-2a85af30c014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Managers">
+      <UniqueIdentifier>{c7dfc22a-70d8-49f0-8d3c-f96689ea8732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\File Loader">
+      <UniqueIdentifier>{0cd8844c-14ef-4cfc-8bd5-da2237eeb21e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\File Loader\xml">
+      <UniqueIdentifier>{b3d3d404-e109-4c3c-a026-20077ea80495}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\File Loader\xml\RapidXML">
+      <UniqueIdentifier>{75a743f2-8a1f-4622-8af9-183cc01547aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\File Loader\xml\AnimationXML Loader">
+      <UniqueIdentifier>{59fc3a8c-1972-4a05-b9b9-2b588f50e646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\File Loader\xml\AudioXML Loader">
+      <UniqueIdentifier>{9abd309a-b8fa-4ed4-a4dc-68d49081116b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\File Loader\png">
+      <UniqueIdentifier>{24b90e57-36b1-45d8-a3c8-ceb65bcb9a8c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameErrors.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Core\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>Core\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Core\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceManager.h">
+      <Filter>Core\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Core\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTool_StdAfx.h" />
+    <ClInclude Include="File.h">
+      <Filter>Core\File Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml\rapidxml.hpp">
+      <Filter>Core\File Loader\xml\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml\rapidxml_iterators.hpp">
+      <Filter>Core\File Loader\xml\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml\rapidxml_print.hpp">
+      <Filter>Core\File Loader\xml\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml\rapidxml_utils.hpp">
+      <Filter>Core\File Loader\xml\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioXML_Loader.h">
+      <Filter>Core\File Loader\xml\AudioXML Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>Core\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationXML_Loader.h">
+      <Filter>Core\File Loader\xml\AnimationXML Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Core\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTimer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DeviceManager.cpp">
+      <Filter>Core\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Core\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Core\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Core\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>Core\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioXML_Loader.cpp">
+      <Filter>Core\File Loader\xml\AudioXML Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>Core\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationXML_Loader.cpp">
+      <Filter>Core\File Loader\xml\AnimationXML Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Core\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTimer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

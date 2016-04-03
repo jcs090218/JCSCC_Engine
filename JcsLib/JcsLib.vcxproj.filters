@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="JcsLib_StdAfx.h" />
+    <ClInclude Include="JcsFile.h">
+      <Filter>JcsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="JcsNullProperty.h">
+      <Filter>JcsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="IDisposable.h">
+      <Filter>JcsLib\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="IJcsObject.h">
+      <Filter>JcsLib\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="IJcsImageProperty.h">
+      <Filter>JcsLib\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="IJcsFile.h">
+      <Filter>JcsLib\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="JcsPropertyType.h">
+      <Filter>JcsLib\Enum</Filter>
+    </ClInclude>
+    <ClInclude Include="JcsObjectType.h">
+      <Filter>JcsLib\Enum</Filter>
+    </ClInclude>
+    <ClInclude Include="JcsKey.h">
+      <Filter>JcsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="JcsImage.h">
+      <Filter>JcsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_FileDefines.h" />
+    <ClInclude Include="JcsVersion.h">
+      <Filter>JcsLib\Enum</Filter>
+    </ClInclude>
+    <ClInclude Include="JcsDirectory.h">
+      <Filter>JcsLib</Filter>
+    </ClInclude>
+    <ClInclude Include="JcsLib.h" />
+    <ClInclude Include="JcsTools.h">
+      <Filter>JcsLib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="JcsLib">
+      <UniqueIdentifier>{3993abb5-5023-481c-96f2-876d4f600f8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JcsLib\Interface">
+      <UniqueIdentifier>{532711c9-3632-4f51-ba35-dc9e853c9049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JcsLib\Enum">
+      <UniqueIdentifier>{fb29f453-7a0e-432a-9a57-cda0d701af0c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="JcsFile.cpp">
+      <Filter>JcsLib</Filter>
+    </ClCompile>
+    <ClCompile Include="JcsNullProperty.cpp">
+      <Filter>JcsLib</Filter>
+    </ClCompile>
+    <ClCompile Include="JcsImage.cpp">
+      <Filter>JcsLib</Filter>
+    </ClCompile>
+    <ClCompile Include="JcsDirectory.cpp">
+      <Filter>JcsLib</Filter>
+    </ClCompile>
+    <ClCompile Include="JcsTools.cpp">
+      <Filter>JcsLib</Filter>
+    </ClCompile>
+    <ClCompile Include="JcsKey.cpp" />
+  </ItemGroup>
+</Project>

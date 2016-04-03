@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Support">
+      <UniqueIdentifier>{5104c8be-de49-4e3a-92b0-43a983f04bfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Window">
+      <UniqueIdentifier>{66976176-8cbe-464f-9049-16d01e6ec768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{b5d43894-6870-4544-8d35-adca0d2ecdf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Render Devices">
+      <UniqueIdentifier>{6710f196-4000-4ce3-af96-481e750e532e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Scene">
+      <UniqueIdentifier>{ab6e313d-bc04-4ee5-b90e-b94fa5f0601c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\XML Loader">
+      <UniqueIdentifier>{e04138f2-24ca-48e2-a08d-c06014e9e19f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Component">
+      <UniqueIdentifier>{c15167ef-b3b8-4dfe-9dfb-17abcfb7160f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Multi-Threading">
+      <UniqueIdentifier>{b82b0d96-091a-4725-8185-974581c49ee5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameInterface_StdAfx.h" />
+    <ClInclude Include="JCS_Thread.h">
+      <Filter>Core\Multi-Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderDevice.h">
+      <Filter>Core\Render Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderDeviceFactory.h">
+      <Filter>Core\Render Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_Window.h">
+      <Filter>Window</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_IEMath.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_GameType.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_XML_Loader.h">
+      <Filter>Core\XML Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_Component.h">
+      <Filter>Core\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_Scene.h">
+      <Filter>Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneFactory.h">
+      <Filter>Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneType.h">
+      <Filter>Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="API_Type.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_Application.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_Input.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_Script.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_World.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="JCS_Thread.cpp">
+      <Filter>Core\Multi-Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderDeviceFactory.cpp">
+      <Filter>Core\Render Devices</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

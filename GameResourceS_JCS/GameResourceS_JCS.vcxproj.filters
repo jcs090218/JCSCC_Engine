@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="GameResourceS_StdAfx.h" />
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="Node.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="Node.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Support">
+      <UniqueIdentifier>{911411dd-432f-4205-80f1-9d2804d5a186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{345e0637-111d-4795-9ec5-4638c2976e7f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

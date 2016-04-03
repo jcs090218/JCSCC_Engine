@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Direct Sound">
+      <UniqueIdentifier>{e9ed7c25-e86f-454b-95fd-ff9b8fdd05d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Direct Sound\mp3">
+      <UniqueIdentifier>{44fdbb77-92d1-4a2c-b228-6e54ceea33aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Direct Sound\wav">
+      <UniqueIdentifier>{c662fb36-046c-47bb-8491-3a559503ead4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XAudio2">
+      <UniqueIdentifier>{ea74aee1-6e64-404f-8cc6-d99d3056f9b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenAL">
+      <UniqueIdentifier>{f5b82b87-8f47-4fc1-a295-1f0c5d489c91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FMOD">
+      <UniqueIdentifier>{02323c86-7263-45fa-b14a-16559f42f63d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectShow">
+      <UniqueIdentifier>{d2eb5781-5481-4ed4-a189-7bd445e10205}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectMusic">
+      <UniqueIdentifier>{c21667e6-b020-42be-bd72-fec044d7ecfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDL_Mixer">
+      <UniqueIdentifier>{9aaee8d2-465c-4f19-a343-6a0e60b27b74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FMOD\include">
+      <UniqueIdentifier>{66c18ea8-b193-4c13-9ce2-794eaa6ab272}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameSound_StdAfx.h" />
+    <ClInclude Include="DirectSound\Sound.h">
+      <Filter>Direct Sound\wav</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectSound\SoundLayer.h">
+      <Filter>Direct Sound\wav</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectSound\WavRead.h">
+      <Filter>Direct Sound\wav</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectShow\MP3Sound.h">
+      <Filter>DirectShow</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\include\fmod.h">
+      <Filter>FMOD\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\include\fmod.hpp">
+      <Filter>FMOD\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\include\fmod_codec.h">
+      <Filter>FMOD\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\include\fmod_dsp.h">
+      <Filter>FMOD\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\include\fmod_errors.h">
+      <Filter>FMOD\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\include\fmod_memoryinfo.h">
+      <Filter>FMOD\include</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_SoundAPI.h" />
+    <ClInclude Include="FMOD\FMOD_AudioEngine.h">
+      <Filter>FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_Mixer\SDL_Mixer_AudioEngine.h">
+      <Filter>SDL_Mixer</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_Mixer\SDL_Mixer_SoundEffect.h">
+      <Filter>SDL_Mixer</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_Mixer\SDL_Mixer_Music.h">
+      <Filter>SDL_Mixer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DirectSound\Sound.cpp">
+      <Filter>Direct Sound\wav</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectSound\SoundLayer.cpp">
+      <Filter>Direct Sound\wav</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectSound\WavRead.cpp">
+      <Filter>Direct Sound\wav</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectShow\MP3Sound.cpp">
+      <Filter>DirectShow</Filter>
+    </ClCompile>
+    <ClCompile Include="FMOD\FMOD_AudioEngine.cpp">
+      <Filter>FMOD</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_Mixer\SDL_Mixer_AudioEngine.cpp">
+      <Filter>SDL_Mixer</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_Mixer\SDL_Mixer_SoundEffect.cpp">
+      <Filter>SDL_Mixer</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_Mixer\SDL_Mixer_Music.cpp">
+      <Filter>SDL_Mixer</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

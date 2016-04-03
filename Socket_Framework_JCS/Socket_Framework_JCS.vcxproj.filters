@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{fc1b956f-01f0-4600-974f-1f1b3090da69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Support">
+      <UniqueIdentifier>{ac59caf5-0a05-4570-b4b9-0ee1207248b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Interfaces">
+      <UniqueIdentifier>{a24c84da-ee5e-4649-810c-13d8c61efafe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="JCS_Socket.h">
+      <Filter>Core\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket_StdAfx.h" />
+    <ClInclude Include="Winsock2_Socket.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket_Lib.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket_CrashReason.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Asio_Socket.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Winsock2_Socket.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Asio_Socket.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

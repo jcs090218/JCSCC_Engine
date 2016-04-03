@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9C71F24B-0401-4D5F-B604-FBBBCE504975}</ProjectGuid>
+    <RootNamespace>D3DVS2013_Test_JCS</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>C:\AcceLeration_Entertainment\BaseScript\DataBase_C++\D3DVS2013_GameLib_JCS\Allegro_Framework_JCS\Allegro\lib;C:\AcceLeration_Entertainment\BaseScript\DataBase_C++\D3DVS2013_GameLib_JCS\GameSound_JCS\FMOD\lib\x86;C:\AcceLeration_Entertainment\BaseScript\DataBase_C++\D3DVS2013_GameLib_JCS\DirectX_3D_v9_Framework_JCS\DirectX SDK\lib\x86;C:\AcceLeration_Entertainment\BaseScript\DataBase_C++\D3DVS2013_GameLib_JCS\SDL_Framework_JCS\SDL\lib\x86;C:\AcceLeration_Entertainment\BaseScript\DataBase_C++\D3DVS2013_GameLib_JCS\OpenGL_Framework_JCS\OpenGL\lib\x86;C:\AcceLeration_Entertainment\BaseScript\DataBase_C++\D3DVS2013_GameLib_JCS\LuaEngine_JCS\Lua\lib\x86;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)/Build/D3DVS2013_Test_JCS/Debug/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>C:\AcceLeration_Entertainment\BaseScript\DataBase_C++\D3DVS2013_GameLib_JCS\Allegro_Framework_JCS\Allegro\lib;C:\AcceLeration_Entertainment\BaseScript\DataBase_C++\D3DVS2013_GameLib_JCS\GameSound_JCS\FMOD\lib\x86;C:\AcceLeration_Entertainment\BaseScript\DataBase_C++\D3DVS2013_GameLib_JCS\DirectX_3D_v9_Framework_JCS\DirectX SDK\lib\x86;C:\AcceLeration_Entertainment\BaseScript\DataBase_C++\D3DVS2013_GameLib_JCS\SDL_Framework_JCS\SDL\lib\x86;C:\AcceLeration_Entertainment\BaseScript\DataBase_C++\D3DVS2013_GameLib_JCS\OpenGL_Framework_JCS\OpenGL\lib\x86;C:\AcceLeration_Entertainment\BaseScript\DataBase_C++\D3DVS2013_GameLib_JCS\LuaEngine_JCS\Lua\lib\x86;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)/Build/D3DVS2013_Test_JCS/Release/</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Visual Leak Detector\lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Visual Leak Detector\lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Direct3D_TestApp.cpp" />
+    <ClCompile Include="DirectX11_Game.cpp" />
+    <ClCompile Include="DirectX3D_Game..cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="OpenGL_Game.cpp" />
+    <ClCompile Include="OpenGL_TestApp.cpp" />
+    <ClCompile Include="TestApp.cpp" />
+    <ClCompile Include="test_main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DirectX11_Game.h" />
+    <ClInclude Include="DirectX3D_Game.h" />
+    <ClInclude Include="DirectX3D_TestApp.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="OpenGL_Game.h" />
+    <ClInclude Include="OpenGL_TestApp.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TestApp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Allegro_Framework_JCS\Allegro_Framework_JCS.vcxproj">
+      <Project>{74c915cb-b113-488f-8179-4236d9f05f74}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\DirectXTK\DirectXTK_Desktop_2013.vcxproj">
+      <Project>{e0b52ae7-e160-4d32-bf3f-910b785e5a8e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\DirectX_3D_v11_Framework_JCS\DirectX_3D_v11_Framework_JCS.vcxproj">
+      <Project>{a1a45dd5-729a-4edc-b950-f4216846e120}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\DirectX_3D_v12_Framework_JCS\DirectX_3D_v12_Framework_JCS.vcxproj">
+      <Project>{e282ae3d-3d44-4be2-9a54-354fd53ad6ed}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\DirectX_3D_v9_Framework_JCS\DirectX_3D_v9_Framework_JCS.vcxproj">
+      <Project>{bed0b48c-723e-40cc-8ac5-20b172304749}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Direct_2D_Framework_JCS\Direct_2D_Framework_JCS.vcxproj">
+      <Project>{f193dc59-6b82-4cb4-9813-af8edb65d11b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\GameInput_JCS\GameInput_JCS.vcxproj">
+      <Project>{d9fbf330-e071-4177-b5a4-022c772032a1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\GameInterface_JCS\GameInterface_JCS.vcxproj">
+      <Project>{30387f45-876b-4a0e-acf5-8992625551af}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\GameSound_JCS\GameSound_JCS.vcxproj">
+      <Project>{a109d5ee-8b4e-4906-b8ed-17a2df6fd90c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\GameTool_JCS\GameTool_JCS.vcxproj">
+      <Project>{24afffd6-3697-42bc-9993-74b992f990dd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\JayCeS_JCS\JayCeS_JCS.vcxproj">
+      <Project>{7b9ca971-b019-4627-9423-49ef968948a4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\LuaEngine_JCS\LuaEngine_JCS.vcxproj">
+      <Project>{90a2a56a-d939-4c6a-a04b-b17c487f15dc}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenGL_Framework_JCS\OpenGL_Framework_JCS.vcxproj">
+      <Project>{6afeb3c7-889a-4960-a09a-05577bf1e2bf}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SDL_Framework_JCS\SDL_Framework_JCS.vcxproj">
+      <Project>{f3f2bc16-23df-419b-8792-99e837c00f32}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SFML_Framework_JCS\SFML_Framework_JCS.vcxproj">
+      <Project>{6653903b-e611-4260-a10d-1c238f77b57a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Socket_Framework_JCS\Socket_Framework_JCS.vcxproj">
+      <Project>{8eb497f9-0bb5-4c63-9879-0b609e3f887d}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D3DVS2013_Test_JCS.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="D3DVS2013_Framework_JCS.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player.lua" />
+    <None Include="Shader\colorShading.frag" />
+    <None Include="Shader\colorShading.vert" />
+    <None Include="Shader\Shaders.shader" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="JCS_Name.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="SafePointer.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="JcsMessageBox.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="OS_Type.h" />
+    <ClInclude Include="JayCeS.h" />
+    <ClInclude Include="JCS_FileDialogs.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="JayCeS_Error.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="JayCeS_Globals.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_BinaryReader.h">
+      <Filter>Core\File IO</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_BinaryWriter.h">
+      <Filter>Core\File IO</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_Buffer.h">
+      <Filter>Core\File IO</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_BufferBuilder.h">
+      <Filter>Core\File IO</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_Type.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="JayCeS_Debug.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_StringBuilder.h">
+      <Filter>Core\String</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_vld.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="JayCes_StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="JcsMessageBox.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_FileDialogs.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_BinaryReader.cpp">
+      <Filter>Core\File IO</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_BinaryWriter.cpp">
+      <Filter>Core\File IO</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_Buffer.cpp">
+      <Filter>Core\File IO</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_BufferBuilder.cpp">
+      <Filter>Core\File IO</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_StringBuilder.cpp">
+      <Filter>Core\String</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{4ff1f2ec-c2c8-4dcc-9210-8c07cfcbcd6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Support">
+      <UniqueIdentifier>{e3ed1a3c-23fb-41d6-85a0-c57e464c4cd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\File IO">
+      <UniqueIdentifier>{b57aa7da-ce29-4e7b-8058-c2cc2c6f4f7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\String">
+      <UniqueIdentifier>{648f35bd-040a-4359-8675-230ac31a0ce8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

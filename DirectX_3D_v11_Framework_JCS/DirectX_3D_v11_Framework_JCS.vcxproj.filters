@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="GameObject2D.cpp">
+      <Filter>Core\Renderable Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Font2D.cpp">
+      <Filter>Core\Renderable Object\String Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite2D.cpp">
+      <Filter>Core\Renderable Object</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimatedObject2D.cpp">
+      <Filter>Core\Renderable Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsD3D11.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface2D.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene2D.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D3DX_v11_StdAfx.h" />
+    <ClInclude Include="GameObject2D.h">
+      <Filter>Core\Renderable Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform2D.h">
+      <Filter>Core\Component 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderableObject.h">
+      <Filter>Core\Component 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Font2D.h">
+      <Filter>Core\Renderable Object\String Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite2D.h">
+      <Filter>Core\Renderable Object</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimatedObject2D.h">
+      <Filter>Core\Renderable Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsD3D11.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface2D.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene2D.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Script2D.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D11_CrashReason.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Support">
+      <UniqueIdentifier>{8e5d4ffa-93fa-4ece-be78-417b543effaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{7a55776d-ccab-465b-b682-304442bcca54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Component 2D">
+      <UniqueIdentifier>{67d637cb-31ee-4dda-a291-6e7894b7d843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Renderable Object">
+      <UniqueIdentifier>{0315ea1d-c709-4669-92c4-6cfbf7ad55d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Renderable Object\Game Object 2D">
+      <UniqueIdentifier>{96e23b82-7ed4-4180-885e-5e9da07a560c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Renderable Object\String Text">
+      <UniqueIdentifier>{a2111d9f-9240-424c-8da7-c8f6eb8e9e5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Renderable Object\Animated Object 2D">
+      <UniqueIdentifier>{76c8b99c-fac5-46ed-abf6-1d8e5b607f9b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

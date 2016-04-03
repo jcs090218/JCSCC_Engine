@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="XInput">
+      <UniqueIdentifier>{c9fb79ee-222c-418a-81b1-346ba90c319a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectInput">
+      <UniqueIdentifier>{25a6c0c7-7e76-4b20-836b-466fb670bb24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDL">
+      <UniqueIdentifier>{dbfeaddd-de66-4bbc-9471-7b6b5c11c963}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameInput_StdAfx.h" />
+    <ClInclude Include="PlatformType.h" />
+    <ClInclude Include="PlatformInputFactory.h" />
+    <ClInclude Include="DirectInput\Keyboard.h">
+      <Filter>DirectInput</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectInput\Mouse.h">
+      <Filter>DirectInput</Filter>
+    </ClInclude>
+    <ClInclude Include="XInput\GamePad.h">
+      <Filter>XInput</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PlatformInputFactory.cpp" />
+    <ClCompile Include="DirectInput\Keyboard.cpp">
+      <Filter>DirectInput</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectInput\Mouse.cpp">
+      <Filter>DirectInput</Filter>
+    </ClCompile>
+    <ClCompile Include="XInput\GamePad.cpp">
+      <Filter>XInput</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

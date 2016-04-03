@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Camera3D.cpp">
+      <Filter>Core\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Capsule3D.cpp">
+      <Filter>Core\Game Object\Shape 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube3D.cpp">
+      <Filter>Core\Game Object\Shape 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Cylinder3D.cpp">
+      <Filter>Core\Game Object\Shape 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene3D.cpp">
+      <Filter>Core\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere3D.cpp">
+      <Filter>Core\Game Object\Shape 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape3D.cpp">
+      <Filter>Core\Game Object\Shape 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject3D.cpp">
+      <Filter>Core\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="IEMath3D.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite3D.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsD3D9.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayObject.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D3DX_v9_StdAfx.h" />
+    <ClInclude Include="Camera3D.h">
+      <Filter>Core\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Capsule3D.h">
+      <Filter>Core\Game Object\Shape 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube3D.h">
+      <Filter>Core\Game Object\Shape 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Cylinder3D.h">
+      <Filter>Core\Game Object\Shape 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene3D.h">
+      <Filter>Core\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere3D.h">
+      <Filter>Core\Game Object\Shape 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape3D.h">
+      <Filter>Core\Game Object\Shape 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject3D.h">
+      <Filter>Core\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="IEMath3D.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPool3D.h">
+      <Filter>Core\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite3D.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsD3D9.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayObject.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D9_CrashReason.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Support">
+      <UniqueIdentifier>{fcf48341-f956-4064-86bc-c58f6ce67a16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics 3D">
+      <UniqueIdentifier>{804b40c2-8538-4d9b-ba50-2e8def0a897d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{50ac227a-592f-42e2-91bb-2ee847de9d9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Game Object">
+      <UniqueIdentifier>{e502ca00-1448-4c7f-8f6a-bc4c2c9b6d6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Game Object\Shape 3D">
+      <UniqueIdentifier>{4108b9f2-1b69-43b2-be6c-e5daf770a31d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

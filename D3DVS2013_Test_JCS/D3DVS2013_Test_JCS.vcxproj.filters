@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Games">
+      <UniqueIdentifier>{c0d66bbf-bd46-4e17-9560-56315f0c35fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Games">
+      <UniqueIdentifier>{110c1751-bc5c-4fc6-b80a-b1e34a9b9397}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\App">
+      <UniqueIdentifier>{09d8904e-cf89-42af-8f1f-4a8b53622990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App">
+      <UniqueIdentifier>{5acb4d4c-fa61-48ef-8b0e-dbc7dd50495d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{c12739ee-6239-48e8-9c73-0bf46c6ba639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scirpt">
+      <UniqueIdentifier>{2c1819ac-1e04-4e10-bee6-57bd80e6f055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\HLSL">
+      <UniqueIdentifier>{c7e64c2a-d42d-42b2-829e-c7a54aab9f97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\GLSL">
+      <UniqueIdentifier>{f614a76f-f5df-4a25-a785-91270f18d540}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DirectX3D_Game..cpp">
+      <Filter>Source Files\Games</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\Games</Filter>
+    </ClCompile>
+    <ClCompile Include="TestApp.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL_TestApp.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL_Game.cpp">
+      <Filter>Source Files\Games</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D_TestApp.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX11_Game.cpp">
+      <Filter>Source Files\Games</Filter>
+    </ClCompile>
+    <ClCompile Include="test_main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\Games</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX3D_Game.h">
+      <Filter>Header Files\Games</Filter>
+    </ClInclude>
+    <ClInclude Include="TestApp.h">
+      <Filter>Header Files\App</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL_TestApp.h">
+      <Filter>Header Files\App</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL_Game.h">
+      <Filter>Header Files\Games</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX3D_TestApp.h">
+      <Filter>Header Files\App</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX11_Game.h">
+      <Filter>Header Files\Games</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D3DVS2013_Test_JCS.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="D3DVS2013_Framework_JCS.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Player.lua">
+      <Filter>Scirpt</Filter>
+    </None>
+    <None Include="Shader\colorShading.vert">
+      <Filter>Shader\GLSL</Filter>
+    </None>
+    <None Include="Shader\colorShading.frag">
+      <Filter>Shader\GLSL</Filter>
+    </None>
+    <None Include="Shader\Shaders.shader">
+      <Filter>Shader\HLSL</Filter>
+    </None>
+  </ItemGroup>
+</Project>

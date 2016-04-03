@@ -1,0 +1,162 @@
+# ignore the following folders
+/.git
+
+########################
+# Out source Libraries #
+########################
+/Libraries
+/Allegro_Framework_JCS/Allegro
+/Boost
+/Box2D
+/DirectX_3D_v9_Framework_JCS/DirectX SDK
+/DirectXTK
+/GameTool_JCS/rapidxml
+/LuaEngine_JCS/Lua
+/LuaEngine_JCS/LuaBridge
+/OpenGL_Framework_JCS/OpenGL
+/SDL_Framework_JCS/SDL
+/SFML_Framework_JCS/SFML
+
+
+#################
+# Build results #
+#################
+/Build
+
+#############
+# Lib files #
+#############
+Debug/
+Release/
+
+######################
+# common ignore type #
+######################
+*_i.c
+*_p.c
+*_i.h
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tlh
+*.tli
+*.tlog
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+##########################
+# Visual Studio profiler #
+##########################
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+##############################################
+# Visual Studio 2015 cache/options directory #
+##############################################
+/.vs
+
+#######################
+# User-specific files #
+#######################
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+####################################################
+# User-specific files (MonoDevelop/Xamarin Studio) #
+####################################################
+*.userprefs
+
+#############################
+# Visual Studio 6 build log #
+#############################
+*.plg
+
+##########################################
+# Visual Studio 6 workspace options file #
+##########################################
+*.opt
+
+##########################
+# Visual C++ cache files #
+##########################
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+
+####################
+# SQL Server files #
+####################
+*.mdf
+*.ldf
+
+#############################
+# Compiled Static libraries #
+#############################
+*.lib
+*.lai
+*.la
+*.a
+
+#########################
+# Compiled Object files #
+#########################
+*.slo
+*.lo
+*.o
+*.obj
+
+#######################
+# Precompiled Headers #
+#######################
+*.gch
+*.pch
+#
+###############
+# Executables #
+###############
+*.exe
+*.out
+*.app
+
+##################
+# resource files #
+##################
+*.jcs
+*.ico
+
+##############################
+# Compiled Dynamic libraries #
+##############################
+*.dll
+*.so
+*.dylib
+
+########################
+# Fortran module files #
+########################
+*.mod
+

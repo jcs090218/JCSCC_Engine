@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="GUI_StdAfx.h" />
+    <ClInclude Include="Identifier.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_GUI.h" />
+    <ClInclude Include="JCS_CheckBox.h">
+      <Filter>Core\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_MenuBar.h">
+      <Filter>Core\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_PushButton.h">
+      <Filter>Core\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_ScrollBar.h">
+      <Filter>Core\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_StatusStrip.h">
+      <Filter>Core\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_TreeView.h">
+      <Filter>Core\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_WindowHandle.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_TreeNode.h">
+      <Filter>Core\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_TextBox.h">
+      <Filter>Core\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_SplitContainer.h">
+      <Filter>Core\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_ListBox.h">
+      <Filter>Core\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_ComboBox.h">
+      <Filter>Core\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{e7a66614-c730-475e-b468-02c390b9e478}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\UI">
+      <UniqueIdentifier>{479d6483-6eaa-486b-a742-b5fc971dbb3b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="JCS_CheckBox.cpp">
+      <Filter>Core\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_MenuBar.cpp">
+      <Filter>Core\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_PushButton.cpp">
+      <Filter>Core\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_ScrollBar.cpp">
+      <Filter>Core\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_StatusStrip.cpp">
+      <Filter>Core\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_TreeView.cpp">
+      <Filter>Core\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_TreeNode.cpp">
+      <Filter>Core\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_TextBox.cpp">
+      <Filter>Core\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_SplitContainer.cpp">
+      <Filter>Core\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_ListBox.cpp">
+      <Filter>Core\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_ComboBox.cpp">
+      <Filter>Core\UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

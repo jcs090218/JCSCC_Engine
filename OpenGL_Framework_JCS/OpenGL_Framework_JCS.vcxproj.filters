@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="OpenGL_StdAfx.h" />
+    <ClInclude Include="GLSLProgram.h">
+      <Filter>Core\Shader Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteBatch.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera2D.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GLTexture.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Glyph.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GlyphSortType.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderBatch.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEngine2D.h">
+      <Filter>Core\Particle Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleBatch2D.h">
+      <Filter>Core\Particle Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle2D.h">
+      <Filter>Core\Particle Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL_CrashReason.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GLSLProgram.cpp">
+      <Filter>Core\Shader Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera2D.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteBatch.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEngine2D.cpp">
+      <Filter>Core\Particle Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleBatch2D.cpp">
+      <Filter>Core\Particle Engine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Support">
+      <UniqueIdentifier>{6d283fd5-8353-4014-8310-e5beae7c8121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{877ccf5e-cb2d-4091-a4b5-8b7dfba9fb73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Shader Engine">
+      <UniqueIdentifier>{32493859-6de2-4663-85e9-6103c10b01ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Particle Engine">
+      <UniqueIdentifier>{41ed68ce-0c59-4d19-8809-015ae76b811d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Support">
+      <UniqueIdentifier>{388be589-769b-4747-8740-7bf1506e49cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{c524bd6d-f906-42b5-b3eb-55fe27774d42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Physics">
+      <UniqueIdentifier>{e9a73e0a-2c84-49d0-aad5-9b5d9eb74eb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Physics\2D">
+      <UniqueIdentifier>{fb6a7899-595e-42f7-aeec-db57dbf0eac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Physics\2D\Shape">
+      <UniqueIdentifier>{ab205f4a-ad1d-4df7-b912-c80e20391a92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Physics\3D">
+      <UniqueIdentifier>{2545ae81-ce47-4c86-a00e-13e4487388af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Physics\3D\Shape">
+      <UniqueIdentifier>{b3617fe9-6fc4-49d8-82c1-4879f753144e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Game Object">
+      <UniqueIdentifier>{5980afb4-16e3-4c2d-af49-09716b58151a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Game Object\Shape 2D">
+      <UniqueIdentifier>{27746afb-8ecc-4931-beff-20ab7f3b2620}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Capsule2D.cpp">
+      <Filter>Core\Game Object\Shape 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Circle2D.cpp">
+      <Filter>Core\Game Object\Shape 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Hexagon2D.cpp">
+      <Filter>Core\Game Object\Shape 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Polygon2D.cpp">
+      <Filter>Core\Game Object\Shape 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle2D.cpp">
+      <Filter>Core\Game Object\Shape 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle2D.cpp">
+      <Filter>Core\Game Object\Shape 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics2D.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera2D.cpp">
+      <Filter>Core\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="IEMath2D.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape2D.cpp">
+      <Filter>Core\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Box.cpp">
+      <Filter>Core\Physics\2D\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="World2D.cpp">
+      <Filter>Core\Physics\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject2D.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics2D.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene2D.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite2D.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D2D_StdAfx.h" />
+    <ClInclude Include="Capsule2D.h">
+      <Filter>Core\Game Object\Shape 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Circle2D.h">
+      <Filter>Core\Game Object\Shape 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Hexagon2D.h">
+      <Filter>Core\Game Object\Shape 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Polygon2D.h">
+      <Filter>Core\Game Object\Shape 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle2D.h">
+      <Filter>Core\Game Object\Shape 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle2D.h">
+      <Filter>Core\Game Object\Shape 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics2D.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera2D.h">
+      <Filter>Core\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="IEMath2D.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape2D.h">
+      <Filter>Core\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Box.h">
+      <Filter>Core\Physics\2D\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="World2D.h">
+      <Filter>Core\Physics\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject2D.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics2D.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPool2D.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene2D.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Script2D.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite2D.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="D2D_CrashReason.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
