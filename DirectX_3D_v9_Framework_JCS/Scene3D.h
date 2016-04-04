@@ -19,7 +19,7 @@ namespace JCS_D3DX_v9_Engine
 		~Scene3D();
 
         virtual void initialize() override;
-        virtual void update(float32 gameTime) override;
+        virtual void update(float32 deltaTime) override;
         virtual void draw() override;
 
 		// setter

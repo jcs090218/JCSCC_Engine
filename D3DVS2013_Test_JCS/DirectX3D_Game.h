@@ -34,17 +34,17 @@ private:
     float speedX, speedY;		// players x and y position
     float mainSpeed = 180;
 
-    void update(float gameTime);
+    void update(float deltaTime);
 
 public:
     DirectX3D_Game(JCS_GameInput::KeyboardServer* kServer, JCS_GameInput::MouseServer* mServer);
     virtual ~DirectX3D_Game();
 
     bool Initlialize(HWND hWnd);
-    void Run(float gameTime);
+    void Run(float deltaTime);
 
-    void Update(float gameTime);
-    void Draw(float gameTime);
+    void Update(float deltaTime);
+    void Draw(float deltaTime);
 
 
 };

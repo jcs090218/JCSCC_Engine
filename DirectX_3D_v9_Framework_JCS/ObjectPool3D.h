@@ -16,8 +16,8 @@ namespace JCS_D3DX_v9_Engine
 		ObjectPool3D(byte num);
 		virtual ~ObjectPool3D();
 
-		virtual void Update(float3232 gameTime) override;
-		virtual void Draw(float32 gameTime)) override;
+		virtual void Update(float3232 deltaTime) override;
+		virtual void Draw(float32 deltaTime)) override;
 
 		T* execute();		// give out object for use!
 		void back_to_pool(T* obj);		// send object back to pool
@@ -56,7 +56,7 @@ namespace JCS_D3DX_v9_Engine
 	}
 
 	template <class T>
-	void ObjectPool3D<T>::update(float3232 gameTime)
+	void ObjectPool3D<T>::update(float3232 deltaTime)
 	{
 		/*for (int32 i = 0; i < objects->size(); i++) {
 		if (objects->at(i) != nullptr) {

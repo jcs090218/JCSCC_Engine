@@ -38,12 +38,12 @@ namespace JCS_D3DX_v9_Engine
 	}
 
 	/**
-	 *	gameTime: time in real life
+	 *	deltaTime: time in real life
 	 *	position:	origin for each frame??
 	 *	frame:	total frame we want to display
 	 *	alpha:	alpha of the animation
 	 */
-	void Animation::PlayAnimationWithSpriteSheet(float gameTime,
+	void Animation::PlayAnimationWithSpriteSheet(float deltaTime,
 		D3DXVECTOR3 position, int totalFrame, bool bLoop, float alpha)
 	{
 		if (totalFrame > 0)		// in some case we want 1 frame animation

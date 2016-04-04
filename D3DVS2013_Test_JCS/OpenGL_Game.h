@@ -27,11 +27,11 @@ public:
 	virtual ~OpenGL_Game();
 
     bool Initialize();
-	void Run(float gameTime);
+	void Run(float deltaTime);
 
 private:
-    void Update(float gameTime);
-    void Draw(float gameTime);
+    void Update(float deltaTime);
+    void Draw(float deltaTime);
 
 };
 

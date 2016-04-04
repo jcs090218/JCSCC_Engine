@@ -24,7 +24,7 @@ namespace JCS_D2DEngine
 		virtual ~Triangle2D();
 
 		virtual void initialize() override;
-		virtual void update(const float32 gameTime) override;
+		virtual void update(const float32 deltaTime) override;
 		virtual void draw() override;
 
 		virtual void rotation_rotate(float32 angle = 1.0f) override;

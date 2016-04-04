@@ -33,13 +33,13 @@ namespace JCS_D2DEngine
 		m_p5 = hex_corner(m_size, 5);
 	}
 
-	void Hexagon2D::update(const float32 gameTime)
+	void Hexagon2D::update(const float32 deltaTime)
 	{
-		Shape2D::update(gameTime);
+		Shape2D::update(deltaTime);
 
 		if (velocity->x != 0.0f)
 		{
-			float speedX = velocity->x * gameTime;
+			float speedX = velocity->x * deltaTime;
 			m_p0.x += speedX; m_p1.x += speedX;
 			m_p2.x += speedX; m_p3.x += speedX;
 			m_p4.x += speedX; m_p5.x += speedX;
@@ -47,7 +47,7 @@ namespace JCS_D2DEngine
 
 		if (velocity->y != 0.0f)
 		{
-			float speedY = velocity->y * gameTime;
+			float speedY = velocity->y * deltaTime;
 			m_p0.y += speedY; m_p1.y += speedY;
 			m_p2.y += speedY; m_p3.y += speedY;
 			m_p4.y += speedY; m_p5.y += speedY;

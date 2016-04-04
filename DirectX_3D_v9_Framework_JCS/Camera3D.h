@@ -13,7 +13,7 @@ namespace JCS_D3DX_v9_Engine
 		Camera3D();
 		virtual ~Camera3D();
 
-		void Update(float32 gameTime, GraphicsD3D9* gDevice);
+		void Update(float32 deltaTime, GraphicsD3D9* gDevice);
 
 		// setter
 		void setCameraPosition(D3DXVECTOR3* newPosition) { this->vCamera = newPosition; }

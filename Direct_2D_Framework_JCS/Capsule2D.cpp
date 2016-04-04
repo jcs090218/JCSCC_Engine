@@ -36,12 +36,12 @@ namespace JCS_D2DEngine
 		
 	}
 
-	void Capsule2D::update(const float32 gameTime)
+	void Capsule2D::update(const float32 deltaTime)
 	{
-		Shape2D::update(gameTime);
+		Shape2D::update(deltaTime);
 
 		if (velocity->x != 0.0f) {
-			float speedX = velocity->x * gameTime;
+			float speedX = velocity->x * deltaTime;
 
 			p1.x += speedX; p2.x += speedX;
 			p3.x += speedX; p4.x += speedX;
@@ -50,7 +50,7 @@ namespace JCS_D2DEngine
 		}
 
 		if (velocity->y != 0.0f) {
-			float speedY = velocity->y * gameTime;
+			float speedY = velocity->y * deltaTime;
 
 			p1.y += speedY; p2.y += speedY;
 			p3.y += speedY; p4.y += speedY;

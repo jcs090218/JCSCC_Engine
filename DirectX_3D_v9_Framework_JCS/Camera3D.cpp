@@ -17,7 +17,7 @@ namespace JCS_D3DX_v9_Engine
 	{
 	}
 
-	void Camera3D::Update(float32 gameTime, GraphicsD3D9* gDevice)
+	void Camera3D::Update(float32 deltaTime, GraphicsD3D9* gDevice)
 	{
 		D3DXMatrixLookAtLH(matView, vCamera, vLookAt, vUpVector);
         gDevice->GetDevice()->SetTransform(D3DTS_VIEW, matView);		// set the view transform to matView

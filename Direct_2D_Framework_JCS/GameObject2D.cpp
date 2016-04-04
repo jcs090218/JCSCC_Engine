@@ -26,10 +26,10 @@ namespace JCS_D2DEngine
 		SafeDeleteObject(offsetPivot);
 	}
 
-	void GameObject2D::update(const float32 gameTime)
+	void GameObject2D::update(const float32 deltaTime)
 	{
-		position->x += velocity->x * gameTime;
-		position->y += velocity->y * gameTime;
+		position->x += velocity->x * deltaTime;
+		position->y += velocity->y * deltaTime;
 	}
 
 	void GameObject2D::resetRotation(const float32 angle)

@@ -50,12 +50,12 @@ bool DirectX11_Game::Initlialize(HWND hWnd)
     return true;
 }
 
-void DirectX11_Game::Run(float gameTime)
+void DirectX11_Game::Run(float deltaTime)
 {
     if (!gm->isGamePause())
     {
-        Update(gameTime);
-        Draw(gameTime);
+        Update(deltaTime);
+        Draw(deltaTime);
     }
     else
     {
@@ -64,13 +64,13 @@ void DirectX11_Game::Run(float gameTime)
 }
 
 
-void DirectX11_Game::Update(float gameTime)
+void DirectX11_Game::Update(float deltaTime)
 {
     if (im->getKeyboard()->KeyIsPressed(VK_DELETE)) 
         sm->playCompleteShot((TCHAR*)L"data/sound01.wav");
 }
 
-void DirectX11_Game::Draw(float gameTime)
+void DirectX11_Game::Draw(float deltaTime)
 {
     dm->GetDriectX3D_v11_DeviceAsRef().Clear(DirectX::Colors::BlueViolet);
     dm->GetDriectX3D_v11_DeviceAsRef().ClearDepth();

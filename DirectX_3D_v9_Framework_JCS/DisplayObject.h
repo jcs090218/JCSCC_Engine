@@ -14,8 +14,8 @@ namespace JCS_D3DX_v9_Engine
 
 		virtual bool Initialize(LPDIRECT3DDEVICE9 device, std::wstring fileName, int type = 0,
 			float width = 50, float height = 50, float alpha = 255);
-		virtual void update(float gameTime);
-		virtual void Draw(float gameTime);
+		virtual void update(float deltaTime);
+		virtual void Draw(float deltaTime);
 
 		Animation *getAnimatObj() { return this->animation; }
 

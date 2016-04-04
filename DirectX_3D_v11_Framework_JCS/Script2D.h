@@ -20,7 +20,7 @@ namespace JCS_D3DX_v11_Engine
         virtual ~Script2D() { }
 
         virtual void initialize() = 0;
-        virtual void update(float32 gameTime) = 0;
+        virtual void update(float32 deltaTime) = 0;
     };
 
 }

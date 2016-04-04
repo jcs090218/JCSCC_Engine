@@ -18,7 +18,7 @@ namespace JCS_D3DX_v9_Engine
 
     }
 
-	void Scene3D::update(float32 gameTime)
+	void Scene3D::update(float32 deltaTime)
 	{
 
 	}

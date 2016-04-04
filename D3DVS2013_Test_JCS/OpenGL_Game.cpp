@@ -46,12 +46,12 @@ bool OpenGL_Game::Initialize()
     return true;
 }
 
-void OpenGL_Game::Run(float gameTime)
+void OpenGL_Game::Run(float deltaTime)
 {
     if (!gm->isGamePause())
     {
-        Update(gameTime);
-        Draw(gameTime);
+        Update(deltaTime);
+        Draw(deltaTime);
     }
     else
     {
@@ -59,7 +59,7 @@ void OpenGL_Game::Run(float gameTime)
     }
 }
 
-void OpenGL_Game::Update(float gameTime)
+void OpenGL_Game::Update(float deltaTime)
 {
     // TODO(JenChieh): Weird acting, if using isKeyDown we need to update, 
     //                 if using isKeyPressed cannot call "update()" function 
@@ -80,7 +80,7 @@ void OpenGL_Game::Update(float gameTime)
     }
 }
 
-void OpenGL_Game::Draw(float gameTime)
+void OpenGL_Game::Draw(float deltaTime)
 {
     glClearDepth(1.0);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);

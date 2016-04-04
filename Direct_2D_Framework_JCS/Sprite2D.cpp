@@ -101,7 +101,7 @@ namespace JCS_D2DEngine
 		SafeReleaseCOM(bmp);
 	}
 
-	void Sprite2D::update(float32 gameTime)
+	void Sprite2D::update(float32 deltaTime)
 	{
         m_topLeft.x = m_origin.x - m_spriteWidth / 2;
         m_topLeft.y = m_origin.y - m_spriteHeight / 2;

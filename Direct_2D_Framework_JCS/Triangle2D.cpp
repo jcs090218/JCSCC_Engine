@@ -31,9 +31,9 @@ namespace JCS_D2DEngine
 
 	}
 
-	void Triangle2D::update(const float32 gameTime)
+	void Triangle2D::update(const float32 deltaTime)
 	{
-		Shape2D::update(gameTime);
+		Shape2D::update(deltaTime);
 	}
 
 	void Triangle2D::draw()

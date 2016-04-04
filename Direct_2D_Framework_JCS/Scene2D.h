@@ -37,7 +37,7 @@ namespace JCS_D2DEngine
 		virtual ~Scene2D();
 
 		virtual void initialize() override;
-		virtual void update(float32 gameTime) override;
+		virtual void update(float32 deltaTime) override;
 		virtual void draw() override;
 
         // using parallel calculation thread handling

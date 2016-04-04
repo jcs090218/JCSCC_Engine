@@ -42,7 +42,7 @@ namespace JCS_GameTool
 			return _instance;
 		}
 
-		void update(float32 gameTime);
+		void update(float32 deltaTime);
 		void draw();
 
 		// setter

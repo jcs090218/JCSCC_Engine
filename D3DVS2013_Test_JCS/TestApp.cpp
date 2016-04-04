@@ -56,9 +56,9 @@ bool TestApp::Initialize()
 }
 
 // Main Game Loop
-void TestApp::RunApp(float gameTime)
+void TestApp::RunApp(float deltaTime)
 {
     // Run the game here.
-	m_pGame->Run(gameTime);
+	m_pGame->Run(deltaTime);
 }
 

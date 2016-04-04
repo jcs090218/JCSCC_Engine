@@ -19,7 +19,7 @@ public:
     virtual bool Initialize() override;
 
 protected:
-    virtual void RunApp(float gameTime) override;
+    virtual void RunApp(float deltaTime) override;
 };
 
 #endif // __TESTAPP_H__

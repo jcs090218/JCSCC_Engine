@@ -49,11 +49,11 @@ bool TestGame::Initialize(HWND hWnd)
     return true;
 }
 
-void TestGame::Run(float gameTime)
+void TestGame::Run(float deltaTime)
 {
     if (!gm->isGamePause())
     {
-        Update(gameTime);
+        Update(deltaTime);
         Draw();
     }
     else
@@ -62,7 +62,7 @@ void TestGame::Run(float gameTime)
     }
 }
 
-void TestGame::Update(float gameTime)
+void TestGame::Update(float deltaTime)
 {
     if (im->getKeyboard()->KeyIsPressed(VK_DELETE))
         sm->playCompleteShot((TCHAR*)L"data/sound01.wav");

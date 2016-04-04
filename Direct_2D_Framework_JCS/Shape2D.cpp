@@ -19,9 +19,9 @@ namespace JCS_D2DEngine
 		GameObject2D::initialize();
 	}
 
-	void Shape2D::update(const float32 gameTime)
+	void Shape2D::update(const float32 deltaTime)
 	{
-		GameObject2D::update(gameTime);
+		GameObject2D::update(deltaTime);
 	}
 
 }

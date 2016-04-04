@@ -113,7 +113,7 @@ namespace JCS_GameTool
         bool InitPlatform();    // Create what kind of platform the game will belong to
 
 		// Override this enable to run the game
-        virtual void RunApp(float32 gameTime) = 0;
+        virtual void RunApp(float32 deltaTime) = 0;
 
 	};
 

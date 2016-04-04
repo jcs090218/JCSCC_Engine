@@ -38,10 +38,10 @@ public:
     virtual ~DirectX11_Game();
 
     bool Initlialize(HWND hWnd);
-    void Run(float gameTime);
+    void Run(float deltaTime);
     
-    void Update(float gameTime);
-    void Draw(float gameTime);
+    void Update(float deltaTime);
+    void Draw(float deltaTime);
 
 };
 

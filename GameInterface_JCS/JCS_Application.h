@@ -17,7 +17,7 @@ namespace JCS_GameInterface
 
     protected:
         virtual bool Initialize() = 0;
-        virtual void RunApp(float32 gameTime) = 0;
+        virtual void RunApp(float32 deltaTime) = 0;
     };
 }
 

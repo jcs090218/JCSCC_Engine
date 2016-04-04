@@ -22,9 +22,9 @@ namespace JCS_GameTool
 		_instance = nullptr;
 	}
 
-	void SceneManager::update(float32 gameTime)
+	void SceneManager::update(float32 deltaTime)
 	{
-        m_pScene->update(gameTime);
+        m_pScene->update(deltaTime);
 	}
 
 	void SceneManager::draw()

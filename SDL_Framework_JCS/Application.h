@@ -57,7 +57,7 @@ namespace JCS_SDL_Engine
 
     protected:
         // Run Main App here
-        virtual void RunApp(float32 gameTime) = 0;
+        virtual void RunApp(float32 deltaTime) = 0;
     };
 
 }

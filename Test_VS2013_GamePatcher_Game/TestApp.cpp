@@ -52,9 +52,9 @@ bool TestApp::Initialize()
     return true;
 }
 
-void TestApp::RunApp(float gameTime)
+void TestApp::RunApp(float deltaTime)
 {
-    m_pGame->Run(gameTime);
+    m_pGame->Run(deltaTime);
 }
 
 

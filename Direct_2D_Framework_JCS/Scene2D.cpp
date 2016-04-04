@@ -48,16 +48,16 @@ namespace JCS_D2DEngine
 
 	}
 
-	void Scene2D::update(float32 gameTime)
+	void Scene2D::update(float32 deltaTime)
 	{
         for (Sprite2D* tempSprite : sprites)
-            tempSprite->update(gameTime);
+            tempSprite->update(deltaTime);
 
 		for (GameObject2D* temp : game_objects)
-			temp->update(gameTime);
+			temp->update(deltaTime);
 
 		for (ObjectPool2D<GameObject2D>* temp : op_game_objects)
-			temp->update(gameTime);
+			temp->update(deltaTime);
 
 	}
 

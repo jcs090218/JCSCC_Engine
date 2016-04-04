@@ -24,9 +24,9 @@ namespace JCS_D2DEngine
 		
 	}
 
-	void Polygon2D::update(const float32 gameTime)
+	void Polygon2D::update(const float32 deltaTime)
 	{
-		Shape2D::update(gameTime);
+		Shape2D::update(deltaTime);
 	}
 
 	void Polygon2D::draw()

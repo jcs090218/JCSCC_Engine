@@ -37,9 +37,9 @@ public:
 
 
     bool Initialize(HWND hWnd);
-    void Run(float gameTime);
+    void Run(float deltaTime);
 
-    void Update(float gameTime);
+    void Update(float deltaTime);
     void Draw();
 };
 

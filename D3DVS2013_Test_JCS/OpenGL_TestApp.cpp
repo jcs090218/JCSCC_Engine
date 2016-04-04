@@ -29,9 +29,9 @@ bool OpenGL_TestApp::Initialize()
     return true;
 }
 
-void OpenGL_TestApp::RunApp(float gameTime)
+void OpenGL_TestApp::RunApp(float deltaTime)
 {
-    m_pGame->Run(gameTime);
+    m_pGame->Run(deltaTime);
 }
 
 

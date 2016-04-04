@@ -26,7 +26,7 @@ namespace JCS_D2DEngine
 		JCS_VECTOR2F topCircle, botCircle;
 
 		virtual void initialize() override;
-		virtual void update(const float32 gameTime) override;
+		virtual void update(const float32 deltaTime) override;
 		virtual void draw() override;
 
 		virtual void rotation_rotate(float32 float32 = 1.0f) override;

@@ -27,7 +27,7 @@ namespace JCS_D2DEngine
 		virtual ~Circle2D();
 
 		virtual void initialize() override;
-		virtual void update(const float32 gameTime) override;
+		virtual void update(const float32 deltaTime) override;
 		virtual void draw() override;
 
 		void ComputeMass(float32 density = 1.0f);

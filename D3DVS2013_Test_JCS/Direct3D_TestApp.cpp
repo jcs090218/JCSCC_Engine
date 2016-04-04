@@ -62,13 +62,13 @@ bool DirectX3D_TestApp::Initialize()
     return true;
 }
 
-void DirectX3D_TestApp::RunApp(float gameTime)
+void DirectX3D_TestApp::RunApp(float deltaTime)
 {
 #ifdef DIRECTX_9
-    m_pGame->Run(gameTime);
+    m_pGame->Run(deltaTime);
 #endif 
 #ifdef DIRECTX_11
-    m_pGame11->Run(gameTime);
+    m_pGame11->Run(deltaTime);
 #endif
 }
 

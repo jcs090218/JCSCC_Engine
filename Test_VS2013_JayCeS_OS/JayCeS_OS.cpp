@@ -1,4 +1,4 @@
-#include "JayCeS_OS.h"
+Ôªø#include "JayCeS_OS.h"
 
 
 
@@ -114,6 +114,6 @@ void JayCeS_OS::Run()
 
 
     // TODO(JenChieh): Try to print out the unicode. (Chinese)
-    printf("\nï2îêòÄ!");
+    printf("\n‰Ω†Â•Ω!");
 }
 

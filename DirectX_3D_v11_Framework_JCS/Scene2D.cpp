@@ -22,7 +22,7 @@ namespace JCS_D3DX_v11_Engine
 
     }
 
-    void Scene2D::update(float32 gameTime)
+    void Scene2D::update(float32 deltaTime)
     {
 
     }

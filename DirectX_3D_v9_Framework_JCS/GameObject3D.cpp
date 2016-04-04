@@ -46,7 +46,7 @@ namespace JCS_D3DX_v9_Engine
 		return true;
 	}
 
-	void GameObject3D::Update(float32 gameTime)
+	void GameObject3D::Update(float32 deltaTime)
 	{
 		if (status == ObjectStatus::ALIVE)
 		{
@@ -55,16 +55,16 @@ namespace JCS_D3DX_v9_Engine
 		}
 
 		// Effects
-		OnAlphaChange(gameTime);
-		OnShake(gameTime);
-		OnScaleChange(gameTime);
-		OnScaleBounce(gameTime);
-		OnMoveTo(gameTime);
+		OnAlphaChange(deltaTime);
+		OnShake(deltaTime);
+		OnScaleChange(deltaTime);
+		OnScaleBounce(deltaTime);
+		OnMoveTo(deltaTime);
 	}
 
-	void GameObject3D::Draw(float32 gameTime)
+	void GameObject3D::Draw(float32 deltaTime)
 	{
-		if (sprite) sprite->Draw(gameTime, position);
+		if (sprite) sprite->Draw(deltaTime, position);
 	}
 
 	ObjectStatus GameObject3D::GetStatus() const
@@ -111,14 +111,14 @@ namespace JCS_D3DX_v9_Engine
 	/**
 	 * function actually doing alphaChange
 	 */
-	void GameObject3D::OnAlphaChange(float32 gameTime)
+	void GameObject3D::OnAlphaChange(float32 deltaTime)
 	{
 		if (isAlphaChange)
 		{
 			// do fade change
 			if (fadeTimer < fadeTime){
-				if (fadeType == 0) getSprite()->a -= 255 / fadeTime * gameTime;
-				else if (fadeType == 1) getSprite()->a += 255 / fadeTime * gameTime;
+				if (fadeType == 0) getSprite()->a -= 255 / fadeTime * deltaTime;
+				else if (fadeType == 1) getSprite()->a += 255 / fadeTime * deltaTime;
 			}
 			else {		// else we do this in normal
 				// check alpha
@@ -128,7 +128,7 @@ namespace JCS_D3DX_v9_Engine
 				fadeTimer = 0;
 				isAlphaChange = false;
 			}
-			fadeTimer += gameTime;
+			fadeTimer += deltaTime;
 		}// end if(isAlpha)
 	}
 
@@ -155,14 +155,14 @@ namespace JCS_D3DX_v9_Engine
 	/**
 	 * this will do actualy shake according to the shake attribute
 	 */
-	void GameObject3D::OnShake(float32 gameTime)
+	void GameObject3D::OnShake(float32 deltaTime)
 	{
 		if (isShake){
 			// while we move and shake we recore our position every frame
 			shakeOrigin.x = this->x;
 			shakeOrigin.y = this->y;
 
-			shakeTimer += gameTime;
+			shakeTimer += deltaTime;
 			// still on shake
 			if (shakeTimer < shakeTime){
 				// shake randomly
@@ -202,18 +202,18 @@ namespace JCS_D3DX_v9_Engine
 			}
 		}
 	}
-	void GameObject3D::OnScaleChange(float32 gameTime)
+	void GameObject3D::OnScaleChange(float32 deltaTime)
 	{
 		if (isScale){
-			scaleTimer += gameTime;
+			scaleTimer += deltaTime;
 			scaleOrigin.x = this->x;
 			scaleOrigin.y = this->y;
 
 			if (scaleTimer < scaleTime){
 				// change height and with to final change
 				getSprite()->scaleTextureIncreasingPixels(
-					(scaleFinalChangeWidth - getWidth()) / scaleTime * gameTime,
-					(scaleFinalChangeHeight - getHeight()) / scaleTime * gameTime
+					(scaleFinalChangeWidth - getWidth()) / scaleTime * deltaTime,
+					(scaleFinalChangeHeight - getHeight()) / scaleTime * deltaTime
 					);
 
 				//if is not shaking stay in center
@@ -222,8 +222,8 @@ namespace JCS_D3DX_v9_Engine
 					//this->y = scaleOrigin.y - (getScaleY() - 1) * (getWidth() / getScaleY()) / 2;
 					// 設置中心點
 					getSprite()->setWidthHeightPivotToCenter(
-						((scaleFinalChangeWidth - getScaleX()) / scaleTime * gameTime) + getWidth(),
-						((scaleFinalChangeHeight - getScaleY()) / scaleTime * gameTime) + getHeight()
+						((scaleFinalChangeWidth - getScaleX()) / scaleTime * deltaTime) + getWidth(),
+						((scaleFinalChangeHeight - getScaleY()) / scaleTime * deltaTime) + getHeight()
 						);
 				}
 			}
@@ -255,10 +255,10 @@ namespace JCS_D3DX_v9_Engine
 			bounceScaleOrigin = getScaleX();
 		}
 	}
-	void GameObject3D::OnScaleBounce(float32 gameTime)
+	void GameObject3D::OnScaleBounce(float32 deltaTime)
 	{
 		if (isBounce) {
-			bounceTimer += gameTime;
+			bounceTimer += deltaTime;
 			bounceOrigin.x = this->x;
 			bounceOrigin.y = this->y;
 
@@ -312,22 +312,22 @@ namespace JCS_D3DX_v9_Engine
 			}
 		}
 	}
-	void GameObject3D::OnMoveTo(float32 gameTime)
+	void GameObject3D::OnMoveTo(float32 deltaTime)
 	{
 		if (isMoveTo){
-			moveToTimer += gameTime;
+			moveToTimer += deltaTime;
 
 			if (moveToTimer < moveToTime)
 			{
 				int32 calX = (int32)(movePosition.x - this->x);
 				if (calX > 1.0f || calX < -1.0f)
-					this->x += ((calX / moveToTime) * gameTime);
+					this->x += ((calX / moveToTime) * deltaTime);
 				else
 					this->x = movePosition.x;
 
 				int32 calY = (int32)(movePosition.y - this->y);
 				if (calY > 1.0f || calY < -1.0f)
-					this->y += ((calY / moveToTime) * gameTime);
+					this->y += ((calY / moveToTime) * deltaTime);
 				else
 					this->y = movePosition.y;
 			}

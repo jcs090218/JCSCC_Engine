@@ -19,7 +19,7 @@ namespace JCS_D2DEngine
 		virtual ~ObjectPool2D();
 
 		virtual void initialize() override;
-		virtual void update(const float32 gameTime) override;
+		virtual void update(const float32 deltaTime) override;
 		virtual void draw() override;
 
 		T* execute();		// give out object for use!
@@ -67,7 +67,7 @@ namespace JCS_D2DEngine
 	}
 
 	template <class T>
-	void ObjectPool2D<T>::update(const float32 gameTime)
+	void ObjectPool2D<T>::update(const float32 deltaTime)
 	{
 		//for (int i = 0; i < GetLength(); ++i) 
 		//{

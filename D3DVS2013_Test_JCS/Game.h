@@ -60,9 +60,9 @@ public:
 	
 	// Game Functions
 	bool Initlialize(HWND hWnd);
-	void Run(float gameTime);
-	void Update(float gameTime);
-	void Draw(float gameTime);
+	void Run(float deltaTime);
+	void Update(float deltaTime);
+	void Draw(float deltaTime);
 
     void SetGamePad(JCS_Input* pInput) { im->setInput(pInput); }
 

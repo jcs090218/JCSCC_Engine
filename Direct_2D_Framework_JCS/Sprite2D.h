@@ -37,7 +37,7 @@ namespace JCS_D2DEngine
 		Sprite2D(wchar_t* filename, Graphics2D& gfx);
 		~Sprite2D();
 
-		void update(float32 gameTime);
+		void update(float32 deltaTime);
 		void draw();	// Draw the bitmap to the render target
 
         // setter

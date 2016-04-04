@@ -31,7 +31,7 @@ namespace JCS_D2DEngine
 		virtual ~Shape2D();
 
 		virtual void initialize() override;
-		virtual void update(const float32 gameTime) override;			// 處理邏輯
+		virtual void update(const float32 deltaTime) override;			// 處理邏輯
         virtual void draw() override { }		                // 畫出來
 		
 		virtual void rotation_rotate(float32 angle = 1.0f) = 0;	// 旋轉形狀

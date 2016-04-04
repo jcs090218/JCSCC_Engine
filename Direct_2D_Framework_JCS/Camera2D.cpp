@@ -25,7 +25,7 @@ namespace JCS_D2DEngine
 	/**
 	 * 跟著目標...
 	 */
-    void Camera2D::Update(JCS_VECTOR2F _position, float32 gameTime)
+    void Camera2D::Update(JCS_VECTOR2F _position, float32 deltaTime)
 	{
 
 	}

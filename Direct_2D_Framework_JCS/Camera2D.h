@@ -21,7 +21,7 @@ namespace JCS_D2DEngine
         Camera2D(JCS_VECTOR2F _position);
         virtual ~Camera2D();
 
-		void Update(JCS_VECTOR2F _position, float32 gameTime);
+		void Update(JCS_VECTOR2F _position, float32 deltaTime);
         void CoordModify(float32 mapLeft, float32 mapRight, float32 mapTop, float32 mapBot);
 
 		// setter

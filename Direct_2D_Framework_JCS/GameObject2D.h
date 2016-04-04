@@ -35,7 +35,7 @@ namespace JCS_D2DEngine
 		virtual ~GameObject2D();
 
         virtual void initialize() { }
-		virtual void update(const float32 gameTime);
+		virtual void update(const float32 deltaTime);
         virtual void draw() { }
 
 		// setter

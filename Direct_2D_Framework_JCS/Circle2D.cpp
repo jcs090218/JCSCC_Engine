@@ -32,19 +32,19 @@ namespace JCS_D2DEngine
 		
 	}
 
-	void Circle2D::update(const float32 gameTime)
+	void Circle2D::update(const float32 deltaTime)
 	{
-		Shape2D::update(gameTime);
+		Shape2D::update(deltaTime);
 
 #ifdef _JCS_DEBUG_2D
 		if (velocity->x != 0.0f) 
 		{
-			float speedX = velocity->x * gameTime;
+			float speedX = velocity->x * deltaTime;
 			orient_point.x += speedX;
 		}
 		if (velocity->y != 0.0f) 
 		{
-			float speedY = velocity->y * gameTime;
+			float speedY = velocity->y * deltaTime;
 			orient_point.y += speedY;
 		}
 #endif

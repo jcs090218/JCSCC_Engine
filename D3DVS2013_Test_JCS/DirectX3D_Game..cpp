@@ -55,12 +55,12 @@ bool DirectX3D_Game::Initlialize(HWND hWnd)
     return true;
 }
 
-void DirectX3D_Game::Run(float gameTime)
+void DirectX3D_Game::Run(float deltaTime)
 {
     if (!gm->isGamePause())
     {
-        Update(gameTime);
-        Draw(gameTime);
+        Update(deltaTime);
+        Draw(deltaTime);
     }
     else
     {
@@ -68,7 +68,7 @@ void DirectX3D_Game::Run(float gameTime)
     }
 }
 
-void DirectX3D_Game::Update(float gameTime)
+void DirectX3D_Game::Update(float deltaTime)
 {
     if (GetAsyncKeyState(67))
     {
@@ -76,7 +76,7 @@ void DirectX3D_Game::Update(float gameTime)
     	MessageBox(NULL, message.c_str(), NULL, NULL);
     }
 
-    //DP1(L"\nGameTime: %f", gameTime);
+    //DP1(L"\nGameTime: %f", deltaTime);
     //DP1(L"Position.x: %d\n", sizeof(JCS_GameTool::KeyboardClient));
 
     if (im->getMouse()->IsInWindow() && im->getMouse()->LeftIsPressed()) player->ScaleBounce(2, 40.0f, 10);
@@ -87,18 +87,18 @@ void DirectX3D_Game::Update(float gameTime)
     if (im->getKeyboard()->KeyIsPressed(VK_ADD)) player->AlphaChange(2, 1);
     if (im->getKeyboard()->KeyIsPressed(VK_BACK)) player->MoveTo(1, D3DXVECTOR3(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 0));
     if (im->getKeyboard()->KeyIsPressed(VK_DELETE)) sm->playCompleteShot((TCHAR*)L"data/sound01.wav");
-    if (im->getKeyboard()->KeyIsPressed(VK_F1)) testAnimation->getAnimatObj()->PlayAnimationWithSpriteSheet(gameTime, D3DXVECTOR3(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 0.0f), 21, true);
+    if (im->getKeyboard()->KeyIsPressed(VK_F1)) testAnimation->getAnimatObj()->PlayAnimationWithSpriteSheet(deltaTime, D3DXVECTOR3(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 0.0f), 21, true);
 
-    if (im->getKeyboard()->KeyIsPressed(VK_UP)) player->y -= mainSpeed * gameTime;		// 這樣才叫有 impl "gametime"
-    if (im->getKeyboard()->KeyIsPressed(VK_DOWN))player->y += mainSpeed * gameTime;
-    if (im->getKeyboard()->KeyIsPressed(VK_LEFT))player->x -= mainSpeed * gameTime;
-    if (im->getKeyboard()->KeyIsPressed(VK_RIGHT))player->x += mainSpeed * gameTime;
+    if (im->getKeyboard()->KeyIsPressed(VK_UP)) player->y -= mainSpeed * deltaTime;		// 這樣才叫有 impl "gametime"
+    if (im->getKeyboard()->KeyIsPressed(VK_DOWN))player->y += mainSpeed * deltaTime;
+    if (im->getKeyboard()->KeyIsPressed(VK_LEFT))player->x -= mainSpeed * deltaTime;
+    if (im->getKeyboard()->KeyIsPressed(VK_RIGHT))player->x += mainSpeed * deltaTime;
 
     // Update our sprite and other game logic
-    if (player != NULL) player->Update(gameTime);
+    if (player != NULL) player->Update(deltaTime);
 }
 
-void DirectX3D_Game::Draw(float gameTime)
+void DirectX3D_Game::Draw(float deltaTime)
 {
     // Simple RGB value for the background so use XRGB instead of ARGB
     dm->GetDriectX3D_v9_DeviceAsPtr()->Clear(D3DXCOLOR(0.0f, 0.0f, 0.0f, 1.0f));
@@ -106,10 +106,10 @@ void DirectX3D_Game::Draw(float gameTime)
     dm->GetDriectX3D_v9_DeviceAsPtr()->BeginRender();
     ////////////////////////////////////////////////////////////////////
 
-    DirectX3D_Game::update(gameTime);
-    if (player) player->Draw(gameTime);
-    if (testSprite) testSprite->Draw(gameTime);
-    if (testAnimation) testAnimation->Draw(gameTime);
+    DirectX3D_Game::update(deltaTime);
+    if (player) player->Draw(deltaTime);
+    if (testSprite) testSprite->Draw(deltaTime);
+    if (testAnimation) testAnimation->Draw(deltaTime);
 
     //meshTeapot->DrawSubset(0);
 
@@ -118,9 +118,9 @@ void DirectX3D_Game::Draw(float gameTime)
     dm->GetDriectX3D_v9_DeviceAsPtr()->RenderPresent();
 }
 
-void DirectX3D_Game::update(float gameTime)
+void DirectX3D_Game::update(float deltaTime)
 {
-    speedX += gameTime;
+    speedX += deltaTime;
     //D3DXMATRIX matView;	// the view transform matrix
     //D3DXMatrixLookAtLH(&matView,
     //	&D3DXVECTOR3(speedX, 2.0f, 6.0f),    // the camera position

@@ -61,15 +61,15 @@ namespace JCS_D3DX_v9_Engine
 		return true;
 	}
 
-	void DisplayObject::update(float gameTime)
+	void DisplayObject::update(float deltaTime)
 	{
 
 	}
 
-	void DisplayObject::Draw(float gameTime)
+	void DisplayObject::Draw(float deltaTime)
 	{
-		if (sprite) sprite->Draw(gameTime, position);
-		if (animation) animation->PlayAnimationWithSpriteSheet(gameTime, position, totalFrame, isLoop);
+		if (sprite) sprite->Draw(deltaTime, position);
+		if (animation) animation->PlayAnimationWithSpriteSheet(deltaTime, position, totalFrame, isLoop);
 	}
 
 }

@@ -16,7 +16,7 @@ namespace JCS_GameInterface
         virtual ~JCS_Scene() { }
 
         virtual void initialize() = 0;
-        virtual void update(float32 gameTime) = 0;
+        virtual void update(float32 deltaTime) = 0;
         virtual void draw() = 0;
     };
 
