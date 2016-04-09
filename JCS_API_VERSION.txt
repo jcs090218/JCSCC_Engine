@@ -1,0 +1,73 @@
+/*******************************************************************
+*                   JCSCC_Framework Version 1.0
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*   See LICENSE.txt for modification and distribution information
+*		        Copyright (c) 2016 by Shen, Jen-Chieh
+******************************************************************/
+
+File: JCS_API_VERSION.txt
+Name: Jen-Chieh Shen <lkk440456@gmail.com>
+Last Edit Date: 2016-03-25
+---------------------------------------------------
+===========
+
+Here listed all of the current version of API using in each framework. Some of the
+API will be not be on the right spot because it might mention somewhere already. If
+the API or Libraries does not mention the version number because the API or Libraries
+might not have one, we will using date we implemented instead of version number.
+
+===========
+
+API:
+=======================================================================================
+=	Framework								|	Version / Impl Date(yyyy-mm-dd)		  =
+=======================================================================================
+---------------------------------------------------------------------------------------
+	* Device Layer
+---------------------------------------------------------------------------------------
+		- [Allegro_Framework_JCS] 			|	-> Allegro 5.0.10
+		- [DirectX_3D_v9_Framework_JCS] 	|	-> DirectX 9
+		- [DirectX_3D_v11_Framework_JCS] 	|	-> DirectX 11
+		- [DirectX_3D_v12_Framework_JCS] 	|	-> DirectX 12
+		- [SDL_Framework_JCS] 				|	-> SDL2.0
+											|	-> SDL2-2.0.3
+											|	-> SDL2_ttf-2.0.12
+											|	-> SDL2_image-2.0.0
+											|	-> SDL2-mixer-2.0.0
+		- [OpenGL_Framework_JCS]			|	-> glew-1.11.0
+											|	-> freeglut
+		- [SFML_Framework_JCS] 				|	-> SFML-2.2
+											|
+---------------------------------------------------------------------------------------
+	* Platform Layer
+---------------------------------------------------------------------------------------
+		- [GameInput_JCS] 					|	-> DirectInput
+											|	-> XInput 13
+		- [GameSound_JCS] 					|	-> DirectMusic
+											|	-> DirectShow
+											|	-> DirectSound
+											|	-> FMOD
+											|	-> OpenAL
+											|	-> SDL2-mixer-2.0.0
+											|	-> XAudio2
+											|
+---------------------------------------------------------------------------------------
+	* Scripting Layer
+---------------------------------------------------------------------------------------
+		- [LuaEngine_JCS] 					|	-> Lua 5.3
+											|	-> LuaBridge 2.0
+											|
+
+===========
+												
+Libraries:
+=======================================================================================
+=	Libraries								|	Version / Impl Date(yyyy-mm-dd)		  =
+=======================================================================================
+---------------------------------------------------------------------------------------
+	* Libraries
+---------------------------------------------------------------------------------------
+	- [Box2D] 								|	-> 2015-10-16
+	- [Boost]								| 	1.59.0
+
+

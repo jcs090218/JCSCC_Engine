@@ -1,4 +1,11 @@
-﻿// stdafx.h : include file for standard system include files,
+﻿/*******************************************************************
+*                   JCSCC_Framework Version 1.0
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*   See LICENSE.txt for modification and distribution information
+*		        Copyright (c) 2016 by Shen, Jen-Chieh
+******************************************************************/
+
+// stdafx.h : include file for standard system include files,
 //  or project specific include files that are used frequently, but
 //      are changed infrequently
 //

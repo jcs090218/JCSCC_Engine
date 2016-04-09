@@ -1,3 +1,10 @@
+/*******************************************************************
+*                   JCSCC_Framework Version 1.0
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*   See LICENSE.txt for modification and distribution information
+*		        Copyright (c) 2016 by Shen, Jen-Chieh
+******************************************************************/
+
 #include "JayCeS_App.h"
 
 #include <GUI_Framework_JCS\JCS_GUI.h>
@@ -24,8 +31,8 @@ bool JayCeS_App::Initialize()
 {
     // Set Screen Width and Height before "Application::Initialize", 
     // or else it will not work...
-    SetScreenWidth(1082);
-    SetScreenHeight(588);
+    SetScreenWidth(760);
+    SetScreenHeight(800);
     SetWindowTitle(L"JayCeS File Management");
 
     SetIcon(IDI_JAYCES_GAME_PATCHER);

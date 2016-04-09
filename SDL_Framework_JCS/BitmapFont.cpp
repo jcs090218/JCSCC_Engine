@@ -1,7 +1,14 @@
+/*******************************************************************
+*                   JCSCC_Framework Version 1.0
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*   See LICENSE.txt for modification and distribution information
+*		        Copyright (c) 2016 by Shen, Jen-Chieh
+******************************************************************/
+
 #include "BitmapFont.h"
 
 
-void apply_surface(int32 x, int32 y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = nullptr)
+inline void apply_surface(int32 x, int32 y, SDL_Surface* source, SDL_Surface* destination, SDL_Rect* clip = nullptr)
 {
     //Holds offsets
     SDL_Rect offset;
@@ -14,7 +21,7 @@ void apply_surface(int32 x, int32 y, SDL_Surface* source, SDL_Surface* destinati
     SDL_BlitSurface(source, clip, destination, &offset);
 }
 
-Uint32 get_pixel32(int32 x, int32 y, SDL_Surface* surface)
+inline Uint32 get_pixel32(int32 x, int32 y, SDL_Surface* surface)
 {
     //Convert the pixels to 32 bit
     Uint32 *pixels = static_cast<Uint32*>(surface->pixels);

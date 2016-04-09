@@ -1,5 +1,12 @@
-﻿#ifndef __SHAPE2D_H__
-#define __SHAPE2D_H__
+﻿/*******************************************************************
+*                   JCSCC_Framework Version 1.0
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*   See LICENSE.txt for modification and distribution information
+*		        Copyright (c) 2016 by Shen, Jen-Chieh
+******************************************************************/
+
+#ifndef __D2D_SHAPE2D_H__
+#define __D2D_SHAPE2D_H__
 
 #include "D2D_StdAfx.h"
 
@@ -46,5 +53,5 @@ namespace JCS_D2DEngine
 	};
 }
 
-#endif // __SHAPE2D_H__
+#endif // __D2D_SHAPE2D_H__
 

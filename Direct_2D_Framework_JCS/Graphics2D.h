@@ -1,4 +1,11 @@
-﻿#ifndef __GRAPHICS_2D_H__
+﻿/*******************************************************************
+*                   JCSCC_Framework Version 1.0
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*   See LICENSE.txt for modification and distribution information
+*		        Copyright (c) 2016 by Shen, Jen-Chieh
+******************************************************************/
+
+#ifndef __GRAPHICS_2D_H__
 #define __GRAPHICS_2D_H__
 
 #include "D2D_StdAfx.h"

@@ -1,4 +1,11 @@
-﻿#include "Interface2D.h"
+﻿/*******************************************************************
+*                   JCSCC_Framework Version 1.0
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*   See LICENSE.txt for modification and distribution information
+*		        Copyright (c) 2016 by Shen, Jen-Chieh
+******************************************************************/
+
+#include "Interface2D.h"
 
 #include <DirectX_3D_v11_Framework_JCS\GraphicsD3D11.h>
 

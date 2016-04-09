@@ -1,4 +1,11 @@
-﻿#include "Scene2D.h"
+﻿/*******************************************************************
+*                   JCSCC_Framework Version 1.0
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*   See LICENSE.txt for modification and distribution information
+*		        Copyright (c) 2016 by Shen, Jen-Chieh
+******************************************************************/
+
+#include "Scene2D.h"
 
 #include "Interface2D.h"
 

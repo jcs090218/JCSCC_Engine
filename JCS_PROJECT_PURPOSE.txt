@@ -1,0 +1,48 @@
+/*******************************************************************
+*                   JCSCC_Framework Version 1.0
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*   See LICENSE.txt for modification and distribution information
+*		        Copyright (c) 2016 by Shen, Jen-Chieh
+******************************************************************/
+//===================
+//-- Framework
+//---------------
+* Allegro_Framework_JCS                       , framework using Allegro API
+* Direct_2D_Framework_JCS                     , framework using Direct 2D API
+* DirectX_3D_v9_Framework_JCS                 , framework using DirectX 9 API
+* DirectX_3D_v11_Framework_JCS                , framework using DirectX 11 API
+* DirectX_3D_v12_Framework_JCS                , framework using DirectX 12 API
+* GUI_Framework_JCS                           , contain code for creating the GUI (cross platform)
+* LuaEngine_JCS                               , support scripting code
+* SDL_Framework_JCS                           , framework using SDL API
+* SFML_Framework_JCS                          , framework using SFML API
+* Socket_Framework_JCS                        , framework using "Boost ASIO" and "Winsock" API (cross platform)
+
+//==========================
+//-- Tools and Supports
+//-----------------------
+* GameInput_JCS                               , contain all the input (cross platform)
+* GameInterface_JCS                           , contain all the code interfaces
+* GameResourceS_JCS                           , contain all the code structures
+* GameSound_JCS                               , contain all the audio code (different api and cross platform)
+* GameTool_JCS                                , contain all the tool for creating the game
+* JayCeS_JCS                                  , operating system layer code for conviences and tool for creating games
+* JcsLib                                      , game data structure lib
+
+//==========================
+//-- Contain Program
+//-----------------------
+* JayCeS Maker                                , program create .jcs format (.jcs are for all data type compress format)
+* JayCeS_GamePatcher                          , program for to check to see if the game data needed to be update (usually for MMO)
+
+//==========================
+//-- Example Project
+//-----------------------
+* Test_VS2013_GamePatcher_Game                , Demo project for GamePacter
+
+//==========================
+//-- Test Project
+//-----------------------
+* D3DVS2013_Test_JCS                          , contain all the test and example code and program
+* Test_VS2013_JayCeS_OS                       , operating system test project
+* Utility_GameResourceS_JCS_Test_VS2013       , GUI framework test

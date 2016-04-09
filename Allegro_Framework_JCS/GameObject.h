@@ -1,5 +1,12 @@
-#ifndef __GAMEOBJECT_H__
-#define __GAMEOBJECT_H__
+/*******************************************************************
+*                   JCSCC_Framework Version 1.0
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*   See LICENSE.txt for modification and distribution information
+*		        Copyright (c) 2016 by Shen, Jen-Chieh
+******************************************************************/
+
+#ifndef __ALLEGRO_GAMEOBJECT_H__
+#define __ALLEGRO_GAMEOBJECT_H__
 
 
 
@@ -20,5 +27,5 @@ namespace JCS_Allegro_Engine
 
 }
 
-#endif // __GAMEOBJECT_H__
+#endif // __ALLEGRO_GAMEOBJECT_H__
 

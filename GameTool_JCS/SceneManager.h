@@ -1,4 +1,11 @@
-﻿#ifndef __SCENEMANAGER_H__
+﻿/*******************************************************************
+*                   JCSCC_Framework Version 1.0
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*   See LICENSE.txt for modification and distribution information
+*		        Copyright (c) 2016 by Shen, Jen-Chieh
+******************************************************************/
+
+#ifndef __SCENEMANAGER_H__
 #define __SCENEMANAGER_H__
 
 #include "GameTool_StdAfx.h"

@@ -1,4 +1,11 @@
-﻿#ifndef __GAMEOBJECT_2D_H__
+﻿/*******************************************************************
+*                   JCSCC_Framework Version 1.0
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*   See LICENSE.txt for modification and distribution information
+*		        Copyright (c) 2016 by Shen, Jen-Chieh
+******************************************************************/
+
+#ifndef __GAMEOBJECT_2D_H__
 #define __GAMEOBJECT_2D_H__
 
 #include "IEMath2D.h"

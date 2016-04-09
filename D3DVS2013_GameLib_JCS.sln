@@ -68,11 +68,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JayCeS Maker", "JayCeS Make
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JayCeS_JCS", "JayCeS_JCS\JayCeS_JCS.vcxproj", "{7B9CA971-B019-4627-9423-49EF968948A4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Licence", "Licence", "{B8B2DE23-B1D7-418D-AB8E-20679718340E}"
-	ProjectSection(SolutionItems) = preProject
-		Licence\LICENSE.txt = Licence\LICENSE.txt
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SFML Framework", "SFML Framework", "{87E08427-C59C-42DC-91D6-B27BD67E3DFE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SFML_Framework_JCS", "SFML_Framework_JCS\SFML_Framework_JCS.vcxproj", "{6653903B-E611-4260-A10D-1C238F77B57A}"

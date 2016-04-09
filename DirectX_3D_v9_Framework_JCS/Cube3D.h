@@ -1,5 +1,13 @@
-#ifndef _CUBE3D_H
-#define _CUBE3D_H
+/*******************************************************************
+*                   JCSCC_Framework Version 1.0
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*   See LICENSE.txt for modification and distribution information
+*		        Copyright (c) 2016 by Shen, Jen-Chieh
+******************************************************************/
+
+
+#ifndef __CUBE3D_H__
+#define __CUBE3D_H__
 
 #include "Shape3D.h"
 
@@ -16,5 +24,5 @@ namespace JCS_D3DX_v9_Engine
 }
 
 
-#endif // _CUBE3D_H
+#endif // __CUBE3D_H__
 

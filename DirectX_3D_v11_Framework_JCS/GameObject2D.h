@@ -1,5 +1,12 @@
-#ifndef _GAMEOBJECT_H__
-#define _GAMEOBJECT_H__
+/*******************************************************************
+*                   JCSCC_Framework Version 1.0
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*   See LICENSE.txt for modification and distribution information
+*		        Copyright (c) 2016 by Shen, Jen-Chieh
+******************************************************************/
+
+#ifndef __D3D11_GAMEOBJECT_2D_H__
+#define __D3D11_GAMEOBJECT_2D_H__
 
 
 #include "RenderableObject.h"
@@ -40,5 +47,5 @@ namespace JCS_D3DX_v11_Engine
 
 }
 
-#endif // _GAMEOBJECT_H__
+#endif // __D3D11_GAMEOBJECT_2D_H__
 
