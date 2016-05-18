@@ -33,4 +33,3 @@
 
 
 #endif // __D3DX_V11_STDAFX_H__
-

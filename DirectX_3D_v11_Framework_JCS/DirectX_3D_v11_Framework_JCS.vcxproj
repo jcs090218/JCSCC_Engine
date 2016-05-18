@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -18,13 +18,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -77,27 +77,44 @@
   <ItemGroup>
     <ClCompile Include="AnimatedObject2D.cpp" />
     <ClCompile Include="Animation2D.cpp" />
+    <ClCompile Include="Box3D.cpp" />
+    <ClCompile Include="Camera2D.cpp" />
+    <ClCompile Include="Capsule2D.cpp" />
+    <ClCompile Include="Capsule3D.cpp" />
+    <ClCompile Include="Circle2D.cpp" />
     <ClCompile Include="Font2D.cpp" />
     <ClCompile Include="GameObject2D.cpp" />
     <ClCompile Include="GraphicsD3D11.cpp" />
     <ClCompile Include="Interface2D.cpp" />
+    <ClCompile Include="Rectangle2D.cpp" />
     <ClCompile Include="Scene2D.cpp" />
+    <ClCompile Include="Sphere3D.cpp" />
     <ClCompile Include="Sprite2D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimatedObject2D.h" />
     <ClInclude Include="Animation2D.h" />
+    <ClInclude Include="Box3D.h" />
+    <ClInclude Include="Camera2D.h" />
+    <ClInclude Include="Capsule2D.h" />
+    <ClInclude Include="Capsule3D.h" />
+    <ClInclude Include="Circle2D.h" />
+    <ClInclude Include="Collision2D.h" />
+    <ClInclude Include="Collision3D.h" />
     <ClInclude Include="D3D11_CrashReason.h" />
     <ClInclude Include="D3DX_v11_StdAfx.h" />
     <ClInclude Include="Font2D.h" />
     <ClInclude Include="GameObject2D.h" />
     <ClInclude Include="GraphicsD3D11.h" />
     <ClInclude Include="Interface2D.h" />
+    <ClInclude Include="Rectangle2D.h" />
     <ClInclude Include="RenderableObject.h" />
     <ClInclude Include="Scene2D.h" />
     <ClInclude Include="Script2D.h" />
+    <ClInclude Include="Sphere3D.h" />
     <ClInclude Include="Sprite2D.h" />
     <ClInclude Include="Transform2D.h" />
+    <ClInclude Include="Transform3D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,7 +15,7 @@ namespace JCS_D2DEngine
 		std::vector<bool> availableObject;
 
 	public:
-		ObjectPool2D(uint8 num);
+		ObjectPool2D(uint32 num);
 		virtual ~ObjectPool2D();
 
 		virtual void initialize() override;
@@ -28,18 +28,18 @@ namespace JCS_D2DEngine
 		// setter
 
 		// getter
-		uint8 GetLength() const { return this->objects.size(); }
+		uint32 GetLength() const { return this->objects.size(); }
 		std::vector<T*>* getObjects() const { return this->objects; }
-		T* getObjectsWithIndex(uint8 i) const { return this->objects.at(i); }
+		T* getObjectsWithIndex(uint32 i) const { return this->objects.at(i); }
 		std::vector<bool>* getAvailableObject() const { return this->availableObject; }
-		bool getAvailableObjectWidthIndex(uint8 i) const { return this->availableObject.at(i); }
+		bool getAvailableObjectWidthIndex(uint32 i) const { return this->availableObject.at(i); }
 
 	};
 
 	template <class T>
-	ObjectPool2D<T>::ObjectPool2D(uint8 num)
+	ObjectPool2D<T>::ObjectPool2D(uint32 num)
 	{
-		for (int32 i = 0; i < num; ++i)
+		for (uint32 i = 0; i < num; ++i)
 		{
 			availableObject.push_back(false);
 			objects.push_back(new T);
@@ -49,7 +49,7 @@ namespace JCS_D2DEngine
 	template <class T>
 	ObjectPool2D<T>::~ObjectPool2D()
 	{
-		for (int32 i = 0; i < GetLength(); ++i)
+		for (uint32 i = 0; i < GetLength(); ++i)
 		{
 			SafeDeleteObject(objects.at(i));
 		}
@@ -60,7 +60,7 @@ namespace JCS_D2DEngine
 	template <class T>
 	void ObjectPool2D<T>::initialize()
 	{
-		for (int32 i = 0; i < GetLength(); ++i)
+		for (uint32 i = 0; i < GetLength(); ++i)
 		{
 			objects.at(i)->initialize();
 		}
@@ -69,7 +69,7 @@ namespace JCS_D2DEngine
 	template <class T>
 	void ObjectPool2D<T>::update(const float32 deltaTime)
 	{
-		//for (int i = 0; i < GetLength(); ++i) 
+		//for (uint32 i = 0; i < GetLength(); ++i) 
 		//{
 		//	if (objects.at(i) != nullptr) 
 		//	{
@@ -99,7 +99,7 @@ namespace JCS_D2DEngine
 	template <class T>
 	T* ObjectPool2D<T>::execute()
 	{
-		for (int i = 0; i < GetLength(); ++i) 
+		for (uint32 i = 0; i < GetLength(); ++i) 
 		{
 			if (!availableObject.at(i) && 
 				objects.at(i) != nullptr) 
@@ -118,7 +118,7 @@ namespace JCS_D2DEngine
 	template <class T>
 	void ObjectPool2D<T>::back_to_pool(T* obj)
 	{
-		for (int i = 0; i < GetLength(); ++i)
+		for (uint32 i = 0; i < GetLength(); ++i)
 		{
 			if (objects.at(i) == obj) 
 			{

@@ -1,47 +1,59 @@
-﻿#ifndef __TRANSFORM2D_H__
-#define __TRANSFORM2D_H__
+﻿/*******************************************************************
+ *                   JCSCC_Framework Version 1.0
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *   See LICENSE.txt for modification and distribution information
+ *              Copyright (c) 2016 by Shen, Jen-Chieh
+ ******************************************************************/
+
+#ifndef __D3D11_TRANSFORM2D_H__
+#define __D3D11_TRANSFORM2D_H__
 
 
 #include "D3DX_v11_StdAfx.h"
-#include <GameInterface_JCS\JCS_Component.h>
+#include <GameInterface_JCS\JCS_Transform.h>
 
 namespace JCS_D3DX_v11_Engine
 {
+    
     //-----------------------------------------------------------------------------------------------------------
     // Name : Transform2D
-    // 
-    // Desc : Record 3 Types of Vector
+    //
+    // Desc : "Transform2D" is also the node itself.
+    //        Record 3 Types of Vector
     //         (1) Position     (位置)
     //         (2) Rotation     (旋轉)
     //         (3) Scale        (大小)
     //-----------------------------------------------------------------------------------------------------------
-    struct Transform2D
-        : public JCS_Component
+    class Transform2D
+        : public JCS_Transform
     {
-        JCS_VECTOR2F m_position;
-        JCS_VECTOR2F m_rotation;
-        JCS_VECTOR2F m_scale;
-
-        Transform2D()
-            : m_position()
-            , m_rotation()
-            , m_scale(1.0f, 1.0f)
+    private:
+        Transform2D* m_pParent;
+        std::vector<Transform2D*> m_childrens;
+        
+    public:
+        JCS_VECTOR2F position;
+        JCS_VECTOR2F rotation;
+        JCS_VECTOR2F scale;
+        
+    public:
+        explicit Transform2D()
+            : position()
+            , rotation()
+            , scale(1.0f, 1.0f)
+            , m_pParent(nullptr)
+            , m_childrens()
         { }
-        virtual ~Transform2D() { }
+        ~Transform2D() { }
 
-        // setter
-        JCS_VECTOR2F SetPosition(const JCS_VECTOR2F position) { this->m_position = position; }
-        JCS_VECTOR2F SetRotation(const JCS_VECTOR2F rotation) { this->m_rotation = rotation; }
-        JCS_VECTOR2F SetScale(const JCS_VECTOR2F scale) { this->m_scale = scale; }
 
-        // getter
-        JCS_VECTOR2F GetPosition() const { return this->m_position; }
-        JCS_VECTOR2F GetRotation() const { return this->m_rotation; }
-        JCS_VECTOR2F GetScale() const { return this->m_scale; }
+        Transform2D* GetParent() const { return this->m_pParent; }
+        std::vector<Transform2D*> GetChildrens() const { return this->m_childrens; }
+        Transform2D& GetChildrensRef(const int32 index) const { return *(this->m_childrens.at(index)); }
+        Transform2D* GetChildrensPtr(const int32 index) const { return this->m_childrens.at(index); }
 
     };
 
 }
 
-#endif // __TRANSFORM2D_H__
-
+#endif // __D3D11_TRANSFORM2D_H__

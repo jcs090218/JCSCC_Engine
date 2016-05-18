@@ -76,6 +76,12 @@
     <ClInclude Include="JCS_World.h">
       <Filter>Core</Filter>
     </ClInclude>
+    <ClInclude Include="JCS_Collision.h">
+      <Filter>Core\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_Transform.h">
+      <Filter>Core\Component</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="JCS_Thread.cpp">

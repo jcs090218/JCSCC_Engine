@@ -10,16 +10,29 @@
 
 namespace JCS_D3DX_v11_Engine
 {
+
     GameObject2D::GameObject2D()
         : m_transform()
-        , m_pScirpt(nullptr)
+        , m_pScript(nullptr)
     {
 
     }
 
     GameObject2D::~GameObject2D()
     {
-        SafeDeleteObject(m_pScirpt);
+        SafeDeleteObject(m_pScript);
+    }
+
+    void GameObject2D::update(float32 deltaTime)
+    {
+        // run the script
+        if (m_pScript)
+        {
+            // do the c++'s script before we get into the 
+            // other language's script
+            m_pScript->update(deltaTime);
+            m_pScript->Update();
+        }
     }
 
     void GameObject2D::draw(DirectX::SpriteBatch& sprite_batch)

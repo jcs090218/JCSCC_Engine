@@ -8,7 +8,6 @@
 #ifndef __D3D11_INTERFACE2D_H__
 #define __D3D11_INTERFACE2D_H__
 
-#include <vector>
 #include "D3DX_v11_StdAfx.h"
 
 #include <DirectXTK\Inc\SpriteBatch.h>

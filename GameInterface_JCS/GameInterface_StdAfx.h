@@ -36,6 +36,7 @@
 #include "JCS_Thread.h"
 #include "JCS_Input.h"
 #include "JCS_Component.h"
+#include "JCS_Collision.h"
 #include "JCS_GameType.h"
 #include "JCS_Scene.h"
 #include "JCS_Script.h"

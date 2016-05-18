@@ -2,67 +2,118 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="GameObject2D.cpp">
-      <Filter>Core\Renderable Object</Filter>
+      <Filter>Core\2D\Renderable Object</Filter>
     </ClCompile>
     <ClCompile Include="Font2D.cpp">
-      <Filter>Core\Renderable Object\String Text</Filter>
+      <Filter>Core\GUI\Text</Filter>
     </ClCompile>
     <ClCompile Include="Sprite2D.cpp">
-      <Filter>Core\Renderable Object</Filter>
+      <Filter>Core\2D\Renderable Object</Filter>
     </ClCompile>
     <ClCompile Include="AnimatedObject2D.cpp">
-      <Filter>Core\Renderable Object</Filter>
-    </ClCompile>
-    <ClCompile Include="Animation2D.cpp">
-      <Filter>Core</Filter>
+      <Filter>Core\2D\Renderable Object</Filter>
     </ClCompile>
     <ClCompile Include="GraphicsD3D11.cpp">
       <Filter>Core</Filter>
     </ClCompile>
+    <ClCompile Include="Animation2D.cpp">
+      <Filter>Core\2D</Filter>
+    </ClCompile>
     <ClCompile Include="Interface2D.cpp">
-      <Filter>Core</Filter>
+      <Filter>Core\2D</Filter>
     </ClCompile>
     <ClCompile Include="Scene2D.cpp">
-      <Filter>Core</Filter>
+      <Filter>Core\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Capsule2D.cpp">
+      <Filter>Core\Components\2D\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle2D.cpp">
+      <Filter>Core\Components\2D\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Circle2D.cpp">
+      <Filter>Core\Components\2D\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Box3D.cpp">
+      <Filter>Core\Components\3D\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere3D.cpp">
+      <Filter>Core\Components\3D\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Capsule3D.cpp">
+      <Filter>Core\Components\3D\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera2D.cpp">
+      <Filter>Core\2D</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D3DX_v11_StdAfx.h" />
     <ClInclude Include="GameObject2D.h">
-      <Filter>Core\Renderable Object</Filter>
-    </ClInclude>
-    <ClInclude Include="Transform2D.h">
-      <Filter>Core\Component 2D</Filter>
+      <Filter>Core\2D\Renderable Object</Filter>
     </ClInclude>
     <ClInclude Include="RenderableObject.h">
-      <Filter>Core\Component 2D</Filter>
+      <Filter>Core\Components</Filter>
     </ClInclude>
     <ClInclude Include="Font2D.h">
-      <Filter>Core\Renderable Object\String Text</Filter>
+      <Filter>Core\GUI\Text</Filter>
     </ClInclude>
     <ClInclude Include="Sprite2D.h">
-      <Filter>Core\Renderable Object</Filter>
+      <Filter>Core\2D\Renderable Object</Filter>
     </ClInclude>
     <ClInclude Include="AnimatedObject2D.h">
-      <Filter>Core\Renderable Object</Filter>
-    </ClInclude>
-    <ClInclude Include="Animation2D.h">
-      <Filter>Core</Filter>
+      <Filter>Core\2D\Renderable Object</Filter>
     </ClInclude>
     <ClInclude Include="GraphicsD3D11.h">
       <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="Interface2D.h">
-      <Filter>Core</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene2D.h">
-      <Filter>Core</Filter>
-    </ClInclude>
-    <ClInclude Include="Script2D.h">
-      <Filter>Core</Filter>
-    </ClInclude>
     <ClInclude Include="D3D11_CrashReason.h">
       <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D.h">
+      <Filter>Core\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Script2D.h">
+      <Filter>Core\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface2D.h">
+      <Filter>Core\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene2D.h">
+      <Filter>Core\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform2D.h">
+      <Filter>Core\Components\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform3D.h">
+      <Filter>Core\Components\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision2D.h">
+      <Filter>Core\Components\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision3D.h">
+      <Filter>Core\Components\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Capsule2D.h">
+      <Filter>Core\Components\2D\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle2D.h">
+      <Filter>Core\Components\2D\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Circle2D.h">
+      <Filter>Core\Components\2D\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Box3D.h">
+      <Filter>Core\Components\3D\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere3D.h">
+      <Filter>Core\Components\3D\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Capsule3D.h">
+      <Filter>Core\Components\3D\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera2D.h">
+      <Filter>Core\2D</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -72,20 +123,41 @@
     <Filter Include="Core">
       <UniqueIdentifier>{7a55776d-ccab-465b-b682-304442bcca54}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Core\Component 2D">
-      <UniqueIdentifier>{67d637cb-31ee-4dda-a291-6e7894b7d843}</UniqueIdentifier>
+    <Filter Include="Core\2D">
+      <UniqueIdentifier>{59e6cc5d-ebe4-4788-82c2-5d34b15bc12f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Core\Renderable Object">
-      <UniqueIdentifier>{0315ea1d-c709-4669-92c4-6cfbf7ad55d9}</UniqueIdentifier>
+    <Filter Include="Core\3D">
+      <UniqueIdentifier>{d74680b3-e8fc-49c6-b7ae-e104be39ec76}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Core\Renderable Object\Game Object 2D">
-      <UniqueIdentifier>{96e23b82-7ed4-4180-885e-5e9da07a560c}</UniqueIdentifier>
+    <Filter Include="Core\GUI">
+      <UniqueIdentifier>{1b48e573-84b5-4d9a-97b8-3e1ccacd5634}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Core\Renderable Object\String Text">
+    <Filter Include="Core\GUI\Text">
       <UniqueIdentifier>{a2111d9f-9240-424c-8da7-c8f6eb8e9e5a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Core\Renderable Object\Animated Object 2D">
+    <Filter Include="Core\2D\Renderable Object">
+      <UniqueIdentifier>{0315ea1d-c709-4669-92c4-6cfbf7ad55d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\2D\Renderable Object\Animated Object 2D">
       <UniqueIdentifier>{76c8b99c-fac5-46ed-abf6-1d8e5b607f9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Components">
+      <UniqueIdentifier>{67d637cb-31ee-4dda-a291-6e7894b7d843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Components\2D">
+      <UniqueIdentifier>{8f27d12f-1ecf-40da-bcbd-07588b835c27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Components\3D">
+      <UniqueIdentifier>{52afffbe-08b1-4981-bf08-fd47980bbe25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Components\2D\Collision">
+      <UniqueIdentifier>{4cda2b1e-4935-4e51-8f76-df697fb6ea00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Components\3D\Collision">
+      <UniqueIdentifier>{a904a270-6c55-4acb-b05f-6ecb5f0380fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\2D\Renderable Object\Game Object 2D">
+      <UniqueIdentifier>{96e23b82-7ed4-4180-885e-5e9da07a560c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

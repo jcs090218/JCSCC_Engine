@@ -21,6 +21,13 @@ namespace JCS_GameInterface
     struct JCS_Script
     {
         virtual ~JCS_Script() { }
+
+        // Script in C++ only!
+        virtual void update(float32 deltaTime) = 0;
+
+        // Scripting Language not in C++, 
+        // this will loaded from the script so no delta time involved.
+        virtual void Update() { /* optional */ }
     };
 
 }

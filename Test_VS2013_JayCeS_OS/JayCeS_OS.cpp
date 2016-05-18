@@ -114,6 +114,7 @@ void JayCeS_OS::Run()
 
 
     // TODO(JenChieh): Try to print out the unicode. (Chinese)
-    printf("\n你好!");
+    wprintf(L"\n你好!");
+    std::cout << L"\n你好!" << std::endl;
 }
 

@@ -26,7 +26,7 @@ namespace JCS_D3DX_v11_Engine
     {
     protected:
         Transform2D m_transform;
-        JCS_Script* m_pScirpt;
+        JCS_Script* m_pScript;
 
     public:
         GameObject2D();
@@ -36,7 +36,7 @@ namespace JCS_D3DX_v11_Engine
         virtual void draw(DirectX::SpriteBatch& sprite_batch) override;
 
 
-        void AttachScript(JCS_Script* script) { this->m_pScirpt = script; }
+        void AttachScript(JCS_Script* script) { this->m_pScript = script; }
 
         // setter
         void SetTransform(const Transform2D& transform) { this->m_transform = transform; }
