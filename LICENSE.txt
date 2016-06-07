@@ -1,9 +1,9 @@
 License information
 
  *******************************************************************
- *					JCSCC_Framework Version 0.2.7
+ *                  JCSCC_Framework Version 0.2.7
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- * 		        Copyright (c) 2016 by Jen-Chieh Shen
+ *              Copyright (c) 2016 by Jen-Chieh Shen
  *******************************************************************
 
 =======
