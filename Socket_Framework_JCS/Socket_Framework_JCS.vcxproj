@@ -78,7 +78,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Asio_Socket.h" />
+    <ClInclude Include="JCS_CodecFactory.h" />
+    <ClInclude Include="JCS_DefaultCodecFactory.h" />
+    <ClInclude Include="JCS_DefaultPacketDecoder.h" />
+    <ClInclude Include="JCS_DefaultPacketEncoder.h" />
+    <ClInclude Include="JCS_PacketDecoder.h" />
+    <ClInclude Include="JCS_PacketEncoder.h" />
     <ClInclude Include="JCS_Socket.h" />
+    <ClInclude Include="NetworkConstants.h" />
     <ClInclude Include="Socket_CrashReason.h" />
     <ClInclude Include="Socket_Lib.h" />
     <ClInclude Include="Socket_StdAfx.h" />
@@ -86,6 +93,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Asio_Socket.cpp" />
+    <ClCompile Include="JCS_DefaultCodecFactory.cpp" />
+    <ClCompile Include="JCS_DefaultPacketDecoder.cpp" />
+    <ClCompile Include="JCS_DefaultPacketEncoder.cpp" />
     <ClCompile Include="Winsock2_Socket.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

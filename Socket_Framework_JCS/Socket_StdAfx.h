@@ -1,4 +1,4 @@
-/*******************************************************************
+﻿/*******************************************************************
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
@@ -18,7 +18,18 @@
 #include <GameTool_JCS\GameTool_StdAfx.h>
 
 
+
+
 //// Local Headers ////////////
+
+//-- Interfaces
+#include "JCS_Socket.h"
+#include "JCS_CodecFactory.h"
+#include "JCS_PacketDecoder.h"
+#include "JCS_PacketEncoder.h"
+
+//-- Setting
+#include "NetworkConstants.h"
 
 
 #endif // __SOCKET_STDAFX_H__

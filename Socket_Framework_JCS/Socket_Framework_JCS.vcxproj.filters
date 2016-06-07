@@ -10,6 +10,9 @@
     <Filter Include="Core\Interfaces">
       <UniqueIdentifier>{a24c84da-ee5e-4649-810c-13d8c61efafe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Core\net">
+      <UniqueIdentifier>{35491f31-42bc-4904-bba0-9a81c3e0d208}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="JCS_Socket.h">
@@ -28,6 +31,25 @@
     <ClInclude Include="Asio_Socket.h">
       <Filter>Core</Filter>
     </ClInclude>
+    <ClInclude Include="JCS_PacketDecoder.h">
+      <Filter>Core\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_PacketEncoder.h">
+      <Filter>Core\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkConstants.h" />
+    <ClInclude Include="JCS_DefaultPacketEncoder.h">
+      <Filter>Core\net</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_DefaultPacketDecoder.h">
+      <Filter>Core\net</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_DefaultCodecFactory.h">
+      <Filter>Core\net</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_CodecFactory.h">
+      <Filter>Core\Interfaces</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Winsock2_Socket.cpp">
@@ -35,6 +57,15 @@
     </ClCompile>
     <ClCompile Include="Asio_Socket.cpp">
       <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_DefaultPacketEncoder.cpp">
+      <Filter>Core\net</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_DefaultPacketDecoder.cpp">
+      <Filter>Core\net</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_DefaultCodecFactory.cpp">
+      <Filter>Core\net</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

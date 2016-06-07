@@ -21,10 +21,10 @@ namespace JCS_Network
 
     WinSock2_Socket::~WinSock2_Socket()
     {
-        closeSocket();
+        CloseSocket();
     }
 
-    void WinSock2_Socket::closeSocket()
+    void WinSock2_Socket::CloseSocket()
     {
         closesocket(m_sockClient);		// Close  our socket
         WSACleanup();		// Cleanup Winsock
@@ -57,7 +57,7 @@ namespace JCS_Network
         if (m_sockClient == INVALID_SOCKET)
         {
             MessageBox(NULL, L"建立連結錯誤!", L"Build Socket, Error!", MB_ICONERROR);
-            closeSocket();
+            CloseSocket();
             return false;
         }
 
@@ -68,7 +68,7 @@ namespace JCS_Network
             if (setsockopt(m_sockClient, SOL_SOCKET, SO_KEEPALIVE, (char *)&optval, sizeof(optval)))
             {
                 MessageBox(NULL, L"Keep Alive錯誤!", L"Keep Alive, Error!", MB_ICONERROR);
-                closeSocket();
+                CloseSocket();
                 return false;
             }
         }
@@ -79,7 +79,7 @@ namespace JCS_Network
         if (nRes == SOCKET_ERROR)
         {
             MessageBox(NULL, L"设置为非阻塞方式錯誤!", L"Non-Input/Output Setting, Error!", MB_ICONERROR);
-            closeSocket();
+            CloseSocket();
             return false;
         }
 #else  
@@ -91,7 +91,7 @@ namespace JCS_Network
         if (serveraddr == INADDR_NONE)   // 检查IP地址格式错误  
         {
             MessageBox(NULL, L"IP格式錯誤!", L"IP Format, Error!", MB_ICONERROR);
-            closeSocket();
+            CloseSocket();
             return false;
         }
 
@@ -103,10 +103,10 @@ namespace JCS_Network
 
         if (connect(m_sockClient, (sockaddr *)&addr_in, sizeof(addr_in)) == SOCKET_ERROR)
         {
-            if (hasError())
+            if (HasError())
             {
-                connectToOfficialWebsite();
-                closeSocket();
+                ConnectToOfficialWebsite();
+                CloseSocket();
                 return false;
             }
             else    // WSAWOLDBLOCK  
@@ -123,7 +123,7 @@ namespace JCS_Network
                 int32 ret = select(FD_SETSIZE, NULL, &writeset, &exceptset, &timeout);
                 if (ret == 0 || ret < 0) {
                     MessageBox(NULL, L"Runtime Error: 0x00001", L"Runtime Out, Error!", MB_ICONERROR);
-                    closeSocket();
+                    CloseSocket();
                     return false;
                 }
                 else  // ret > 0  
@@ -132,8 +132,8 @@ namespace JCS_Network
                     if (ret)     // or (!FD_ISSET(m_sockClient, &writeset)  
                     {
                         //MessageBox(NULL, L"Runtime Error: 0x00002", L"Runtime Out, Error!", MB_ICONERROR);
-                        connectToOfficialWebsite();
-                        closeSocket();
+                        ConnectToOfficialWebsite();
+                        CloseSocket();
                         return false;
                     }
                 }
@@ -156,7 +156,7 @@ namespace JCS_Network
     /**
     *  檢查錯誤...
     */
-    bool WinSock2_Socket::hasError()
+    bool WinSock2_Socket::HasError()
     {
 #ifdef _WIN32
         int32 err = WSAGetLastError();
@@ -174,7 +174,7 @@ namespace JCS_Network
     /**
     *  傳送封包...
     */
-    bool WinSock2_Socket::sendPacket(void* pBuf, int32 nSize)
+    bool WinSock2_Socket::SendPacket(void* pBuf, int32 nSize)
     {
         if (pBuf == 0 || nSize <= 0)
             return false;
@@ -208,7 +208,7 @@ namespace JCS_Network
     /**
     *  接收封包...
     */
-    bool WinSock2_Socket::receivePacket(void* pBuf, int32& nSize)
+    bool WinSock2_Socket::ReceivePacket(void* pBuf, int32& nSize)
     {
         //检查参数  
         if (pBuf == NULL || nSize <= 0)
@@ -221,7 +221,7 @@ namespace JCS_Network
         if (m_nInbufLen < 2)
         {
             //  如果没有请求成功  或者   如果没有数据则直接返回  
-            if (!recvFromSock() || m_nInbufLen < 2)      // 这个m_nInbufLen更新了
+            if (!RecvFromSock() || m_nInbufLen < 2)      // 这个m_nInbufLen更新了
             {
                 return false;
             }
@@ -243,7 +243,7 @@ namespace JCS_Network
         if (packsize > m_nInbufLen)
         {
             // 如果没有请求成功   或者    依然无法获取到完整的数据包  则返回，直到取得完整包  
-            if (!recvFromSock() || packsize > m_nInbufLen)  // 这个m_nInbufLen已更新  
+            if (!RecvFromSock() || packsize > m_nInbufLen)  // 这个m_nInbufLen已更新  
             {
                 return false;
             }
@@ -278,7 +278,7 @@ namespace JCS_Network
     /**
     *  从网络中读取尽可能多的数据，实际向服务器请求数据的地方
     */
-    bool WinSock2_Socket::recvFromSock(void)
+    bool WinSock2_Socket::RecvFromSock(void)
     {
         if (m_nInbufLen >= INBUFSIZE || m_sockClient == INVALID_SOCKET)
             return false;
@@ -327,7 +327,7 @@ namespace JCS_Network
                 else
                 {
                     // 连接已断开或者错误（包括阻塞）  
-                    if (hasError())
+                    if (HasError())
                     {
                         Destroy();
                         return false;
@@ -343,7 +343,7 @@ namespace JCS_Network
         else
         {
             // 连接已断开或者错误（包括阻塞）  
-            if (hasError())
+            if (HasError())
             {
                 Destroy();
                 return false;
@@ -380,7 +380,7 @@ namespace JCS_Network
         }
         else
         {
-            if (hasError())
+            if (HasError())
             {
                 Destroy();
                 return false;
@@ -405,7 +405,7 @@ namespace JCS_Network
         }
         else if (ret < 0)
         {
-            if (hasError())
+            if (HasError())
             {
                 Destroy();
                 return false;
@@ -431,7 +431,7 @@ namespace JCS_Network
         so_linger.l_linger = 500;
         int32 ret = setsockopt(m_sockClient, SOL_SOCKET, SO_LINGER, (const char*)&so_linger, sizeof(so_linger));
 
-        closeSocket();
+        CloseSocket();
 
         m_sockClient = INVALID_SOCKET;
         m_nInbufLen = 0;
@@ -451,7 +451,7 @@ namespace JCS_Network
     * if 是: 連上官網
     * if 不是: 不做任何動作
     */
-    void WinSock2_Socket::connectToOfficialWebsite()
+    void WinSock2_Socket::ConnectToOfficialWebsite()
     {
 #ifdef _WIN32
         if (JCS_MessageBox(L"D3DVS2013_Framework_JCS", L"無法登入入伺服器...\n詳情請查看官網!", MB_ICONQUESTION | MB_YESNO) == IDYES)

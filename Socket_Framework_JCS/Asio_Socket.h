@@ -9,7 +9,8 @@
 #define __ASIO_SOCKET_H__
 
 
-#include <boost\asio.hpp>
+#include "Socket_StdAfx.h"
+
 
 namespace JCS_Network
 {
@@ -20,6 +21,7 @@ namespace JCS_Network
     // Desc : 
     //------------------------------------------------------------------------------------
     class Asio_Socket
+        : public JCS_Socket
     {
     public:
         Asio_Socket();
