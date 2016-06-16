@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __TRIANGLE_2D__
@@ -19,24 +19,24 @@ namespace JCS_D2DEngine
     //
     // Desc : 
     //---------------------------------------------------------------------------------------------------------------------------------------------------
-	class Triangle2D 
+    class Triangle2D 
         : public Shape2D
-	{
-	private:
-	    JCS_VECTOR2F p0, p1, p2;
+    {
+    private:
+        JCS_VECTOR2F p0, p1, p2;
 
-	public:
-		Triangle2D(JCS_VECTOR2F p0, JCS_VECTOR2F p1, JCS_VECTOR2F p2, 
-			Graphics2D& gfx, bool autoPivot = true);
-		virtual ~Triangle2D();
+    public:
+        Triangle2D(JCS_VECTOR2F p0, JCS_VECTOR2F p1, JCS_VECTOR2F p2, 
+            Graphics2D& gfx, bool autoPivot = true);
+        virtual ~Triangle2D();
 
-		virtual void initialize() override;
-		virtual void update(const float32 deltaTime) override;
-		virtual void draw() override;
+        virtual void initialize() override;
+        virtual void update(const float32 deltaTime) override;
+        virtual void draw() override;
 
-		virtual void rotation_rotate(float32 angle = 1.0f) override;
-		virtual void revolution_rotate(GameObject2D& target, float32 angle = 1.0f) override;
-	};
+        virtual void rotation_rotate(float32 angle = 1.0f) override;
+        virtual void revolution_rotate(GameObject2D& target, float32 angle = 1.0f) override;
+    };
 }
 
 #endif // __TRIANGLE_2D__

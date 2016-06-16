@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 // stdafx.h : include file for standard system include files,
@@ -15,10 +15,10 @@
 
 #include <GameTool_JCS\GameTool_StdAfx.h>
 
-//#include <dshow.h>		// 使用DirectX 中的 DirectShow組件
+//#include <dshow.h>        // 使用DirectX 中的 DirectShow組件
 
 // microsoft os system
-#define WM_GRAPHNOTIFY  WM_USER		// audio check WindowProc event use
+#define WM_GRAPHNOTIFY  WM_USER        // audio check WindowProc event use
 #define WM_SOCKET 104
 
 // Client's / Server's INFO
@@ -28,9 +28,9 @@
 // 遊戲主程式INFO
 #define WIDOW_TITLE L"Test_GamePatcher_Game"
 #define WIDOW_CLASS L"Test Game Class"
-#define SCREEN_WIDTH 1280		// set screen width
-#define SCREEN_HEIGHT 720		// set screen height
-#define FILL_VALUE 0x00		// color for D3D
+#define SCREEN_WIDTH 1280        // set screen width
+#define SCREEN_HEIGHT 720        // set screen height
+#define FILL_VALUE 0x00        // color for D3D
 
 ////// LINKER ////////////////
 

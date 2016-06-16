@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __JAYCES_GLOBALS_H__
@@ -14,37 +14,37 @@
 
 #define JCS_Print( a )\
 {\
-	TCHAR buff[1024];\
-	swprintf_s( buff, a );\
-	OutputDebugString( buff );\
+    TCHAR buff[1024];\
+    swprintf_s( buff, a );\
+    OutputDebugString( buff );\
 }
 
 #define JCS_Print1( a, b )\
 {\
-	TCHAR buff[1024];\
-	swprintf_s( buff, 1024, a, b );\
-	OutputDebugString( buff );\
+    TCHAR buff[1024];\
+    swprintf_s( buff, 1024, a, b );\
+    OutputDebugString( buff );\
 }
 
 #define JCS_Print2( a, b, c )\
 {\
-	TCHAR buff[1024];\
-	swprintf_s( buff, 1024, a, b );\
-	OutputDebugString( buff );\
+    TCHAR buff[1024];\
+    swprintf_s( buff, 1024, a, b );\
+    OutputDebugString( buff );\
 }
 
 #define JCS_Print3( a, b, c, d )\
 {\
-	TCHAR buff[1024];\
-	swprintf_s( buff, 1024, a, b );\
-	OutputDebugString( buff );\
+    TCHAR buff[1024];\
+    swprintf_s( buff, 1024, a, b );\
+    OutputDebugString( buff );\
 }
 
 #define JCS_Print4( a, b, c, d, e )\
 {\
-	TCHAR buff[1024];\
-	swprintf_s( buff, 1024, a, b );\
-	OutputDebugString( buff );\
+    TCHAR buff[1024];\
+    swprintf_s( buff, 1024, a, b );\
+    OutputDebugString( buff );\
 }
 
 // 檢查通訊...
@@ -52,10 +52,10 @@
 #define CHECKF(x) \
 do \
 { \
-	if (!(x)) { \
-		log_msg("CHECKF", #x, __FILE__, __LINE__); \
-		return 0; \
-    	} \
+    if (!(x)) { \
+        log_msg("CHECKF", #x, __FILE__, __LINE__); \
+        return 0; \
+        } \
 } while (0)
 #endif  
 

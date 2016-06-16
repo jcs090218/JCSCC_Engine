@@ -6,63 +6,63 @@
 
 namespace JCS_D2DEngine
 {
-	Scene2D::Scene2D()
-		: game_objects()
-		, op_game_objects()
-		, sprites()
+    Scene2D::Scene2D()
+        : game_objects()
+        , op_game_objects()
+        , sprites()
         // Multi-threading Handling
         , m_endThread(false)
         , m_updateThread()
         , m_drawThread()
-	{
+    {
 
-	}
+    }
 
-	Scene2D::~Scene2D()
-	{
+    Scene2D::~Scene2D()
+    {
         // Close the thread before we delete RenderableObject
         clear_thread();
 
         // Delete RenderableObject
-		for (GameObject2D* pGameObject2D : game_objects)
-			SafeDeleteObject(pGameObject2D);
+        for (GameObject2D* pGameObject2D : game_objects)
+            SafeDeleteObject(pGameObject2D);
 
-		for (ObjectPool2D<GameObject2D>* pObjectPoolObjectGameObject2D : op_game_objects)
-			SafeDeleteObject(pObjectPoolObjectGameObject2D);
+        for (ObjectPool2D<GameObject2D>* pObjectPoolObjectGameObject2D : op_game_objects)
+            SafeDeleteObject(pObjectPoolObjectGameObject2D);
 
-		for (Sprite2D* pSprite2D : sprites)
-			SafeDeleteObject(pSprite2D);
+        for (Sprite2D* pSprite2D : sprites)
+            SafeDeleteObject(pSprite2D);
 
-		game_objects.clear();
-		op_game_objects.clear();
-		sprites.clear();
-	}
+        game_objects.clear();
+        op_game_objects.clear();
+        sprites.clear();
+    }
 
-	void Scene2D::initialize()
-	{
-		for (GameObject2D* temp : game_objects)
-			temp->initialize();
+    void Scene2D::initialize()
+    {
+        for (GameObject2D* temp : game_objects)
+            temp->initialize();
 
-		for (ObjectPool2D<GameObject2D>* temp : op_game_objects)
-			temp->initialize();
+        for (ObjectPool2D<GameObject2D>* temp : op_game_objects)
+            temp->initialize();
 
-	}
+    }
 
-	void Scene2D::update(float32 deltaTime)
-	{
+    void Scene2D::update(float32 deltaTime)
+    {
         for (Sprite2D* tempSprite : sprites)
             tempSprite->update(deltaTime);
 
-		for (GameObject2D* temp : game_objects)
-			temp->update(deltaTime);
+        for (GameObject2D* temp : game_objects)
+            temp->update(deltaTime);
 
-		for (ObjectPool2D<GameObject2D>* temp : op_game_objects)
-			temp->update(deltaTime);
+        for (ObjectPool2D<GameObject2D>* temp : op_game_objects)
+            temp->update(deltaTime);
 
-	}
+    }
 
-	void Scene2D::draw()
-	{
+    void Scene2D::draw()
+    {
         for (Sprite2D* tempSprite : sprites)
             tempSprite->draw();
 
@@ -71,7 +71,7 @@ namespace JCS_D2DEngine
 
         for (ObjectPool2D<GameObject2D>* temp : op_game_objects)
             temp->draw();
-	}
+    }
 
     //-------------------------------------------------------------------------------------------------------
     // 執行緒平行運算
@@ -142,133 +142,133 @@ namespace JCS_D2DEngine
     //-------------------------------------------------------------------------------------------------------
     // 相關輔助
     //-------------------------------------------------------------------------------------------------------
-	/**
-	 * 加入一個 "GameObject2D"
-	 *
-	 * 如果是物理物件我們加入來進行計算
-	 */
-	void Scene2D::AddGameObject2DToScene(GameObject2D* game_object)
-	{
-		if (game_object != nullptr)
-			game_objects.push_back(game_object);
-	}
-	/**
-	 * 加入一個 "ObjectPool<GameObject2D>*"
-	 */
-	void Scene2D::AddObjectPoolGameObject2DToScene(ObjectPool2D<GameObject2D>* op_game_object)
-	{
-		if (op_game_object != nullptr)
-			op_game_objects.push_back(op_game_object);
-	}
-	/**
-	* 加入一個 "Sprite2D*"
-	*/
-	void Scene2D::AddSprite2DToScene(Sprite2D* sprite)
-	{
-		if (sprite != nullptr)
-			sprites.push_back(sprite);
-	}
-	/**
-	 * 刪除一個 "GameObject2D"
-	 */
-	void Scene2D::RemoveGameObject2DFromScene(GameObject2D* game_object)
-	{
-		if (game_object == nullptr)
-		{
-			throw GameError(L"Scene2D::RemoveGO2DFromScene(GameObject2D*) :\
-							  Object equals to nullptr!");
-			return;
-		}
+    /**
+     * 加入一個 "GameObject2D"
+     *
+     * 如果是物理物件我們加入來進行計算
+     */
+    void Scene2D::AddGameObject2DToScene(GameObject2D* game_object)
+    {
+        if (game_object != nullptr)
+            game_objects.push_back(game_object);
+    }
+    /**
+     * 加入一個 "ObjectPool<GameObject2D>*"
+     */
+    void Scene2D::AddObjectPoolGameObject2DToScene(ObjectPool2D<GameObject2D>* op_game_object)
+    {
+        if (op_game_object != nullptr)
+            op_game_objects.push_back(op_game_object);
+    }
+    /**
+    * 加入一個 "Sprite2D*"
+    */
+    void Scene2D::AddSprite2DToScene(Sprite2D* sprite)
+    {
+        if (sprite != nullptr)
+            sprites.push_back(sprite);
+    }
+    /**
+     * 刪除一個 "GameObject2D"
+     */
+    void Scene2D::RemoveGameObject2DFromScene(GameObject2D* game_object)
+    {
+        if (game_object == nullptr)
+        {
+            throw GameError(L"Scene2D::RemoveGO2DFromScene(GameObject2D*) :\
+                              Object equals to nullptr!");
+            return;
+        }
 
-		uint16 i, j;
-		for (i = 0; i < game_objects.size(); ++i)
-		{
-			if (game_objects.at(i) == game_object)
-			{
-				// 刪除物件
-				SafeDeleteObject(game_objects.at(i));
+        uint16 i, j;
+        for (i = 0; i < game_objects.size(); ++i)
+        {
+            if (game_objects.at(i) == game_object)
+            {
+                // 刪除物件
+                SafeDeleteObject(game_objects.at(i));
 
-				// 移動來補上原本的位置
-				for (j = i; j < game_objects.size(); ++j)
-					game_objects.at(i) = game_objects.at(i + 1);
+                // 移動來補上原本的位置
+                for (j = i; j < game_objects.size(); ++j)
+                    game_objects.at(i) = game_objects.at(i + 1);
 
-				// 改變Array大小
-				game_objects.erase(game_objects.begin() + i);
-				return;
-			}
-		}
+                // 改變Array大小
+                game_objects.erase(game_objects.begin() + i);
+                return;
+            }
+        }
 
-		throw GameError(L"Scene2D::RemoveGO2DFromScene(GameObject2D*) :\
-							清單中沒有此物體!");
-	}
-	/**
-	 * 刪除一個 "ObjectPool<GameObject2D>*"
-	 */
-	void Scene2D::RemoveObjectPoolGameObject2DFromScene(ObjectPool2D<GameObject2D>* op_game_object)
-	{
-		if (op_game_object == nullptr)
-		{
-			throw GameError(L"Scene2D::RemoveOPGO2DFromScene\
-				(JCS_GameTool::ObjectPool<GameObject2D>*) :\
-				Object equals to nullptr!");
-			return;
-		}
+        throw GameError(L"Scene2D::RemoveGO2DFromScene(GameObject2D*) :\
+                            清單中沒有此物體!");
+    }
+    /**
+     * 刪除一個 "ObjectPool<GameObject2D>*"
+     */
+    void Scene2D::RemoveObjectPoolGameObject2DFromScene(ObjectPool2D<GameObject2D>* op_game_object)
+    {
+        if (op_game_object == nullptr)
+        {
+            throw GameError(L"Scene2D::RemoveOPGO2DFromScene\
+                (JCS_GameTool::ObjectPool<GameObject2D>*) :\
+                Object equals to nullptr!");
+            return;
+        }
 
 
-		uint16 i, j;
-		for (i = 0; i < op_game_objects.size(); i++)
-		{
-			if (op_game_objects.at(i) == op_game_object)
-			{
-				// 刪除物件
-				SafeDeleteObject(op_game_objects.at(i));
+        uint16 i, j;
+        for (i = 0; i < op_game_objects.size(); i++)
+        {
+            if (op_game_objects.at(i) == op_game_object)
+            {
+                // 刪除物件
+                SafeDeleteObject(op_game_objects.at(i));
 
-				// 移動來補上原本的位置
-				for (j = i; j < op_game_objects.size(); ++j)
-					op_game_objects.at(i) = op_game_objects.at(i + 1);
+                // 移動來補上原本的位置
+                for (j = i; j < op_game_objects.size(); ++j)
+                    op_game_objects.at(i) = op_game_objects.at(i + 1);
 
-				// 改變Array大小
-				op_game_objects.erase(op_game_objects.begin() + i);
-				return;
-			}
-		}
+                // 改變Array大小
+                op_game_objects.erase(op_game_objects.begin() + i);
+                return;
+            }
+        }
 
-		throw GameError(L"Scene2D::RemoveOPGO2DFromScene\
-					(JCS_GameTool::ObjectPool<GameObject2D>*) : \
-					清單中沒有此物體!");
-	}
-	/**
-	* 刪除一個 "Sprite2D*"
-	*/
-	void Scene2D::RemoveSprite2DFromScene(Sprite2D* sprite)
-	{
-		if (sprite == nullptr)
-		{
-			throw GameError(L"Scene2D::RemoveSprite2DFromScene(cSprite2D*) : \
-							  Object equals to nullptr!");
-			return;
-		}
+        throw GameError(L"Scene2D::RemoveOPGO2DFromScene\
+                    (JCS_GameTool::ObjectPool<GameObject2D>*) : \
+                    清單中沒有此物體!");
+    }
+    /**
+    * 刪除一個 "Sprite2D*"
+    */
+    void Scene2D::RemoveSprite2DFromScene(Sprite2D* sprite)
+    {
+        if (sprite == nullptr)
+        {
+            throw GameError(L"Scene2D::RemoveSprite2DFromScene(cSprite2D*) : \
+                              Object equals to nullptr!");
+            return;
+        }
 
-		uint8 i, j;
-		for (i = 0; i < sprites.size(); ++i)
-		{
-			if (sprites.at(i) == sprite)
-			{
-				// 刪除物件
-				SafeDeleteObject(sprites.at(i));
+        uint8 i, j;
+        for (i = 0; i < sprites.size(); ++i)
+        {
+            if (sprites.at(i) == sprite)
+            {
+                // 刪除物件
+                SafeDeleteObject(sprites.at(i));
 
-				// 移動來補上原本的位置
-				for (j = i; j < sprites.size(); ++j)
-					sprites.at(i) = sprites.at(i + 1);
+                // 移動來補上原本的位置
+                for (j = i; j < sprites.size(); ++j)
+                    sprites.at(i) = sprites.at(i + 1);
 
-				// 改變Array大小
-				sprites.erase(sprites.begin() + i);
-				return;
-			}
-		}
-		throw GameError(L"Scene2D::RemoveSprite2DFromScene(cSprite2D*) : \
-						  清單中沒有此物體!");
-	}
+                // 改變Array大小
+                sprites.erase(sprites.begin() + i);
+                return;
+            }
+        }
+        throw GameError(L"Scene2D::RemoveSprite2DFromScene(cSprite2D*) : \
+                          清單中沒有此物體!");
+    }
 
 
 }// end namespace "JCS_D2DEngine"

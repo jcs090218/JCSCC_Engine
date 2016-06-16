@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __WINDOW_H__
@@ -26,10 +26,10 @@ namespace JCS_GameResourceS
     {
     public:
         static Application* s_pApplication;
-        static Window* s_pGlobalWindow;		// singleton pattern
+        static Window* s_pGlobalWindow;        // singleton pattern
 
     private:
-        HWND mhMainWndow;		// handle for window
+        HWND mhMainWndow;        // handle for window
         WNDPROC mhWinProc;
 
         int32 m_screenWidth, m_screenHeight;

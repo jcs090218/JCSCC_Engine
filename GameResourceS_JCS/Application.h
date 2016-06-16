@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __APPLICATION_H__
@@ -40,7 +40,7 @@ namespace JCS_GameResourceS
         MSG m_message;  // window message
 
         // Program Control
-        bool m_appPaused;		// use when we want to stop the program
+        bool m_appPaused;        // use when we want to stop the program
 
     public:
         Application(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int32 nCmdShow);
@@ -71,7 +71,7 @@ namespace JCS_GameResourceS
         bool GetAppPause() const { return this->m_appPaused; }
 
     protected:
-        bool InitWindow();		// Create GameWindow
+        bool InitWindow();        // Create GameWindow
 
         // Override this enable to run the game
         virtual void RunApp() = 0;

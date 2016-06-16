@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __SCENEMANAGER_H__
@@ -27,37 +27,37 @@ namespace JCS_GameTool
     // Desc : Take care of all the scene. Three main thing this class should 
     //        consider. Load scene, Exit scene, Switch scene and Render scene. 
     //------------------------------------------------------------------------------------
-	class SceneManager
-	{
-	private:
-		static SceneManager* _instance;
+    class SceneManager
+    {
+    private:
+        static SceneManager* _instance;
         SceneManager(API_Type api, SceneType scene);
 
-		bool isPhysicsWorld;				// 物理引擎開關
+        bool isPhysicsWorld;                // 物理引擎開關
 
         SceneType m_sceneType;
         API_Type m_apiType;
         JCS_Scene* m_pScene;
 
-	public:
-		virtual ~SceneManager();
+    public:
+        virtual ~SceneManager();
 
         static SceneManager* getInstance(API_Type api, SceneType scene)
-		{
-			if (!_instance)
+        {
+            if (!_instance)
                 _instance = new SceneManager(api, scene);
-			return _instance;
-		}
+            return _instance;
+        }
 
-		void update(float32 deltaTime);
-		void draw();
+        void update(float32 deltaTime);
+        void draw();
 
-		// setter
-		void setIsPhysicsWorld(bool active) { if (isPhysicsWorld != active) this->isPhysicsWorld = active; }
+        // setter
+        void setIsPhysicsWorld(bool active) { if (isPhysicsWorld != active) this->isPhysicsWorld = active; }
         void SetScene(JCS_Scene* scene) { this->m_pScene = scene; }
 
-		// getter
-		bool getIsPhysicsWorld() { return this->isPhysicsWorld; }
+        // getter
+        bool getIsPhysicsWorld() { return this->isPhysicsWorld; }
         JCS_Scene* GetSceneAsPtr() const { return this->m_pScene; }
         JCS_Scene& GetSceneAsRef() const { return *(this->m_pScene); }
         
@@ -69,7 +69,7 @@ namespace JCS_GameTool
         
         JCS_D3DX_v9_Engine::Scene3D* GetDriectX3D_v9_Scene3DAsPtr() { return dynamic_cast<JCS_D3DX_v9_Engine::Scene3D*>(m_pScene); }
         JCS_D3DX_v9_Engine::Scene3D& GetDriectX3D_v9_Scene3DAsRef() { return *(dynamic_cast<JCS_D3DX_v9_Engine::Scene3D*>(m_pScene)); }
-	};
+    };
 
 }// end namespace "JCS_GameTool"
 

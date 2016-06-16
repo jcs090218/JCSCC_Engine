@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #include "Application.h"
@@ -22,8 +22,8 @@ namespace JCS_GameResourceS
         , m_message()
         , m_windowTitle(L"D3DVS2013_Framework_JCS")
         , m_windowClass(L"Framework Development Class")
-        , m_screenWidth(1280)		// default SCREEN WIDTH
-        , m_screenHeight(720)		// default SCREEN HEIGHT
+        , m_screenWidth(1280)        // default SCREEN WIDTH
+        , m_screenHeight(720)        // default SCREEN HEIGHT
         , m_icon(101)               // default Icon defines
         , m_exeIcon(102)          // default Small Icon defines
     {
@@ -96,7 +96,7 @@ namespace JCS_GameResourceS
         // Set Main Window
         this->m_mainWindow = m_pWindow->GetHWND();
 
-        return true;	// Success create the "Window" for game client
+        return true;    // Success create the "Window" for game client
     }
 
 }

@@ -2,8 +2,8 @@
 *         Advanced 3D Game Programming with DirectX 10.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *
-*	See license.txt for modification and distribution information
-*		copyright (c) 2007 by Peter Walsh, Wordware
+*    See license.txt for modification and distribution information
+*        copyright (c) 2007 by Peter Walsh, Wordware
 ******************************************************************/
 
 //-----------------------------------------------------------------------------
@@ -29,19 +29,19 @@
 class CWaveSoundRead
 {
 public:
-	WAVEFORMATEX* m_pwfx;        // Pointer to WAVEFORMATEX structure
-	HMMIO         m_hmmioIn;     // MM I/O handle for the WAVE
-	MMCKINFO      m_ckIn;        // Multimedia RIFF chunk
-	MMCKINFO      m_ckInRiff;    // Use in opening a WAVE file
+    WAVEFORMATEX* m_pwfx;        // Pointer to WAVEFORMATEX structure
+    HMMIO         m_hmmioIn;     // MM I/O handle for the WAVE
+    MMCKINFO      m_ckIn;        // Multimedia RIFF chunk
+    MMCKINFO      m_ckInRiff;    // Use in opening a WAVE file
 
 public:
-	CWaveSoundRead();
-	~CWaveSoundRead();
+    CWaveSoundRead();
+    ~CWaveSoundRead();
 
-	HRESULT Open(TCHAR* strFilename);
-	HRESULT Reset();
-	HRESULT Read(UINT nSizeToRead, BYTE* pbData, UINT* pnSizeRead);
-	HRESULT Close();
+    HRESULT Open(TCHAR* strFilename);
+    HRESULT Reset();
+    HRESULT Read(UINT nSizeToRead, BYTE* pbData, UINT* pnSizeRead);
+    HRESULT Close();
 
 };
 

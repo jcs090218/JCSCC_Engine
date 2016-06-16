@@ -16,7 +16,7 @@ DirectX11_Game::~DirectX11_Game()
     SafeDeleteObject(m_pAnimation);
 
     SafeDeleteObject(gm);
-    SafeDeleteObject(sem);		// 這個目前必須在 Managers 上面
+    SafeDeleteObject(sem);        // 這個目前必須在 Managers 上面
     SafeDeleteObject(sm);
     SafeDeleteObject(im);
     SafeDeleteObject(dm);
@@ -59,7 +59,7 @@ void DirectX11_Game::Run(float deltaTime)
     }
     else
     {
-        Sleep(100);		// pause
+        Sleep(100);        // pause
     }
 }
 

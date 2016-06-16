@@ -479,10 +479,10 @@ namespace FMOD
         FMOD_RESULT F_API getActive              (bool *active);
         FMOD_RESULT F_API setBypass              (bool bypass);
         FMOD_RESULT F_API getBypass              (bool *bypass);
-        FMOD_RESULT F_API setSpeakerActive		 (FMOD_SPEAKER speaker, bool active);
-		FMOD_RESULT F_API getSpeakerActive		 (FMOD_SPEAKER speaker, bool *active);
-		FMOD_RESULT F_API reset                  ();
-		
+        FMOD_RESULT F_API setSpeakerActive         (FMOD_SPEAKER speaker, bool active);
+        FMOD_RESULT F_API getSpeakerActive         (FMOD_SPEAKER speaker, bool *active);
+        FMOD_RESULT F_API reset                  ();
+        
 
         // DSP parameter control.
         FMOD_RESULT F_API setParameter           (int index, float value);

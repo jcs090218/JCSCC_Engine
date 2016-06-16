@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 
@@ -13,13 +13,13 @@
 
 namespace JCS_D3DX_v9_Engine
 {
-	class Cube3D 
+    class Cube3D 
         : public Shape3D
-	{
-	public:
-		Cube3D();
-		~Cube3D();
-	};
+    {
+    public:
+        Cube3D();
+        ~Cube3D();
+    };
 
 }
 

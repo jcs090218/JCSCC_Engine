@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #include "DeviceManager.h"
@@ -12,20 +12,20 @@
 
 namespace JCS_GameTool
 {
-	DeviceManager* DeviceManager::s_pDeviceManager = nullptr;
+    DeviceManager* DeviceManager::s_pDeviceManager = nullptr;
 
     DeviceManager::DeviceManager()
         : m_pRenderDevice(nullptr)
         , m_pDeviceType(API_Type::NONE)
-	{
+    {
         
-	}
+    }
 
-	DeviceManager::~DeviceManager()
-	{
+    DeviceManager::~DeviceManager()
+    {
         SafeDeleteObject(m_pRenderDevice);
-		s_pDeviceManager = nullptr;
-	}
+        s_pDeviceManager = nullptr;
+    }
 
     //---------------------------------------------------------------------------------------------------------------------------------------
     // Create Device with different API

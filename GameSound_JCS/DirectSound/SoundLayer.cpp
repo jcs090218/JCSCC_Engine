@@ -43,7 +43,7 @@ namespace JCS_GameSound
         ZeroMemory(&wfx, sizeof(WAVEFORMATEX));
         wfx.wFormatTag = WAVE_FORMAT_PCM;
         wfx.nChannels = 2;
-        wfx.nSamplesPerSec = 22050;		// hz
+        wfx.nSamplesPerSec = 22050;        // hz
         wfx.wBitsPerSample = 16;
         wfx.nBlockAlign = wfx.wBitsPerSample / 8 * wfx.nChannels;
         wfx.nAvgBytesPerSec = wfx.nSamplesPerSec * wfx.nBlockAlign;

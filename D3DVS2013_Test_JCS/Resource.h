@@ -3,7 +3,7 @@
 // Used by D3DVS2013_Test_JCS.rc
 //
 #define IDI_JCS_FRAMWORK_ICON                       101
-#define IDI_MAIN_ICON							   102
+#define IDI_MAIN_ICON                               102
 
 // Next default values for new objects
 // 

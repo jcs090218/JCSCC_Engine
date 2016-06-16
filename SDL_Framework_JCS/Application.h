@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __APPLICATION_H__
@@ -35,7 +35,7 @@ namespace JCS_SDL_Engine
 
         // 遊戲時間
         JCS_GameTool::GameTimer* m_pTimer;
-        bool m_appPaused;		// use when we want to stop the game
+        bool m_appPaused;        // use when we want to stop the game
 
     public:
         Application();

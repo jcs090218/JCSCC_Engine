@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __WINSOCK2_SOCKET_H__
@@ -28,20 +28,20 @@ namespace JCS_Network
         const char* m_pHostName = DEFAULT_HOST_NAME;
         int32 m_port = DEFAULT_PORT;
 
-        bool RecvFromSock(void);		// 从网络中读取尽可能多的数据
-        bool HasError();		// 是否發生错误，注意，異同步模式未完成非錯誤
+        bool RecvFromSock(void);        // 从网络中读取尽可能多的数据
+        bool HasError();        // 是否發生错误，注意，異同步模式未完成非錯誤
         void CloseSocket();
 
-        void ConnectToOfficialWebsite();			// 檢查是否要連上官網
+        void ConnectToOfficialWebsite();            // 檢查是否要連上官網
 
         // 發送數據緩衝
-        char m_bufOutput[OUTBUFSIZE];	//? 可優化为指针數组
+        char m_bufOutput[OUTBUFSIZE];    //? 可優化为指针數组
         int32 m_nOutbufLen;
 
         // 环形缓冲区
         char m_bufInput[INBUFSIZE];
         int32 m_nInbufLen;
-        int32 m_nInbufStart;				// INBUF使用循环式队列，该变量为队列起点，0 - (SIZE-1)
+        int32 m_nInbufStart;                // INBUF使用循环式队列，该变量为队列起点，0 - (SIZE-1)
 
     public:
         WinSock2_Socket(void);

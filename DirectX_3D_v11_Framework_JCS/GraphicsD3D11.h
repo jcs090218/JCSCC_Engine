@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __GRAPHICSD3D11_H__
@@ -28,9 +28,9 @@ namespace JCS_D3DX_v11_Engine
 
         IDXGISwapChain* m_pSwapChain;             // the pointer to the swap chain interface
         ID3D11RenderTargetView* m_pRenderTargetView;    // the pointer to our back buffer
-        ID3D11DepthStencilView* m_pDepthStencilView;		// the pointer to z-buffer
+        ID3D11DepthStencilView* m_pDepthStencilView;        // the pointer to z-buffer
 
-        D3D_DRIVER_TYPE	m_driverType;
+        D3D_DRIVER_TYPE    m_driverType;
         D3D_FEATURE_LEVEL m_featureLevel;
         D3D11_VIEWPORT m_viewport;
 
@@ -46,7 +46,7 @@ namespace JCS_D3DX_v11_Engine
         virtual void BeginRender() const override;
         virtual void EndRender() const override;
 
-        void Clear(const FLOAT color[4]);		// this will help us clear the frame
+        void Clear(const FLOAT color[4]);        // this will help us clear the frame
         void ClearDepth();
         void RenderPresent();
 

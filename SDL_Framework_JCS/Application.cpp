@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #include "Application.h"
@@ -32,7 +32,7 @@ namespace JCS_SDL_Engine
     {
         m_pWindow = new Window();
 
-        m_pTimer = new JCS_GameTool::GameTimer();		// 建立遊戲時間
+        m_pTimer = new JCS_GameTool::GameTimer();        // 建立遊戲時間
 
         m_pMouse = new Mouse();
         m_pKeyboard = new Keyboard();

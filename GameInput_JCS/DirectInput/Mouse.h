@@ -6,31 +6,31 @@
 
 namespace JCS_GameInput
 {
-	class MouseServer;
+    class MouseServer;
 
-	class MouseClient
+    class MouseClient
         : public JCS_Input
-	{
-	private:
-		const MouseServer* server;		// declare mouse server
-
-	public:
-		MouseClient(const MouseServer* server);
-		virtual ~MouseClient();
-
-		int32 GetMouseX() const;
-		int32 GetMouseY() const;
-		bool LeftIsPressed() const;
-		bool RightIsPressed() const;
-		bool IsInWindow() const;
-
-	};
-
-	class MouseServer
-        : public JCS_Input
-	{
+    {
     private:
-		friend MouseClient;
+        const MouseServer* server;        // declare mouse server
+
+    public:
+        MouseClient(const MouseServer* server);
+        virtual ~MouseClient();
+
+        int32 GetMouseX() const;
+        int32 GetMouseY() const;
+        bool LeftIsPressed() const;
+        bool RightIsPressed() const;
+        bool IsInWindow() const;
+
+    };
+
+    class MouseServer
+        : public JCS_Input
+    {
+    private:
+        friend MouseClient;
 
         // value we send to client
         int32 x;
@@ -39,20 +39,20 @@ namespace JCS_GameInput
         bool rightIsPressed;
         bool isInWindow;
 
-	public:
-		// Constructor
-		MouseServer();
-		~MouseServer();
+    public:
+        // Constructor
+        MouseServer();
+        ~MouseServer();
 
-		void OnMouseMove(int32 x, int32 y);
-		void OnMouseLeave();
-		void OnMouseEnter();
-		void OnLeftPressed();		// left mouse
-		void OnLeftReleased();
-		void OnRightPressed();		// right mouse
-		void OnRightReleased();
-		bool IsInWindow() const;	// check mouse are in window or not
-	};
+        void OnMouseMove(int32 x, int32 y);
+        void OnMouseLeave();
+        void OnMouseEnter();
+        void OnLeftPressed();        // left mouse
+        void OnLeftReleased();
+        void OnRightPressed();        // right mouse
+        void OnRightReleased();
+        bool IsInWindow() const;    // check mouse are in window or not
+    };
 
 }
 

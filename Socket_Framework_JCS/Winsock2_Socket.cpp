@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #include "Winsock2_Socket.h"
@@ -26,8 +26,8 @@ namespace JCS_Network
 
     void WinSock2_Socket::CloseSocket()
     {
-        closesocket(m_sockClient);		// Close  our socket
-        WSACleanup();		// Cleanup Winsock
+        closesocket(m_sockClient);        // Close  our socket
+        WSACleanup();        // Cleanup Winsock
     }
 
     /**
@@ -460,7 +460,7 @@ namespace JCS_Network
             ShellExecute(
                 NULL,
                 L"open",
-                L"http://54.148.134.127/",		// 要連結上的網址 (( 請放入官網url
+                L"http://54.148.134.127/",        // 要連結上的網址 (( 請放入官網url
                 NULL,
                 NULL,
                 SW_SHOWNORMAL);

@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 // JayCeS_StdAfx.h : include file for standard system include files,
@@ -30,13 +30,13 @@
 #include <assert.h>
 #include <ctime>
 #include <string>
-#include <cstring>		// strlen, memcpy, etc.
-#include <cstdlib>		// exit
-#include <cfloat>		// FLT_MAX
+#include <cstring>        // strlen, memcpy, etc.
+#include <cstdlib>        // exit
+#include <cfloat>        // FLT_MAX
 #include <sstream>
-#include <cmath>		// abs, sqrt
-#include <cassert>		// assert
-#include <algorithm>	// max, min
+#include <cmath>        // abs, sqrt
+#include <cassert>        // assert
+#include <algorithm>    // max, min
 #include <iomanip>
 #include <queue>
 #include <stdint.h>     // all the uint8 and int8 stuff in "JCS_IEMath.h"

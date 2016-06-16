@@ -31,7 +31,7 @@ private:
     /*LPD3DXMESH meshTeapot;*/
 
     // Variables
-    float speedX, speedY;		// players x and y position
+    float speedX, speedY;        // players x and y position
     float mainSpeed = 180;
 
     void update(float deltaTime);

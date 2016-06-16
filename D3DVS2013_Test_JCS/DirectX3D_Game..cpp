@@ -19,7 +19,7 @@ DirectX3D_Game::~DirectX3D_Game()
     //SafeReleaseCOM(meshTeapot);
 
     SafeDeleteObject(gm);
-    SafeDeleteObject(sem);		// 這個目前必須在 Managers 上面
+    SafeDeleteObject(sem);        // 這個目前必須在 Managers 上面
     SafeDeleteObject(sm);
     SafeDeleteObject(im);
     SafeDeleteObject(dm);
@@ -38,16 +38,16 @@ bool DirectX3D_Game::Initlialize(HWND hWnd)
 
     player = new JCS_D3DX_v9_Engine::GameObject3D(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2);
     if (!player->Initialize(dm->GetDriectX3D_v9_DeviceAsPtr()->GetDevice(), L"Sprite/PlayerPaper.png", 58, 86, 255))
-    	return false;
-    player->getSprite()->setPivot(D3DXVECTOR2(58 / 2, 86 / 2));		// 設置中心點
+        return false;
+    player->getSprite()->setPivot(D3DXVECTOR2(58 / 2, 86 / 2));        // 設置中心點
 
     testSprite = new JCS_D3DX_v9_Engine::DisplayObject(200, 300);
     if (!testSprite->Initialize(dm->GetDriectX3D_v9_DeviceAsPtr()->GetDevice(), L"Sprite/PlayerPaper.png"))
-    	return false;
+        return false;
 
     testAnimation = new JCS_D3DX_v9_Engine::DisplayObject(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 21, 0, 0, false);
     if (!testAnimation->Initialize(dm->GetDriectX3D_v9_DeviceAsPtr()->GetDevice(), L"Sprite/Panel3.png", 1))
-    	return false;
+        return false;
 
     // 3d model
     //D3DXCreateTeapot(gDevice->d3ddev, &meshTeapot, NULL);
@@ -64,7 +64,7 @@ void DirectX3D_Game::Run(float deltaTime)
     }
     else
     {
-        Sleep(100);		// pause
+        Sleep(100);        // pause
     }
 }
 
@@ -72,8 +72,8 @@ void DirectX3D_Game::Update(float deltaTime)
 {
     if (GetAsyncKeyState(67))
     {
-    	std::wstring message = L"C key is pressed";
-    	MessageBox(NULL, message.c_str(), NULL, NULL);
+        std::wstring message = L"C key is pressed";
+        MessageBox(NULL, message.c_str(), NULL, NULL);
     }
 
     //DP1(L"\nGameTime: %f", deltaTime);
@@ -89,7 +89,7 @@ void DirectX3D_Game::Update(float deltaTime)
     if (im->getKeyboard()->KeyIsPressed(VK_DELETE)) sm->playCompleteShot((TCHAR*)L"data/sound01.wav");
     if (im->getKeyboard()->KeyIsPressed(VK_F1)) testAnimation->getAnimatObj()->PlayAnimationWithSpriteSheet(deltaTime, D3DXVECTOR3(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 0.0f), 21, true);
 
-    if (im->getKeyboard()->KeyIsPressed(VK_UP)) player->y -= mainSpeed * deltaTime;		// 這樣才叫有 impl "gametime"
+    if (im->getKeyboard()->KeyIsPressed(VK_UP)) player->y -= mainSpeed * deltaTime;        // 這樣才叫有 impl "gametime"
     if (im->getKeyboard()->KeyIsPressed(VK_DOWN))player->y += mainSpeed * deltaTime;
     if (im->getKeyboard()->KeyIsPressed(VK_LEFT))player->x -= mainSpeed * deltaTime;
     if (im->getKeyboard()->KeyIsPressed(VK_RIGHT))player->x += mainSpeed * deltaTime;
@@ -121,19 +121,19 @@ void DirectX3D_Game::Draw(float deltaTime)
 void DirectX3D_Game::update(float deltaTime)
 {
     speedX += deltaTime;
-    //D3DXMATRIX matView;	// the view transform matrix
+    //D3DXMATRIX matView;    // the view transform matrix
     //D3DXMatrixLookAtLH(&matView,
-    //	&D3DXVECTOR3(speedX, 2.0f, 6.0f),    // the camera position
-    //	&D3DXVECTOR3(0.0f, 0.0f, 0.0f),    // the look-at position
-    //	&D3DXVECTOR3(0.0f, 1.0f, 0.0f));    // the up direction
+    //    &D3DXVECTOR3(speedX, 2.0f, 6.0f),    // the camera position
+    //    &D3DXVECTOR3(0.0f, 0.0f, 0.0f),    // the look-at position
+    //    &D3DXVECTOR3(0.0f, 1.0f, 0.0f));    // the up direction
     //gDevice->d3ddev->SetTransform(D3DTS_VIEW, &matView);    // set the view transform to matView
 
     //D3DXMATRIX matProjection;     // the projection transform matrix
     //D3DXMatrixPerspectiveFovLH(&matProjection,
-    //	D3DXToRadian(45),    // the horizontal field of view
-    //	(FLOAT)SCREEN_WIDTH / (FLOAT)SCREEN_HEIGHT, // aspect ratio
-    //	1.0f,    // the near view-plane
-    //	100.0f);    // the far view-plane
+    //    D3DXToRadian(45),    // the horizontal field of view
+    //    (FLOAT)SCREEN_WIDTH / (FLOAT)SCREEN_HEIGHT, // aspect ratio
+    //    1.0f,    // the near view-plane
+    //    100.0f);    // the far view-plane
     //gDevice->d3ddev->SetTransform(D3DTS_PROJECTION, &matProjection);    // set the projection
 
     //D3DXVECTOR3 vCamera(speedX, speedX, speedX);

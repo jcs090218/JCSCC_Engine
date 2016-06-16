@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __SAFEPOINTER_H__
@@ -71,7 +71,7 @@ inline void SafeDeleteObject(T& ptr)
     if (ptr)
     {
         delete ptr;
-        ptr = nullptr;		// could also set to 0
+        ptr = nullptr;        // could also set to 0
     }
 }
 

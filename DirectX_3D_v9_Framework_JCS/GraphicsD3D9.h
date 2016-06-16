@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __GRAPHICSD3D9_H__
@@ -16,30 +16,30 @@ namespace JCS_D3DX_v9_Engine
 {
     class GraphicsD3D9
         : public JCS_GameInterface::RenderDevice
-	{
+    {
     private:
         LPDIRECT3D9 m_direct3d;
         LPDIRECT3DDEVICE9 m_d3ddev;
 
-	public:
+    public:
         GraphicsD3D9();
         virtual ~GraphicsD3D9();
 
-		// Direct3D functions
+        // Direct3D functions
         bool Initialize(HWND hWnd, bool windowed);
 
-		virtual void BeginRender() const override;		// not using this in Direct 11
-		virtual void EndRender() const override;		// not using this in Direct 11
+        virtual void BeginRender() const override;        // not using this in Direct 11
+        virtual void EndRender() const override;        // not using this in Direct 11
 
-        void Clear(D3DXCOLOR& color);		// this will help us clear the frame
+        void Clear(D3DXCOLOR& color);        // this will help us clear the frame
         void ClearDepth();
-		void RenderPresent();
+        void RenderPresent();
 
         // setter
 
         // getter
         LPDIRECT3DDEVICE9 GetDevice() const { return this->m_d3ddev; }
-	};
+    };
 
 }
 

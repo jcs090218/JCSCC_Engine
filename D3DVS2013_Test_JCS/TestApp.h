@@ -9,13 +9,13 @@ class Game;
 class TestApp : public JCS_GameTool::Application
 {
 private:
-	Game* m_pGame;
+    Game* m_pGame;
 
 public:
-	TestApp(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow);
-	virtual ~TestApp();
+    TestApp(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow);
+    virtual ~TestApp();
 
-	virtual bool Initialize() override;
+    virtual bool Initialize() override;
 
 protected:
     virtual void RunApp(float deltaTime) override;

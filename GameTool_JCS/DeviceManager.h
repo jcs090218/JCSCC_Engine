@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __DEVICEMANAGER_H__
@@ -24,31 +24,31 @@ namespace JCS_GameTool
     //
     // Desc : 
     //------------------------------------------------------------------------------------
-	class DeviceManager
-	{
-	private:
-		static DeviceManager* s_pDeviceManager;
+    class DeviceManager
+    {
+    private:
+        static DeviceManager* s_pDeviceManager;
 
         API_Type m_pDeviceType;
         RenderDevice* m_pRenderDevice;
 
         DeviceManager();
 
-	public:
-		virtual ~DeviceManager();
+    public:
+        virtual ~DeviceManager();
 
         static DeviceManager* getInstance()
-		{
-			if (!s_pDeviceManager)
+        {
+            if (!s_pDeviceManager)
                 s_pDeviceManager = new DeviceManager();
-			return s_pDeviceManager;
-		}
+            return s_pDeviceManager;
+        }
 
         void CreateDevice(API_Type type, HWND hWnd);
 
-		// setter
+        // setter
 
-		// getter
+        // getter
         RenderDevice* GetRednerDeviceAsPtr() const { return this->m_pRenderDevice; }
         RenderDevice& GetRednerDeviceAsRef() const { return *(this->m_pRenderDevice); }
 
@@ -66,7 +66,7 @@ namespace JCS_GameTool
 
     private:
         void SetRenderDeviceType(const API_Type type) { this->m_pDeviceType = type; }
-	};
+    };
 
 }
 

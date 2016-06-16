@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #include "Window.h"
@@ -19,7 +19,7 @@ namespace JCS_GameResourceS
     {
         switch (message)
         {
-        case WM_CREATE:		// 創建時...
+        case WM_CREATE:        // 創建時...
         {
             // Create GUI
             Window::s_pApplication->CreateGUI(hWnd, message, wParam, lParam);
@@ -79,8 +79,8 @@ namespace JCS_GameResourceS
 
         return GenerateWindow(hInstance,
             nCmdShow, className, windowTitle,
-            (GetSystemMetrics(SM_CXSCREEN) - width) / 2,		// set to the middle of the screen
-            (GetSystemMetrics(SM_CYSCREEN) - height) / 2,		// set to the middle of the screen
+            (GetSystemMetrics(SM_CXSCREEN) - width) / 2,        // set to the middle of the screen
+            (GetSystemMetrics(SM_CYSCREEN) - height) / 2,        // set to the middle of the screen
             width, height);
     }
 
@@ -113,8 +113,8 @@ namespace JCS_GameResourceS
 
         RECT wr = { 0, 0, width, height };
         AdjustWindowRect(&wr, WS_OVERLAPPED | WS_SYSMENU | WS_MINIMIZEBOX, FALSE);
-        UINT widthX = wr.right - wr.left;			// use to measure and adjust window display.. (width)
-        UINT heightX = wr.bottom - wr.top;			// use to mesure and adjust window display.. (height)
+        UINT widthX = wr.right - wr.left;            // use to measure and adjust window display.. (width)
+        UINT heightX = wr.bottom - wr.top;            // use to mesure and adjust window display.. (height)
 
         mhMainWndow = CreateWindowEx(NULL, className.c_str(), windowTitle.c_str(),
             WS_OVERLAPPED | WS_SYSMENU | WS_MINIMIZEBOX,

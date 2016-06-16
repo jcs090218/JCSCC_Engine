@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __SCENE3D_H__
@@ -15,25 +15,25 @@
 
 namespace JCS_D3DX_v9_Engine
 {
-	class Scene3D 
+    class Scene3D 
         : public JCS_Scene
-	{
-	private:
+    {
+    private:
 
 
-	public:
-		Scene3D(bool isPhysicsWorld = false);
-		~Scene3D();
+    public:
+        Scene3D(bool isPhysicsWorld = false);
+        ~Scene3D();
 
         virtual void initialize() override;
         virtual void update(float32 deltaTime) override;
         virtual void draw() override;
 
-		// setter
+        // setter
 
-		// getter
+        // getter
 
-	};
+    };
 
 }
 

@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __D2D_POLYGON2D_H__
@@ -18,41 +18,41 @@ namespace JCS_D2DEngine
     //
     // Desc : 
     //---------------------------------------------------------------------------------------------------------------------------------------------------
-	class Polygon2D 
+    class Polygon2D 
         : public Shape2D
-	{
-	public:
+    {
+    public:
         JCS_GameInterface::JIMat2 u;
-		uint32 m_vertexCount;
+        uint32 m_vertexCount;
         JCS_GameInterface::JIVec2f m_vertices[MaxPolyVertexCount];
         JCS_GameInterface::JIVec2f m_normals[MaxPolyVertexCount];
 
-	public:
-		Polygon2D(Graphics2D& gfx, bool autoPivot = true);
-		virtual ~Polygon2D();
+    public:
+        Polygon2D(Graphics2D& gfx, bool autoPivot = true);
+        virtual ~Polygon2D();
 
-		virtual void initialize() override;
-		virtual void update(const float32 deltaTime) override;
-		virtual void draw() override;
+        virtual void initialize() override;
+        virtual void update(const float32 deltaTime) override;
+        virtual void draw() override;
 
-		virtual void rotation_rotate(float32 angle = 1.0f) override;
-		virtual void revolution_rotate(GameObject2D& target, float32 angle = 1.0f) override;
+        virtual void rotation_rotate(float32 angle = 1.0f) override;
+        virtual void revolution_rotate(GameObject2D& target, float32 angle = 1.0f) override;
 
-		void SetBox(float32 hw, float32 hh);		// Half width and half height
+        void SetBox(float32 hw, float32 hh);        // Half width and half height
         void Set(JCS_GameInterface::JIVec2f* vertices, uint32 count);
-        JCS_GameInterface::JIVec2f GetSupport(const JCS_GameInterface::JIVec2f& dir);		// The extreme point along a direction within a polygon
+        JCS_GameInterface::JIVec2f GetSupport(const JCS_GameInterface::JIVec2f& dir);        // The extreme point along a direction within a polygon
 
-		// -- Basic Collision
-		bool PolygontoPolygon(Polygon2D& obj);
-		bool PolygontoCircle(Circle2D& obj);
-		bool PolygontoRectangle(Rectangle2D& obj);
-		bool PolygontoCapsule(Capsule2D& obj);
+        // -- Basic Collision
+        bool PolygontoPolygon(Polygon2D& obj);
+        bool PolygontoCircle(Circle2D& obj);
+        bool PolygontoRectangle(Rectangle2D& obj);
+        bool PolygontoCapsule(Capsule2D& obj);
 
-		// setter
+        // setter
 
-		// getter
+        // getter
 
-	};
+    };
 }
 
 #endif // __D2D_POLYGON2D_H__

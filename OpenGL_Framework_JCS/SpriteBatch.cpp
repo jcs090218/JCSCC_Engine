@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #include "SpriteBatch.h"
@@ -73,8 +73,8 @@ namespace JCS_OpenGLEngine
         if (m_glyphs.empty())
             return;
         int offset = 0;
-        int cv = 0;		// current vertex
-        m_renderBatches.emplace_back(offset, 6, m_glyphsPointer[0]->texture);		// 他最自己產生新的"RenderBatch"
+        int cv = 0;        // current vertex
+        m_renderBatches.emplace_back(offset, 6, m_glyphsPointer[0]->texture);        // 他最自己產生新的"RenderBatch"
         vertices[cv++] = m_glyphsPointer[0]->topLeft;
         vertices[cv++] = m_glyphsPointer[0]->bottomLeft;
         vertices[cv++] = m_glyphsPointer[0]->bottomRight;
@@ -86,7 +86,7 @@ namespace JCS_OpenGLEngine
         for (uint32 cg = 1; cg < m_glyphs.size(); cg++) 
         {
             if (m_glyphsPointer[cg]->texture != m_glyphsPointer[cg - 1]->texture)
-                m_renderBatches.emplace_back(offset, 6, m_glyphsPointer[0]->texture);		// 他最自己產生新的"RenderBatch"
+                m_renderBatches.emplace_back(offset, 6, m_glyphsPointer[0]->texture);        // 他最自己產生新的"RenderBatch"
             else 
                 m_renderBatches.back().DeltaNumVetices(6);
 

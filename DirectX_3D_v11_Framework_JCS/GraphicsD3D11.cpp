@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #include "GraphicsD3D11.h"
@@ -28,10 +28,10 @@ namespace JCS_D3DX_v11_Engine
     GraphicsD3D11::~GraphicsD3D11()
     {
         if (m_pImmediateContext) m_pImmediateContext->ClearState();
-        SafeReleaseCOM(m_pRenderTargetView);	// Backbuffer device
-        SafeReleaseCOM(m_pSwapChain);		    // swapchain device
-        SafeReleaseCOM(m_pImmediateContext);	// context device
-        SafeReleaseCOM(m_pDevice);		        // d3d11 device (main)
+        SafeReleaseCOM(m_pRenderTargetView);    // Backbuffer device
+        SafeReleaseCOM(m_pSwapChain);            // swapchain device
+        SafeReleaseCOM(m_pImmediateContext);    // context device
+        SafeReleaseCOM(m_pDevice);                // d3d11 device (main)
     }
 
     // Init Direct3D for use
@@ -45,7 +45,7 @@ namespace JCS_D3DX_v11_Engine
             D3D_DRIVER_TYPE_WARP,
             D3D_DRIVER_TYPE_REFERENCE
         };
-        UINT numDriverTypes = ARRAYSIZE(driverTypes);		// declare the length of the Array
+        UINT numDriverTypes = ARRAYSIZE(driverTypes);        // declare the length of the Array
 
         D3D_FEATURE_LEVEL featureLevels[] =
         {
@@ -54,7 +54,7 @@ namespace JCS_D3DX_v11_Engine
             D3D_FEATURE_LEVEL_10_0,
             D3D_FEATURE_LEVEL_9_3
         };
-        UINT numFeatureLevels = ARRAYSIZE(featureLevels);			// declare the length of the Array
+        UINT numFeatureLevels = ARRAYSIZE(featureLevels);            // declare the length of the Array
 
         // Get window's width and height
         RECT rect;
@@ -115,7 +115,7 @@ namespace JCS_D3DX_v11_Engine
         SafeReleaseCOM(pBackBufferTex);
 
         // Bind render target view
-        GetDeviceContext()->OMSetRenderTargets(1, &m_pRenderTargetView, nullptr);		// set the render target as the back buffer
+        GetDeviceContext()->OMSetRenderTargets(1, &m_pRenderTargetView, nullptr);        // set the render target as the back buffer
 
         // Set the 
         m_viewport.TopLeftX = 0;
@@ -125,7 +125,7 @@ namespace JCS_D3DX_v11_Engine
         m_viewport.MinDepth = 0.0f;
         m_viewport.MaxDepth = 1.0f;
 
-        GetDeviceContext()->RSSetViewports(1, &m_viewport);		// create viewport
+        GetDeviceContext()->RSSetViewports(1, &m_viewport);        // create viewport
 
         return true;
     }
@@ -135,7 +135,7 @@ namespace JCS_D3DX_v11_Engine
     */
     void GraphicsD3D11::Clear(const FLOAT color[4])
     {
-        GetDeviceContext()->ClearRenderTargetView(m_pRenderTargetView, color);		// backbuffer and swapchain
+        GetDeviceContext()->ClearRenderTargetView(m_pRenderTargetView, color);        // backbuffer and swapchain
     }
 
     void GraphicsD3D11::ClearDepth()
@@ -144,7 +144,7 @@ namespace JCS_D3DX_v11_Engine
     }
 
     /**
-    *	This function will start rendering the frame.
+    *    This function will start rendering the frame.
     *  Which is start of the frame
     */
     void GraphicsD3D11::BeginRender() const
@@ -161,7 +161,7 @@ namespace JCS_D3DX_v11_Engine
     }
 
     /**
-    *	This function will display the frame.
+    *    This function will display the frame.
     */
     void GraphicsD3D11::RenderPresent()
     {

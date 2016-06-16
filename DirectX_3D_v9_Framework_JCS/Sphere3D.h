@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __SPHERE3D_H__
@@ -12,13 +12,13 @@
 
 namespace JCS_D3DX_v9_Engine
 {
-	class Sphere3D 
+    class Sphere3D 
         : public Shape3D
-	{
-	public:
-		Sphere3D();
-		~Sphere3D();
-	};
+    {
+    public:
+        Sphere3D();
+        ~Sphere3D();
+    };
 
 }
 

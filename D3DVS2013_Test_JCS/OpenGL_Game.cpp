@@ -55,7 +55,7 @@ void OpenGL_Game::Run(float deltaTime)
     }
     else
     {
-        Sleep(100);		// pause
+        Sleep(100);        // pause
     }
 }
 

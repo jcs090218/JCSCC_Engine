@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __CYLINDER3D_H__
@@ -13,13 +13,13 @@
 
 namespace JCS_D3DX_v9_Engine
 {
-	class Cylinder3D 
+    class Cylinder3D 
         : public Shape3D
-	{
-	public:
-		Cylinder3D();
-		~Cylinder3D();
-	};
+    {
+    public:
+        Cylinder3D();
+        ~Cylinder3D();
+    };
 }
 
 #endif // __CYLINDER3D_H__

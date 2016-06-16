@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __SOCKET_LIB_H__
@@ -19,7 +19,7 @@
 #include <winsock2.h>
 
 ////// LINKER ////////////////
-#pragma comment(lib,"ws2_32.lib")			// socket lib
+#pragma comment(lib,"ws2_32.lib")            // socket lib
 
 //------------------------------------------------------------------------------
 #elif _OSX

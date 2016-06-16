@@ -15,13 +15,13 @@ namespace JCS_D2DEngine
     //
     // Desc : 
     //---------------------------------------------------------------------------------------------------------------------------------------------------
-	class Scene2D 
+    class Scene2D 
         : public JCS_Scene
-	{
-	private:
-		std::vector<GameObject2D*> game_objects;
-		std::vector<ObjectPool2D<GameObject2D>*> op_game_objects;
-		std::vector<Sprite2D*> sprites;
+    {
+    private:
+        std::vector<GameObject2D*> game_objects;
+        std::vector<ObjectPool2D<GameObject2D>*> op_game_objects;
+        std::vector<Sprite2D*> sprites;
 
 
         // Multi-threading Handling        
@@ -32,41 +32,41 @@ namespace JCS_D2DEngine
         void SetEndThread(const bool active) { this->m_endThread = active; }
         bool GetEndThread() const { return this->m_endThread; }
 
-	public:
-		Scene2D();
-		virtual ~Scene2D();
+    public:
+        Scene2D();
+        virtual ~Scene2D();
 
-		virtual void initialize() override;
-		virtual void update(float32 deltaTime) override;
-		virtual void draw() override;
+        virtual void initialize() override;
+        virtual void update(float32 deltaTime) override;
+        virtual void draw() override;
 
         // using parallel calculation thread handling
         void thread_initialize(JCS_GameTool::GameTimer& pTimer);
 
-		//-- 加入物件
-		void AddGameObject2DToScene(GameObject2D* game_object);
-		void AddObjectPoolGameObject2DToScene(ObjectPool2D<GameObject2D>* op_game_object);
-		void AddSprite2DToScene(Sprite2D* sprite);
+        //-- 加入物件
+        void AddGameObject2DToScene(GameObject2D* game_object);
+        void AddObjectPoolGameObject2DToScene(ObjectPool2D<GameObject2D>* op_game_object);
+        void AddSprite2DToScene(Sprite2D* sprite);
 
-		//-- 移除物件
-		void RemoveGameObject2DFromScene(GameObject2D* game_object);
-		void RemoveObjectPoolGameObject2DFromScene(ObjectPool2D<GameObject2D>* op_game_object);
-		void RemoveSprite2DFromScene(Sprite2D* sprite);		
+        //-- 移除物件
+        void RemoveGameObject2DFromScene(GameObject2D* game_object);
+        void RemoveObjectPoolGameObject2DFromScene(ObjectPool2D<GameObject2D>* op_game_object);
+        void RemoveSprite2DFromScene(Sprite2D* sprite);        
 
-		// setter
+        // setter
 
-		// getter
-		std::vector<GameObject2D*> getGameObjects() const { return this->game_objects; }
-		std::vector<ObjectPool2D<GameObject2D>*> getOPGameObjects() const { return this->op_game_objects; }
-		GameObject2D* getGameObjectPointerWithIndex(const uint32 index) const { return this->game_objects.at(index); }
-		GameObject2D& getGameObjectReferenceWithIndex(const uint32 index) const { return *this->game_objects.at(index); }
+        // getter
+        std::vector<GameObject2D*> getGameObjects() const { return this->game_objects; }
+        std::vector<ObjectPool2D<GameObject2D>*> getOPGameObjects() const { return this->op_game_objects; }
+        GameObject2D* getGameObjectPointerWithIndex(const uint32 index) const { return this->game_objects.at(index); }
+        GameObject2D& getGameObjectReferenceWithIndex(const uint32 index) const { return *this->game_objects.at(index); }
 
     private:
         // parallel calculation thread handling functions
         void thread_update(JCS_GameTool::GameTimer& pTimer);
         void thread_draw();
         void clear_thread();
-	};
+    };
 
 }
 

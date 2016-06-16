@@ -39,7 +39,7 @@ namespace JCS_GameSound
     //------------------------------------------------------------------------------------
     class MP3SoundServer
     {
-        friend class MP3SoundClient;	// this will make "MP3SoundClient" direct access this class!
+        friend class MP3SoundClient;    // this will make "MP3SoundClient" direct access this class!
     public:
         MP3SoundServer(HWND);
         ~MP3SoundServer();
@@ -64,5 +64,5 @@ namespace JCS_GameSound
 
 }
 
-#endif	// __MP3SOUND_H__
+#endif    // __MP3SOUND_H__
 

@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __JCS_ERRORS_H__
@@ -15,16 +15,16 @@
 
 namespace JCS_SDL_Engine
 {
-	//Prints out an error message and exits the game
-	inline void fatalError(std::string errorString) 
+    //Prints out an error message and exits the game
+    inline void fatalError(std::string errorString) 
     {
-		std::cout << errorString << std::endl;
-		std::cout << "Enter any key to quit...";
-		int tmp;
-		std::cin >> tmp;
-		SDL_Quit();
-		exit(69);
-	}
+        std::cout << errorString << std::endl;
+        std::cout << "Enter any key to quit...";
+        int tmp;
+        std::cin >> tmp;
+        SDL_Quit();
+        exit(69);
+    }
 }
 
 #endif // __ERRORS_H__

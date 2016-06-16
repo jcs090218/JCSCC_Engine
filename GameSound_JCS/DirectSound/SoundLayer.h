@@ -11,7 +11,7 @@ namespace JCS_GameSound
     {
     private:
         LPDIRECTSOUND8 m_pDSound;
-        LPDIRECTSOUNDBUFFER8 m_pPrimary;	// primary mixer
+        LPDIRECTSOUNDBUFFER8 m_pPrimary;    // primary mixer
 
         static SoundLayer* _instance;
 

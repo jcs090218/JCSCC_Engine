@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #include "TestGame.h"
@@ -21,7 +21,7 @@ TestGame::~TestGame()
     SafeDeleteObject(m_pAnimation);
 
     SafeDeleteObject(gm);
-    SafeDeleteObject(sem);		// 這個目前必須在 Managers 上面
+    SafeDeleteObject(sem);        // 這個目前必須在 Managers 上面
     SafeDeleteObject(sm);
     SafeDeleteObject(im);
     SafeDeleteObject(dm);
@@ -64,7 +64,7 @@ void TestGame::Run(float deltaTime)
     }
     else
     {
-        Sleep(100);		// pause
+        Sleep(100);        // pause
     }
 }
 

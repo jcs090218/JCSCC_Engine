@@ -2,7 +2,7 @@
 *                   JCSCC_Framework Version 1.0
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
-*		        Copyright (c) 2016 by Shen, Jen-Chieh
+*                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __INPUTMANAGER_H__
@@ -22,34 +22,34 @@ namespace JCS_GameTool
     //
     // Desc : 
     //------------------------------------------------------------------------------------
-	class InputManager
-	{
-	private:
-		static InputManager* s_pInputManager;
+    class InputManager
+    {
+    private:
+        static InputManager* s_pInputManager;
         InputManager();
 
 
-		JCS_GameInput::KeyboardClient* m_pKeyboardClient;		// for keyboard input
-        JCS_GameInput::MouseClient* m_pMouseClient;		// for mouse input
+        JCS_GameInput::KeyboardClient* m_pKeyboardClient;        // for keyboard input
+        JCS_GameInput::MouseClient* m_pMouseClient;        // for mouse input
 
         JCS_Input* m_pInput;    // Platform controller
 
-	public:
-		virtual ~InputManager();
+    public:
+        virtual ~InputManager();
 
         static InputManager* getInstance()
-		{
-			if (!s_pInputManager)
-				s_pInputManager = new InputManager();
-			return s_pInputManager;
-		}
+        {
+            if (!s_pInputManager)
+                s_pInputManager = new InputManager();
+            return s_pInputManager;
+        }
 
         void setKeyboard(KeyboardServer* kServer);
         void setMouse(const MouseServer* mServer);
         void setInput(JCS_Input* pInput) { this->m_pInput = pInput; }
 
 
-		// getter
+        // getter
         JCS_GameInput::KeyboardClient* getKeyboard() const { return this->m_pKeyboardClient; }
         JCS_GameInput::MouseClient* getMouse() const { return this->m_pMouseClient; }
         JCS_Input* getInputAsPtr() const { return this->m_pInput; }
@@ -64,7 +64,7 @@ namespace JCS_GameTool
 
         // XBox One
         // ...
-	};
+    };
 
 }
 

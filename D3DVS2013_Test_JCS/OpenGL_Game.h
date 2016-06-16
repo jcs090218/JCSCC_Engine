@@ -14,7 +14,7 @@
 class OpenGL_Game
 {
 private:
-    JCS_GameTool::GameManager* gm;	// 
+    JCS_GameTool::GameManager* gm;    // 
 
     JCS_SDL_Engine::Mouse& m_mouse;
     JCS_SDL_Engine::Keyboard& m_kbd;
@@ -24,10 +24,10 @@ private:
 
 public:
     OpenGL_Game(JCS_SDL_Engine::Mouse& mouse, JCS_SDL_Engine::Keyboard& kbd);
-	virtual ~OpenGL_Game();
+    virtual ~OpenGL_Game();
 
     bool Initialize();
-	void Run(float deltaTime);
+    void Run(float deltaTime);
 
 private:
     void Update(float deltaTime);
