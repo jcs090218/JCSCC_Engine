@@ -1,4 +1,12 @@
 #ifndef __OBJECTPOOL2D_H__
+/**
+ * $File: ObjectPool2D.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __OBJECTPOOL2D_H__
 
 
@@ -6,6 +14,12 @@
 
 namespace JCS_D2DEngine
 {
+
+    //====================================================================================
+    // Class Name : ObjectPool2D
+    //
+    // Description : Simulate the object pool.
+    //====================================================================================
     template <class T>
     class ObjectPool2D 
         : public GameObject2D
@@ -25,9 +39,9 @@ namespace JCS_D2DEngine
         T* execute();        // give out object for use!
         void back_to_pool(T* obj);        // send object back to pool
 
-        // setter
+        /** setter **/
 
-        // getter
+        /** getter **/
         uint32 GetLength() const { return this->objects.size(); }
         std::vector<T*>* getObjects() const { return this->objects; }
         T* getObjectsWithIndex(uint32 i) const { return this->objects.at(i); }

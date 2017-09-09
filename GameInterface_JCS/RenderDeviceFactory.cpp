@@ -1,10 +1,11 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
+/**
+ * $File: RenderDeviceFactory.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #include "RenderDeviceFactory.h"
 
 // All the render devices currently appear

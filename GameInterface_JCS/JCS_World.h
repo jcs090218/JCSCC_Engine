@@ -1,21 +1,22 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __JCS_WORLD_H__
+/**
+ * $File: JCS_World.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __JCS_WORLD_H__
 
 
 namespace JCS_GameInterface
 {
-    //------------------------------------------------------------------------------------
+    //====================================================================================
     // Name : JCS_World (Interface)
     //
-    // Desc : interface for all the world sub-classes.
-    //------------------------------------------------------------------------------------
+    // Description : interface for all the world sub-classes.
+    //====================================================================================
     class JCS_World
     {
     public:

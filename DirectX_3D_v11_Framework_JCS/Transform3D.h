@@ -1,11 +1,12 @@
-﻿/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
-#ifndef __D3D11_TRANSFORM3D_H__
+﻿#ifndef __D3D11_TRANSFORM3D_H__
+/**
+ * $File: Transform3D.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __D3D11_TRANSFORM3D_H__
 
 #include "D3DX_v11_StdAfx.h"
@@ -14,15 +15,15 @@
 namespace JCS_D3DX_v11_Engine
 {
 
-    //-----------------------------------------------------------------------------------------------------------
+    //====================================================================================-----------------------
     // Name : Transform2D
     // 
-    // Desc : "Transform3D" is also the node itself.
+    // Description : "Transform3D" is also the node itself.
     //        Record 3 Types of Vector
     //         (1) Position     (位置)
     //         (2) Rotation     (旋轉)
     //         (3) Scale        (大小)
-    //-----------------------------------------------------------------------------------------------------------
+    //====================================================================================-----------------------
     class Transform3D
         : public JCS_Transform
     {

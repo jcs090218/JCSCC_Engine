@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __D3D11_INTERFACE2D_H__
+/**
+ * $File: Interface2D.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __D3D11_INTERFACE2D_H__
 
 #include "D3DX_v11_StdAfx.h"
@@ -18,12 +19,12 @@ namespace JCS_D3DX_v11_Engine
     class GraphicsD3D11;
     class RenderableObject;
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    //====================================================================================---------------------------------------------------------------
     // Name : Interface
     //
-    // Desc : handle each object draw call try as limited as possible
+    // Description : handle each object draw call try as limited as possible
     //        to save performace
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    //====================================================================================---------------------------------------------------------------
     class Interface2D
     {
     private:
@@ -42,9 +43,9 @@ namespace JCS_D3DX_v11_Engine
         void udpate();
         void draw();
 
-        // setter
+        /** setter **/
 
-        // getter
+        /** getter **/
         DirectX::SpriteBatch* GetSpriteBatch() const { return this->m_pSpriteBatch; }
         DirectX::SpriteBatch& GetSpriteBatchRef() const { return *(this->m_pSpriteBatch); }
         std::vector<RenderableObject*> GetRenderableObject() const { return this->m_interfaceObjects; }

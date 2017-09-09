@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __JAYCES_APP_H__
+/**
+ * $File: JayCeS_App.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __JAYCES_APP_H__
 
 

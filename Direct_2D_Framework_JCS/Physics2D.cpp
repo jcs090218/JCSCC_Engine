@@ -1,4 +1,13 @@
-﻿#include "Physics2D.h"
+﻿/**
+ * $File: Physics2D.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
+
+#include "Physics2D.h"
 
 #include "Capsule2D.h"
 #include "Circle2D.h"

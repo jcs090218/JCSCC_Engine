@@ -80,7 +80,10 @@
     <ClInclude Include="JCS_Errors.h" />
     <ClInclude Include="Keyboard.h" />
     <ClInclude Include="Mouse.h" />
+    <ClInclude Include="SDL_Animation.h" />
+    <ClInclude Include="SDL_Animator.h" />
     <ClInclude Include="SDL_CrashReason.h" />
+    <ClInclude Include="SDL_Sprite.h" />
     <ClInclude Include="SDL_StdAfx.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Window.h" />
@@ -90,6 +93,9 @@
     <ClCompile Include="BitmapFont.cpp" />
     <ClCompile Include="Keyboard.cpp" />
     <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="SDL_Animation.cpp" />
+    <ClCompile Include="SDL_Animator.cpp" />
+    <ClCompile Include="SDL_Sprite.cpp" />
     <ClCompile Include="Timer.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>

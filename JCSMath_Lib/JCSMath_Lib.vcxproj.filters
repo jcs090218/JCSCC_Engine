@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{b5124cca-e191-424a-a745-897b3a97e5ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="support">
+      <UniqueIdentifier>{5ba57f10-c96c-4934-b764-e6e056c00c01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\shape">
+      <UniqueIdentifier>{1b0961f6-52a8-4b9f-a6d5-cc6fad9fb53f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\shape\2d">
+      <UniqueIdentifier>{87c8280b-2539-4c85-971c-75b39a39b57c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\shape\3d">
+      <UniqueIdentifier>{367cc307-1fc1-463e-9a01-0cb080e9eab9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="JCSMath_Lib_StdAfx.h" />
+    <ClInclude Include="core\JCS_Collision.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="JCSMath_Lib.h" />
+    <ClInclude Include="core\JCS_Mathf.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\shape\2d\JCS_Circle.h">
+      <Filter>core\shape\2d</Filter>
+    </ClInclude>
+    <ClInclude Include="core\shape\2d\JCS_Rect.h">
+      <Filter>core\shape\2d</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\JCS_Collision.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\JCS_Mathf.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\shape\2d\JCS_Circle.cpp">
+      <Filter>core\shape\2d</Filter>
+    </ClCompile>
+    <ClCompile Include="core\shape\2d\JCS_Rect.cpp">
+      <Filter>core\shape\2d</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

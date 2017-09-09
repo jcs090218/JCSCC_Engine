@@ -1,11 +1,19 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __JCSMESSAGEBOX_H__
+/**
+ * $File: JcsMessageBox.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __JCSMESSAGEBOX_H__
 
 
@@ -15,11 +23,11 @@
 namespace JayCeS
 {
 
-    //------------------------------------------------------------------------------------
+    //====================================================================================
     // Name : JcsMessageBox 
     //
-    // Desc : 
-    //------------------------------------------------------------------------------------
+    // Description : Provide cross platform message box.
+    //====================================================================================
     class JcsMessageBox
     {
     public:

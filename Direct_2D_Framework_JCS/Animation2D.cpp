@@ -1,9 +1,11 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
+/**
+ * $File: Animation2D.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 
 #include "Animation2D.h"
 
@@ -107,7 +109,7 @@ namespace JCS_D2DEngine
     // int y : origin y
     // int nFrame : specific number of frame
     // 
-    // Desc : Draw Specific Frame
+    // Description : Draw Specific Frame
     //-----------------------------------------------------------------------------------
     void Animation2D::DrawFrame(const JCS_VECTOR2F origin, const uint32 nFrame)
     {

@@ -1,11 +1,19 @@
 ﻿/*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __JCS_BINARYREADER_H__
+/**
+ * $File: JCS_BinaryReader.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __JCS_BINARYREADER_H__
 
 
@@ -16,11 +24,11 @@ namespace JayCeS
 {
     class IJcsObject;
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    //====================================================================================---------------------------------------------------------------
     // Name : JCS_BinaryReader
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================---------------------------------------------------------------
     class JCS_BinaryReader
     {
     private:
@@ -76,9 +84,9 @@ namespace JayCeS
         float32 ReadFloat32();
         float64 ReadFloat64();
 
-        // setter
+        /** setter **/
 
-        // getter
+        /** getter **/
         size_t GetLength() const { return this->m_length; }
         FILE* GetFile() const { return this->m_file; }
         JCS_BufferBuilder* GetJBufferBuilderPtr() const { return this->m_pJcsBufferBuilder; }
@@ -88,7 +96,7 @@ namespace JayCeS
         bool CheckBufferLength(size_t lenToCheck);
         bool CheckBuffer();
 
-        // setter
+        /** setter **/
         void SetLength(const size_t len) { this->m_length = len; }
     };
 

@@ -1,21 +1,31 @@
+/**
+ * $File: GameTimer.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 
 #include <windows.h>
 #include "GameTimer.h"
 
+
 namespace JCS_GameTool
 {
+
     GameTimer::GameTimer()
-        : mSecondsPerCount(0.0)
-        , mDeltaTime(-1.0)
-        , mBaseTime(0)
-        , mPausedTime(0)
-        , mPrevTime(0)
-        , mCurrTime(0)
-        , mStopped(false)
+        : m_secondsPerCount(0.0)
+        , m_deltaTime(-1.0)
+        , m_baseTime(0)
+        , m_pausedTime(0)
+        , m_prevTime(0)
+        , m_currTime(0)
+        , m_stopped(false)
     {
         __int64 countsPerSec;
         QueryPerformanceFrequency((LARGE_INTEGER*)&countsPerSec);
-        mSecondsPerCount = 1.0 / (double)countsPerSec;
+		m_secondsPerCount = 1.0 / (double)countsPerSec;
     }
 
     // Returns the total time elapsed since Reset() was called, NOT counting any
@@ -24,37 +34,37 @@ namespace JCS_GameTool
     {
         // If we are stopped, do not count the time that has passed since we stopped.
         // Moreover, if we previously already had a pause, the distance 
-        // mStopTime - mBaseTime includes paused time, which we do not want to count.
-        // To correct this, we can subtract the paused time from mStopTime:  
+        // m_stopTime - mBaseTime includes paused time, which we do not want to count.
+        // To correct this, we can subtract the paused time from m_stopTime:  
         //
         //                     |<--paused time-->|
         // ----*---------------*-----------------*------------*------------*------> time
-        //  mBaseTime       mStopTime        startTime     mStopTime    mCurrTime
+        //  mBaseTime       m_stopTime        startTime     m_stopTime    m_currTime
 
-        if (mStopped)
+        if (m_stopped)
         {
-            return (float)(((mStopTime - mPausedTime) - mBaseTime) * mSecondsPerCount);
+            return (float)(((m_stopTime - m_pausedTime) - m_baseTime) * m_secondsPerCount);
         }
 
-        // The distance mCurrTime - mBaseTime includes paused time,
+        // The distance m_currTime - mBaseTime includes paused time,
         // which we do not want to count.  To correct this, we can subtract 
-        // the paused time from mCurrTime:  
+        // the paused time from m_currTime:  
         //
-        //  (mCurrTime - mPausedTime) - mBaseTime 
+        //  (m_currTime - m_pausedTime) - mBaseTime 
         //
         //                     |<--paused time-->|
         // ----*---------------*-----------------*------------*------> time
-        //  mBaseTime       mStopTime        startTime     mCurrTime
+        //  mBaseTime       m_stopTime        startTime     m_currTime
 
         else
         {
-            return (float)(((mCurrTime - mPausedTime) - mBaseTime) * mSecondsPerCount);
+            return (float)(((m_currTime - m_pausedTime) - m_baseTime) * m_secondsPerCount);
         }
     }
 
     float GameTimer::DeltaTime() const
     {
-        return static_cast<float>(mDeltaTime);
+        return static_cast<float>(m_deltaTime);
     }
 
     void GameTimer::Reset()
@@ -62,10 +72,10 @@ namespace JCS_GameTool
         __int64 currTime;
         QueryPerformanceCounter((LARGE_INTEGER*)&currTime);
 
-        mBaseTime = currTime;
-        mPrevTime = currTime;
-        mStopTime = 0;
-        mStopped = false;
+        m_baseTime = currTime;
+        m_prevTime = currTime;
+        m_stopTime = 0;
+        m_stopped = false;
     }
 
     void GameTimer::Start()
@@ -78,54 +88,54 @@ namespace JCS_GameTool
         //
         //                     |<-------d------->|
         // ----*---------------*-----------------*------------> time
-        //  mBaseTime       mStopTime        startTime     
+        //  mBaseTime       m_stopTime        startTime     
 
-        if (mStopped)
+        if (m_stopped)
         {
-            mPausedTime += (startTime - mStopTime);
+            m_pausedTime += (startTime - m_stopTime);
 
-            mPrevTime = startTime;
-            mStopTime = 0;
-            mStopped = false;
+            m_prevTime = startTime;
+            m_stopTime = 0;
+            m_stopped = false;
         }
     }
 
     void GameTimer::Stop()
     {
-        if (!mStopped)
+        if (!m_stopped)
         {
             __int64 currTime;
             QueryPerformanceCounter((LARGE_INTEGER*)&currTime);
 
-            mStopTime = currTime;
-            mStopped = true;
+            m_stopTime = currTime;
+            m_stopped = true;
         }
     }
 
     void GameTimer::Tick()
     {
-        if (mStopped)
+        if (m_stopped)
         {
-            mDeltaTime = 0.0;
+			m_deltaTime = 0.0;
             return;
         }
 
         __int64 currTime;
         QueryPerformanceCounter((LARGE_INTEGER*)&currTime);
-        mCurrTime = currTime;
+        m_currTime = currTime;
 
         // Time difference between this frame and the previous.
-        mDeltaTime = (mCurrTime - mPrevTime) * mSecondsPerCount;
+		m_deltaTime = (m_currTime - m_prevTime) * m_secondsPerCount;
 
         // Prepare for next frame.
-        mPrevTime = mCurrTime;
+        m_prevTime = m_currTime;
 
         // Force nonnegative.  The DXSDK's CDXUTTimer mentions that if the 
         // processor goes into a power save mode or we get shuffled to another
         // processor, then mDeltaTime can be negative.
-        if (mDeltaTime < 0.0)
+        if (m_deltaTime < 0.0)
         {
-            mDeltaTime = 0.0;
+			m_deltaTime = 0.0;
         }
     }
 

@@ -1,17 +1,17 @@
-﻿/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
+﻿/**
+ * $File: InputManager.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 
 #include "InputManager.h"
 
 
 namespace JCS_GameTool
 {
-    InputManager* InputManager::s_pInputManager = nullptr;
-
     InputManager::InputManager()
         : m_pKeyboardClient(nullptr)
         , m_pMouseClient(nullptr)
@@ -24,7 +24,6 @@ namespace JCS_GameTool
     {
         SafeDeleteObject(m_pKeyboardClient);
         SafeDeleteObject(m_pMouseClient);
-        s_pInputManager = nullptr;
     }
 
     /**

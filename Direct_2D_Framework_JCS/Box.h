@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __D2D_BOX_H__
+/**
+ * $File: Box.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __D2D_BOX_H__
 
 
@@ -15,11 +16,11 @@ namespace JCS_D2DEngine
 {
     class Rectangle2D;
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : Box
+    //====================================================================================
+    // Class Class Name : Box
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================
     class Box
     {
     private:
@@ -32,14 +33,23 @@ namespace JCS_D2DEngine
         Box();
         ~Box();
 
-        void initialize(b2World& world, 
+        /**
+            Initialize the shap itself.
+
+            @param world to render to.
+            @param position in the world.
+            @param dimension in the world.
+        */
+        void Initialize(b2World& world, 
             const JCS_VECTOR2F& position, 
             const JCS_VECTOR2F& dimension);
 
-        // setter
+        /** setter **/
 
-        // getter
+        /** getter **/
+        /**  */
         b2Body* getBody() const { return this->m_body; }
+        /**  */
         b2Fixture* getFixture() const { return this->m_fixture; }
 
     };

@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __SFML_WINDOW_H__
+/**
+ * $File: Window.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __SFML_WINDOW_H__
 
 
@@ -14,11 +15,11 @@
 namespace JCS_SFML_Engine
 {
 
-    //-----------------------------------------------------------------------------------------------------------
+    //====================================================================================-----------------------
     // Name : Window
     // 
-    // Desc : 
-    //-----------------------------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================-----------------------
     class Window
     {
     private:
@@ -33,12 +34,11 @@ namespace JCS_SFML_Engine
 
         void Clear() { m_pWindow->clear(); }
 
-        // setter 
+        /** setter **/ 
 
-        // getter 
+        /** getter **/ 
 
     };
 }
 
 #endif // __SFML_WINDOW_H__
-

@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __JCS_STATUSSTRIP_H__
+/**
+ * $File: JCS_StatusStrip.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2016 by Shen, Jen-Chieh $
+ */
 #define __JCS_STATUSSTRIP_H__
 
 
@@ -14,11 +15,11 @@
 namespace JCS_GUI
 {
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : JCS_StatusStrip
+    //====================================================================================---------------------------------------------------------------
+    // Class Name : JCS_StatusStrip
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : JCSCC Status Strip GUI.
+    //====================================================================================---------------------------------------------------------------
     class JCS_StatusStrip
         : public JCS_WindowHandle
     {
@@ -33,5 +34,4 @@ namespace JCS_GUI
 
 }
 
-#endif // 
-
+#endif // __JCS_STATUSSTRIP_H__

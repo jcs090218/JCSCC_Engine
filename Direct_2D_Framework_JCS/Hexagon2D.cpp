@@ -1,9 +1,11 @@
-﻿/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
+﻿/**
+ * $File: Hexagon2D.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 
 #include "Hexagon2D.h"
 
@@ -143,7 +145,7 @@ namespace JCS_D2DEngine
         return JCS_VECTOR2F(position->x + size * std::cos(angle_radian), position->y + size * std::sin(angle_radian));
     }
 
-    // setter
+    /** setter **/
     void Hexagon2D::setM_type(bool value)
     { 
         if (m_type != value)

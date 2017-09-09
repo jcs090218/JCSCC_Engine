@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __JCS_SCROLLBAR_H__
+/**
+ * $File: JCS_ScrollBar.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2016 by Shen, Jen-Chieh $
+ */
 #define __JCS_SCROLLBAR_H__
 
 
@@ -14,11 +15,11 @@
 namespace JCS_GUI
 {
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : JCS_ScrollBar
+    //====================================================================================---------------------------------------------------------------
+    // Class Name : JCS_ScrollBar
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : JCSCC Scroll Bar GUI.
+    //====================================================================================---------------------------------------------------------------
     class JCS_ScrollBar
         : public JCS_WindowHandle
     {
@@ -27,6 +28,17 @@ namespace JCS_GUI
         ~JCS_ScrollBar();
 
 #ifdef _WIN32
+        /**
+            Create GUI.
+
+            @param hWnd
+            @param word
+            @param x
+            @param y
+            @param width
+            @param height
+            @param identifier
+        */
         void Create(const HWND hWnd, 
             const LPCWSTR word,
             const int32 x, const int32 y, 
@@ -38,4 +50,3 @@ namespace JCS_GUI
 }
 
 #endif // __JCS_SCROLLBAR_H__
-

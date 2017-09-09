@@ -1,4 +1,12 @@
 #ifndef __JCS_SCENE_H__
+/**
+ * $File: JCS_Scene.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __JCS_SCENE_H__
 
 
@@ -6,11 +14,11 @@
 
 namespace JCS_GameInterface
 {
-    //------------------------------------------------------------------------------------
+    //====================================================================================
     // JCS_Scene (Interface)
     //
-    // Desc : interface for all the scene sub-classes.
-    //------------------------------------------------------------------------------------
+    // Description : interface for all the scene sub-classes.
+    //====================================================================================
     struct JCS_Scene
     {
         virtual ~JCS_Scene() { }

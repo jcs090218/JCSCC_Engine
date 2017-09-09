@@ -1,4 +1,12 @@
 #ifndef _SCENEFACTORY_H__
+/**
+ * $File: SceneFactory.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define _SCENEFACTORY_H__
 
 

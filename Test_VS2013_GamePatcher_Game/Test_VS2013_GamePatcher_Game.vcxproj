@@ -39,11 +39,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)/Build/Test_JayCeS_GamePatcher/Debug/</OutDir>
-    <LibraryPath>C:\Enterprise\ALDES\AcceLeration_Entertainment\BaseScript\DataBase_C++\JCSCC_Framework\GameSound_JCS\FMOD\lib\x86;C:\Enterprise\ALDES\AcceLeration_Entertainment\BaseScript\DataBase_C++\JCSCC_Framework\DirectX_3D_v9_Framework_JCS\DirectX SDK\lib\x86;C:\Enterprise\ALDES\AcceLeration_Entertainment\BaseScript\DataBase_C++\JCSCC_Framework\SDL_Framework_JCS\SDL\lib\x86;C:\Enterprise\ALDES\AcceLeration_Entertainment\BaseScript\DataBase_C++\JCSCC_Framework\OpenGL_Framework_JCS\OpenGL\lib\x86;C:\Enterprise\ALDES\AcceLeration_Entertainment\BaseScript\DataBase_C++\JCSCC_Framework\LuaEngine_JCS\Lua\lib\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\DataBase_Enterprise\Asia\ALDES\ALDES_Entertainment\BaseScript\DataBase_C++\JCSCC_Engine\GameSound_JCS\FMOD\lib\x86;C:\DataBase_Enterprise\Asia\ALDES\ALDES_Entertainment\BaseScript\DataBase_C++\JCSCC_Engine\DirectX_3D_v9_Framework_JCS\DirectX SDK\lib\x86;C:\DataBase_Enterprise\Asia\ALDES\ALDES_Entertainment\BaseScript\DataBase_C++\JCSCC_Engine\SDL_Framework_JCS\SDL\lib\x86;C:\DataBase_Enterprise\Asia\ALDES\ALDES_Entertainment\BaseScript\DataBase_C++\JCSCC_Engine\OpenGL_Framework_JCS\OpenGL\lib\x86;C:\DataBase_Enterprise\Asia\ALDES\ALDES_Entertainment\BaseScript\DataBase_C++\JCSCC_Engine\LuaEngine_JCS\Lua\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)/Build/Test_JayCeS_GamePatcher/Release/</OutDir>
-    <LibraryPath>C:\Enterprise\ALDES\AcceLeration_Entertainment\BaseScript\DataBase_C++\JCSCC_Framework\GameSound_JCS\FMOD\lib\x86;C:\Enterprise\ALDES\AcceLeration_Entertainment\BaseScript\DataBase_C++\JCSCC_Framework\DirectX_3D_v9_Framework_JCS\DirectX SDK\lib\x86;C:\Enterprise\ALDES\AcceLeration_Entertainment\BaseScript\DataBase_C++\JCSCC_Framework\SDL_Framework_JCS\SDL\lib\x86;C:\Enterprise\ALDES\AcceLeration_Entertainment\BaseScript\DataBase_C++\JCSCC_Framework\OpenGL_Framework_JCS\OpenGL\lib\x86;C:\Enterprise\ALDES\AcceLeration_Entertainment\BaseScript\DataBase_C++\JCSCC_Framework\LuaEngine_JCS\Lua\lib\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\DataBase_Enterprise\Asia\ALDES\ALDES_Entertainment\BaseScript\DataBase_C++\JCSCC_Engine\GameSound_JCS\FMOD\lib\x86;C:\DataBase_Enterprise\Asia\ALDES\ALDES_Entertainment\BaseScript\DataBase_C++\JCSCC_Engine\DirectX_3D_v9_Framework_JCS\DirectX SDK\lib\x86;C:\DataBase_Enterprise\Asia\ALDES\ALDES_Entertainment\BaseScript\DataBase_C++\JCSCC_Engine\SDL_Framework_JCS\SDL\lib\x86;C:\DataBase_Enterprise\Asia\ALDES\ALDES_Entertainment\BaseScript\DataBase_C++\JCSCC_Engine\OpenGL_Framework_JCS\OpenGL\lib\x86;C:\DataBase_Enterprise\Asia\ALDES\ALDES_Entertainment\BaseScript\DataBase_C++\JCSCC_Engine\LuaEngine_JCS\Lua\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -55,6 +55,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Libraries\vld\lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

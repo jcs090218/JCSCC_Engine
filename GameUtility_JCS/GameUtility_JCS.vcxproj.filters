@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{3ad8754d-7d06-4b2d-a8a0-26655c5e9bed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="support">
+      <UniqueIdentifier>{a6db1b9e-3bfe-4d3b-84a0-094fe7853011}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameUtility_JCS.h" />
+    <ClInclude Include="GameUtility_JCS_StdAfx.h" />
+    <ClInclude Include="core\Box2d_Util.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\Box2d_ContactListener.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="support\JCS_Random.h">
+      <Filter>support</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\Box2d_Util.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\Box2d_ContactListener.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="support\JCS_Random.cpp">
+      <Filter>support</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

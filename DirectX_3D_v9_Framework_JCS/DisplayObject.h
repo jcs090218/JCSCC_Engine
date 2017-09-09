@@ -1,18 +1,27 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __DISPLAYOBJECT_H__
+/**
+ * $File: DisplayObject.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2016 by Shen, Jen-Chieh $
+ */
 #define __DISPLAYOBJECT_H__
+
 
 #include "Sprite3D.h"
 #include "Animation.h"
 
+
 namespace JCS_D3DX_v9_Engine
 {
+
+	//====================================================================================
+	// Name : DisplayObject 
+	//
+	// Description : 
+	//====================================================================================
     class DisplayObject
     {
     public:
@@ -26,7 +35,7 @@ namespace JCS_D3DX_v9_Engine
 
         Animation *getAnimatObj() { return this->animation; }
 
-        // setter
+        /** setter **/
         void setPosition(float x, float y, float z = 0)
         {
             position.x = x; position.y = y; position.z = z;
@@ -38,7 +47,7 @@ namespace JCS_D3DX_v9_Engine
         void setHeight(float _height) { thisHeight = _height; }
         void setAlpha(float _alpha) { thisAlpha = _alpha; }
         void setFrame(int newTotalFrame) { totalFrame = newTotalFrame; }
-        // getter
+        /** getter **/
         float getPostiionX() { return position.x; }
         float getPositionY() { return position.y; }
         float getPositionZ() { return position.z; }

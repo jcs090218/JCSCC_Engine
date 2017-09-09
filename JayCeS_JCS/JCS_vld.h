@@ -1,14 +1,16 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __JCS_VLD_H__
+/**
+ * $File: JCS_vld.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __JCS_VLD_H__
 
 
+// User define visual studio plugin "Visual Leak Detector".
 
 #if defined(_JCSVLD) || defined(_JCS_VLD) || \
 defined(__JCS_VLD__) || defined (JCS_VLD) || \

@@ -1,5 +1,5 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
@@ -23,6 +23,10 @@
 #include "JCS_Errors.h"
 #include "SDL_CrashReason.h"
 
+#include "SDL_Animation.h"
+#include "SDL_Sprite.h"
+#include "SDL_Animator.h"
+
 ////// LINKER ////////////////
 #pragma comment(lib, "SDL2.lib")
 #pragma comment(lib, "SDL2main.lib")
@@ -33,4 +37,3 @@
 #pragma comment(lib, "SDL2_mixer.lib")
 
 #endif // __SDL_STDAFX_H__
-

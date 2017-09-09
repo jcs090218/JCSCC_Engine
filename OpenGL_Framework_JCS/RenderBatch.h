@@ -1,5 +1,5 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
@@ -14,11 +14,11 @@
 namespace JCS_OpenGLEngine
 {
 
-    //-----------------------------------------------------------------------------------------------------------
+    //====================================================================================-----------------------
     // Name : RenderBatch
     // 
-    // Desc : 
-    //-----------------------------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================-----------------------
     class RenderBatch
     {
     private:
@@ -35,12 +35,12 @@ namespace JCS_OpenGLEngine
 
         void DeltaNumVetices(const int32 delta) { this->m_numVertices += delta; }
 
-        // setter
+        /** setter **/
         void SetOffset(const GLuint offset) { this->m_offset = offset; }
         void SetNumVertices(const GLuint numVertices) { this->m_numVertices = numVertices; }
         void SetTexture(const GLuint texture) { this->m_texture = texture; }
 
-        // getter
+        /** getter **/
         GLuint GetOffset() const { return this->m_offset; }
         GLuint GetNumVertices() const { return this->m_numVertices; }
         GLuint GetTexture() const { return this->m_texture; }

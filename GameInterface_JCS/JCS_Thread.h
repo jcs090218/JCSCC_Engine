@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __JCS_THREAD_H__
+/**
+* $File: JCS_Thread.h $
+* $Date: $
+* $Revision: $
+* $Creator: Jen-Chieh Shen $
+* $Notice: See LICENSE.txt for modification and distribution information
+*                   Copyright (c) 2015 by Shen, Jen-Chieh $
+*/
 #define __JCS_THREAD_H__
 
 #include "GameInterface_StdAfx.h"
@@ -21,9 +22,9 @@ namespace JCS_GameInterface
         explicit JCS_Thread();
         virtual ~JCS_Thread();
 
-        // setter
+        /** setter **/
 
-        // getter
+        /** getter **/
 
     };
 }

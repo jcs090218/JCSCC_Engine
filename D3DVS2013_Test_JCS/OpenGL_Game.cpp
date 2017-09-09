@@ -1,23 +1,38 @@
+/**
+ * $File: OpenGL_Game.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
+
 #include "OpenGL_Game.h"
 
 #include "StdAfx.h"
 
-OpenGL_Game::OpenGL_Game(JCS_SDL_Engine::Mouse& mouse, JCS_SDL_Engine::Keyboard& kbd)
+OpenGL_Game::OpenGL_Game(
+	JCS_SDL_Engine::Application* app, 
+	JCS_SDL_Engine::Mouse& mouse, 
+	JCS_SDL_Engine::Keyboard& kbd)
     : gm(nullptr)
     , m_mouse(mouse)
     , m_kbd(kbd)
+	, m_app(app)
 {
 
 }
 
 OpenGL_Game::~OpenGL_Game()
 {
-    SafeDeleteObject(gm);
+	JCS_GameTool::GameManager::DestroyInstance();
+	SafeDeleteObject(m_pSprite);
 }
+
 
 bool OpenGL_Game::Initialize()
 {
-    gm = JCS_GameTool::GameManager::getInstance();
+    gm = JCS_GameTool::GameManager::GetInstance();
 
     /*m_audioEngine.Initialize();
 
@@ -43,12 +58,15 @@ bool OpenGL_Game::Initialize()
 
     glEnable(GL_DEPTH_TEST);    // check for depth
 
+	m_pSprite = new JCS_SDL_Engine::SDL_Sprite();
+	m_pSprite->LoadSprite("Sprite/PlayerPaper", ".png");
+
     return true;
 }
 
 void OpenGL_Game::Run(float deltaTime)
 {
-    if (!gm->isGamePause())
+    if (!gm->IsGamePause())
     {
         Update(deltaTime);
         Draw(deltaTime);
@@ -66,18 +84,28 @@ void OpenGL_Game::Update(float deltaTime)
     //                 every frame...
     //m_kbd.update();
 
-    if (m_kbd.isKeyDown(SDLK_e))
-    {
-        m_fmodSystem->playSound(FMOD_CHANNEL_FREE, sound2, false, 0);
-    }
 
-    m_fmodSystem->update();
-
-    if (m_kbd.isKeyPressed(SDL_BUTTON_LEFT))
+    if (m_mouse.GetMouseButtonDown())
     {
         glm::vec2 mouseCoords = m_mouse.GetMouseCoords();
         std::cout << mouseCoords.x << " " << mouseCoords.y << std::endl;
     }
+
+	// window's input set.
+	if (m_app->GetWindowByName("Inspector")->GetKeyboardPtr()->GetKeyDown(SDLK_d))
+	{
+		m_fmodSystem->playSound(FMOD_CHANNEL_FREE, sound2, false, 0);
+	}
+
+
+	// global input set.
+	if (m_kbd.GetKey(SDLK_e))
+	{
+		m_fmodSystem->playSound(FMOD_CHANNEL_FREE, sound2, false, 0);
+		std::cout << "ok\n";
+	}
+
+	m_fmodSystem->update();
 }
 
 void OpenGL_Game::Draw(float deltaTime)
@@ -85,4 +113,3 @@ void OpenGL_Game::Draw(float deltaTime)
     glClearDepth(1.0);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
-

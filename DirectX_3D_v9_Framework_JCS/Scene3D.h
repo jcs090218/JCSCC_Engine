@@ -1,5 +1,5 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
@@ -29,9 +29,9 @@ namespace JCS_D3DX_v9_Engine
         virtual void update(float32 deltaTime) override;
         virtual void draw() override;
 
-        // setter
+        /** setter **/
 
-        // getter
+        /** getter **/
 
     };
 

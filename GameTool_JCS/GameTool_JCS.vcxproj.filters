@@ -114,13 +114,13 @@
     <ClCompile Include="ResourceManager.cpp">
       <Filter>Core\Managers</Filter>
     </ClCompile>
-    <ClCompile Include="Application.cpp">
-      <Filter>Core</Filter>
-    </ClCompile>
     <ClCompile Include="Window.cpp">
       <Filter>Core</Filter>
     </ClCompile>
     <ClCompile Include="GameTimer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
       <Filter>Core</Filter>
     </ClCompile>
   </ItemGroup>

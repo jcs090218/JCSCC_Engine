@@ -1,4 +1,12 @@
 #ifndef _D2D_SPRITE2D_H
+/**
+ * $File: Sprite2D.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define _D2D_SPRITE2D_H
 
 #include "D2D_StdAfx.h"
@@ -8,11 +16,11 @@
 namespace JCS_D2DEngine
 {
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : Sprite2D
+    //====================================================================================
+    // Class Name : Sprite2D
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================
     class Sprite2D
     {
     private:
@@ -40,10 +48,10 @@ namespace JCS_D2DEngine
         void update(float32 deltaTime);
         void draw();    // Draw the bitmap to the render target
 
-        // setter
+        /** setter **/
         void SetOrigin(const JCS_VECTOR2F origin) { this->m_origin = origin; }
 
-        // getter
+        /** getter **/
         JCS_VECTOR2F GetOrigin() const { return this->m_origin; }
     };
 }

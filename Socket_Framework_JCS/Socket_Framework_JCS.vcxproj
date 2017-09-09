@@ -38,27 +38,22 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(SolutionDir)/Boost/boost_1_59_0_vs2013/include/;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)/Boost/boost_1_59_0_vs2013/lib/x86;$(LibraryPath)</LibraryPath>
-    <ExecutablePath>$(SolutionDir)/Boost/boost_1_59_0_vs2013/lib/x86;$(ExecutablePath)</ExecutablePath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(SolutionDir)/Boost/boost_1_59_0_vs2013/include/;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)/Boost/boost_1_59_0_vs2013/lib/x86;$(LibraryPath)</LibraryPath>
-    <ExecutablePath>$(SolutionDir)/Boost/boost_1_59_0_vs2013/lib/x86;$(ExecutablePath)</ExecutablePath>
-  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/;$(SolutionDir)\Libraries\boost_1_64_0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Libraries\boost_1_64_0\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -67,7 +62,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/;$(SolutionDir)\Libraries\boost_1_64_0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -75,6 +70,9 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Libraries\boost_1_64_0\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Asio_Socket.h" />
@@ -86,6 +84,7 @@
     <ClInclude Include="JCS_PacketEncoder.h" />
     <ClInclude Include="JCS_Socket.h" />
     <ClInclude Include="NetworkConstants.h" />
+    <ClInclude Include="SDLNet_Socket.h" />
     <ClInclude Include="Socket_CrashReason.h" />
     <ClInclude Include="Socket_Lib.h" />
     <ClInclude Include="Socket_StdAfx.h" />
@@ -96,6 +95,7 @@
     <ClCompile Include="JCS_DefaultCodecFactory.cpp" />
     <ClCompile Include="JCS_DefaultPacketDecoder.cpp" />
     <ClCompile Include="JCS_DefaultPacketEncoder.cpp" />
+    <ClCompile Include="SDLNet_Socket.cpp" />
     <ClCompile Include="Winsock2_Socket.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

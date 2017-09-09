@@ -1,12 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
-
 #ifndef __D3D11_CRASHREASON_H__
+/**
+* $File: D3D11_CrashReason.h $
+* $Date: $
+* $Revision: $
+* $Creator: Jen-Chieh Shen $
+* $Notice: See LICENSE.txt for modification and distribution information
+*                   Copyright (c) 2016 by Shen, Jen-Chieh $
+*/
 #define __D3D11_CRASHREASON_H__
 
 
@@ -16,12 +16,12 @@
 namespace JCS_D3DX_v11_Engine
 {
 
-    //------------------------------------------------------------------------------------
+    //====================================================================================
     // Name : CrashReason
     // 
-    // Desc : List of all the reason might crashed the framework
+    // Description : List of all the reason might crashed the framework
     //        and handle it with error message.
-    //------------------------------------------------------------------------------------
+    //====================================================================================
     enum class CrashReason
     {
         // Warnings
@@ -36,7 +36,7 @@ namespace JCS_D3DX_v11_Engine
     /**
      * Function Name : JCS_CR (JCS_CrashReason)
      * 
-     * Desc : Pass in the reason and Message Box the client.
+     * Description : Pass in the reason and Message Box the client.
      */
     inline void JCS_CR(CrashReason reason)
     {

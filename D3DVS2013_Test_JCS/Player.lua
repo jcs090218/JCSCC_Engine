@@ -1,4 +1,11 @@
- -- [[ Player Controller ]] --
+-- ========================================================================
+-- $File: Player.lua $
+-- $Date: 2015-09-10 11:34:10 $
+-- $Revision: $
+-- $Creator: Jen-Chieh Shen $
+-- $Notice: See LICENSE.txt for modification and distribution information $
+--                   Copyright (c) 2015 by Shen, Jen-Chieh $
+-- ========================================================================
 
 
  require "Keys"

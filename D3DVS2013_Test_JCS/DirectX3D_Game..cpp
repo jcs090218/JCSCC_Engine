@@ -1,11 +1,20 @@
-﻿#include "DirectX3D_Game.h"
+﻿/**
+ * $File: DirectX3D_Game.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
+
+#include "DirectX3D_Game.h"
 
 
 #include "StdAfx.h"
 
 DirectX3D_Game::DirectX3D_Game(JCS_GameInput::KeyboardServer* kServer, JCS_GameInput::MouseServer* mServer)
 {
-    im = JCS_GameTool::InputManager::getInstance();
+    im = JCS_GameTool::InputManager::GetInstance();
     im->setKeyboard(kServer);
     im->setMouse(mServer);
 }
@@ -18,20 +27,20 @@ DirectX3D_Game::~DirectX3D_Game()
 
     //SafeReleaseCOM(meshTeapot);
 
-    SafeDeleteObject(gm);
-    SafeDeleteObject(sem);        // 這個目前必須在 Managers 上面
-    SafeDeleteObject(sm);
-    SafeDeleteObject(im);
-    SafeDeleteObject(dm);
+	JCS_GameTool::GameManager::DestroyInstance();
+	JCS_GameTool::SceneManager::DestroyInstance();        // 這個目前必須在 Managers 上面
+	JCS_GameTool::SoundManager::DestroyInstance();
+	JCS_GameTool::InputManager::DestroyInstance();
+	JCS_GameTool::DeviceManager::DestroyInstance();
 }
 
 bool DirectX3D_Game::Initlialize(HWND hWnd)
 {
-    sm = JCS_GameTool::SoundManager::getInstance(hWnd);
-    gm = JCS_GameTool::GameManager::getInstance();
-    dm = JCS_GameTool::DeviceManager::getInstance();
+    sm = JCS_GameTool::SoundManager::GetInstance(hWnd);
+    gm = JCS_GameTool::GameManager::GetInstance();
+    dm = JCS_GameTool::DeviceManager::GetInstance();
     dm->CreateDevice(API_Type::DIRECTX3D_9, hWnd);
-    sem = JCS_GameTool::SceneManager::getInstance(API_Type::DIRECTX3D_9, SceneType::SCENE_3D);
+    sem = JCS_GameTool::SceneManager::GetInstance(API_Type::DIRECTX3D_9, SceneType::SCENE_3D);
 
     sm->playBGM(static_cast<TCHAR*>(L"data/test.wav"));
 
@@ -57,7 +66,7 @@ bool DirectX3D_Game::Initlialize(HWND hWnd)
 
 void DirectX3D_Game::Run(float deltaTime)
 {
-    if (!gm->isGamePause())
+    if (!gm->IsGamePause())
     {
         Update(deltaTime);
         Draw(deltaTime);

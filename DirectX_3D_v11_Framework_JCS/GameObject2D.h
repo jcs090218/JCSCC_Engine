@@ -1,5 +1,5 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
@@ -16,11 +16,11 @@
 
 namespace JCS_D3DX_v11_Engine
 {
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    //====================================================================================---------------------------------------------------------------
     // Name : GameObject2D
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================---------------------------------------------------------------
     class GameObject2D
         : public RenderableObject
     {
@@ -38,10 +38,10 @@ namespace JCS_D3DX_v11_Engine
 
         void AttachScript(JCS_Script* script) { this->m_pScript = script; }
 
-        // setter
+        /** setter **/
         void SetTransform(const Transform2D& transform) { this->m_transform = transform; }
 
-        // getter
+        /** getter **/
         Transform2D GetTransform() const { return this->m_transform; }
     };
 

@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __NODE_H__
+/**
+ * $File: Node.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __NODE_H__
 
 
@@ -14,11 +15,11 @@
 namespace JCS_GameResourceS
 {
 
-    //------------------------------------------------------------------------------------
+    //====================================================================================
     // Name : Node 
     //
-    // Desc : Node for tree view
-    //------------------------------------------------------------------------------------
+    // Description : Node for tree view
+    //====================================================================================
     class Node
     {
     private:

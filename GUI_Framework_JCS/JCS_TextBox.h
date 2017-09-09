@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __JCS_TEXTBOX_H__
+/**
+ * $File: JCS_TextBox.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2016 by Shen, Jen-Chieh $
+ */
 #define __JCS_TEXTBOX_H__
 
 
@@ -14,11 +15,11 @@
 namespace JCS_GUI
 {
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : JCS_TextBox
+    //====================================================================================---------------------------------------------------------------
+    // Class Name : JCS_TextBox
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : JCSCC Text Box GUI.
+    //====================================================================================---------------------------------------------------------------
     class JCS_TextBox
         : public JCS_WindowHandle
     {
@@ -27,11 +28,24 @@ namespace JCS_GUI
         ~JCS_TextBox();
 
 #ifdef _WIN32
+
+        /**
+            Create GUI.
+
+            @param hWnd
+            @param word
+            @param x
+            @param y
+            @param width
+            @param height
+            @param identifier
+        */
         void Create(const HWND hWnd, 
             const LPCWSTR word, 
             const int32 x, const int32 y, 
             const int32 width, const int32 height, 
             const int32 identifier = IDC_NONE);
+
 #endif // _WIN32
     };
 

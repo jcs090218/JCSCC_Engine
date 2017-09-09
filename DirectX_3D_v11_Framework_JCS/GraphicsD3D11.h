@@ -1,24 +1,28 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __GRAPHICSD3D11_H__
+/**
+ * $File: GraphicsD3D11.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2014 by Shen, Jen-Chieh $
+ */
 #define __GRAPHICSD3D11_H__
+
 
 #include "D3DX_v11_StdAfx.h"
 
 #include <GameInterface_JCS\RenderDevice.h>
 
+
 namespace JCS_D3DX_v11_Engine
 {
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+
+    //====================================================================================---------------------------------------------------------------
     // Name : GraphicsD3D11
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================---------------------------------------------------------------
     class GraphicsD3D11
         : public RenderDevice
     {
@@ -50,10 +54,10 @@ namespace JCS_D3DX_v11_Engine
         void ClearDepth();
         void RenderPresent();
 
-        // setter
+        /** setter **/
         void SetVsync(const bool vsync) { this->m_vsync = vsync; }
 
-        // getter
+        /** getter **/
         bool GetVsync() const { return this->m_vsync; }
         ID3D11Device* GetDevice() const { return this->m_pDevice; }
         ID3D11Device& GetDeviceRef() const { return *(this->m_pDevice); }

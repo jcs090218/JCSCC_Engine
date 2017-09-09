@@ -1,16 +1,30 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __OS_TYPE_H__
+/**
+ * $File: OS_Type.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __OS_TYPE_H__
 
 
 namespace JayCeS
 {
+
+    //====================================================================================
+    // Enum Name : Operating System Type 
+    // 
+    // Description : List of all operating system JCSCC can do. 
+    //====================================================================================
     enum class OperatingSystemType
     {
         //*** Microsoft ***//

@@ -1,10 +1,19 @@
-﻿// stdafx.h : include file for standard system include files,
-//  or project specific include files that are used frequently, but
-//      are changed infrequently
-//
-
-#ifndef __STDAFX_H__
+﻿#ifndef __STDAFX_H__
+/**
+ * $File: StdAfx.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __STDAFX_H__
+
+ // stdafx.h : include file for standard system include files,
+ //  or project specific include files that are used frequently, but
+ //      are changed infrequently
+ //
+
 
 #include <GameTool_JCS\GameTool_StdAfx.h>
 
@@ -34,4 +43,3 @@
 #define __OPENGL__
 
 #endif // __STDAFX_H__
-

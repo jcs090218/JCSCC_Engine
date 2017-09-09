@@ -29,7 +29,7 @@ namespace JCS_GameSound
             throw JCS_GameTool::GameError(L"SetCooperativeLevel (DS) failed!");
 
         // Get the primary buffer 
-        sAutoZero<DSBUFFERDESC> dsbd;
+        AutoZero<DSBUFFERDESC> dsbd;
         dsbd.dwFlags = DSBCAPS_PRIMARYBUFFER;
         dsbd.dwBufferBytes = 0;
         dsbd.lpwfxFormat = nullptr;

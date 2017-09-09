@@ -1,9 +1,11 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
+/**
+ * $File: RenderDevice.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 
 #ifndef __RENDERDEVICE_H__
 #define __RENDERDEVICE_H__
@@ -12,11 +14,11 @@
 
 namespace JCS_GameInterface
 {
-    //------------------------------------------------------------------------------------
+    //====================================================================================
     // RenderDevice
     //
-    // Desc : Any Render Device should implement this interface.
-    //------------------------------------------------------------------------------------
+    // Description : Any Render Device should implement this interface.
+    //====================================================================================
     class RenderDevice
     {
     public:

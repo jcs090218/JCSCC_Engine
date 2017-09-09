@@ -1,4 +1,13 @@
-﻿#include "TestApp.h"
+﻿/**
+ * $File: TestApp.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
+
+#include "TestApp.h"
 
 #include "Game.h"
 
@@ -30,7 +39,7 @@ bool TestApp::Initialize()
     // We are creating an online game
     /*SetIsOnlineGame(true);
     SetHostName("127.0.0.1");
-    SetPort(5555);*/
+    SetPort(5454);*/
 
     SetPlatformType(PlatformType::XBOX360);
 
@@ -39,6 +48,8 @@ bool TestApp::Initialize()
     {
         return false;
     }
+
+	CreateSubWindow(L"Inspector", 800, 600);
 
     // Create Game
     m_pGame = new Game(GetKeyBoardServer(), GetMouseServer(), this->GetGameTimer());

@@ -1,4 +1,12 @@
 ﻿#ifndef _GAME_H
+/**
+ * $File: Game.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define _GAME_H
 
 #include "StdAfx.h"

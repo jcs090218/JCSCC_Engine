@@ -1,5 +1,5 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
@@ -37,7 +37,6 @@
 #include "JCS_Input.h"
 #include "JCS_Component.h"
 #include "JCS_Collision.h"
-#include "JCS_GameType.h"
 #include "JCS_Scene.h"
 #include "JCS_Script.h"
 #include "JCS_World.h"

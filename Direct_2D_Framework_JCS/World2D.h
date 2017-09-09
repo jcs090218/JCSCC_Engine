@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __D2D_WORLD2D_H__
+/**
+ * $File: World2D.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __D2D_WORLD2D_H__
 
 
@@ -16,11 +17,11 @@
 namespace JCS_D2DEngine
 {
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : World2D
+    //====================================================================================
+    // Class Name : World2D
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : Sandbox in 2d world.
+    //====================================================================================
     class World2D
         : public JCS_World
     {
@@ -31,9 +32,9 @@ namespace JCS_D2DEngine
         explicit World2D(bool isPhysicWolrd = false, float32 xGrav = 0.0f, float32 yGrav = -9.81f);
         ~World2D();
 
-        // setter
+        /** setter **/
 
-        // getter
+        /** getter **/
         b2World* GetPhysicWorld() const { return this->m_pPhysicWorld.get(); }
 
     private:

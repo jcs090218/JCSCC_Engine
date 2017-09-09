@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __GAMEERRORS_H__
+/**
+ * $File: GameError.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __GAMEERRORS_H__
 
 #include <string>
@@ -13,26 +14,30 @@
 
 namespace JCS_GameTool
 {
-    //------------------------------------------------------------------------------------
-    // Name : GameError 
+    //====================================================================================
+    // Class Name : GameError 
     //
-    // Desc : This code is slow, using dynamic memory, but since we only use them
+    // Description : This code is slow, using dynamic memory, but since we only use them
     //        when something Really Bad happens, the user won't notice that their
     //        application exits abmornally a few nanoseconds slower than usual
-    //------------------------------------------------------------------------------------
+    //====================================================================================
     class GameError
     {
     private:
         std::wstring m_errorText;
 
     public:
+
+        /**
+            Print out the message from the output window.
+        */
         GameError(const TCHAR* errorText)
         {
             JCS_Print1(L"***\n*** [ERROR] GameError thrown! text: [%s]\n***\n", errorText);
             m_errorText = std::wstring(errorText);
         }
 
-        // getter
+        /** getter **/
         const TCHAR* getText()
         {
             return m_errorText.c_str();

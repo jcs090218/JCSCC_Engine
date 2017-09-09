@@ -1,11 +1,19 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __JAYCES_ERROR_H__
+/**
+ * $File: JCS_Error.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __JAYCES_ERROR_H__
 
 #include "JayCeS_StdAfx.h"
@@ -13,13 +21,14 @@
 
 namespace JayCeS
 {
-    //------------------------------------------------------------------------------------
+
+    //====================================================================================
     // Name : JCS_Error 
     //
-    // Desc : This code is slow, using dynamic memory, but since we only use them
+    // Description : This code is slow, using dynamic memory, but since we only use them
     //        when something Really Bad happens, the user won't notice that their
     //        application exits abmornally a few nanoseconds slower than usual
-    //------------------------------------------------------------------------------------
+    //====================================================================================
     class JCS_Error
     {
     private:
@@ -67,4 +76,3 @@ namespace JayCeS
 typedef JayCeS::JCS_Error JCS_Error;
 
 #endif // __JAYCES_ERROR_H__
-

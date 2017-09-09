@@ -1,5 +1,5 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
@@ -9,15 +9,17 @@
 #define __JCS_WINDOW_H__
 
 
+#include "GameInterface_StdAfx.h"
+
 namespace JCS_GameInterface
 {
-    //-------------------------------------------------------------------------------------------------------
-    // JCS_Window
-    //
-    // Desc : Base class of Window class using any API
-    //-------------------------------------------------------------------------------------------------------
     class JCS_GameTool::GameTimer;
 
+    //====================================================================================
+    // Class Name: JCS_Window
+    // 
+    // Description : Base class of Window class using any API
+    //====================================================================================
     class JCS_Window
     {
     public:

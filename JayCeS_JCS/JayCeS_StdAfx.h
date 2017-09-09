@@ -1,17 +1,19 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
-// JayCeS_StdAfx.h : include file for standard system include files,
-//  or project specific include files that are used frequently, but
-//      are changed infrequently
-//
-
 #ifndef __JAYCES_STDAFX_H__
+/**
+ * $File: JayCes_StdAfx $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __JAYCES_STDAFX_H__
+
+ // JayCeS_StdAfx.h : include file for standard system include files,
+ //  or project specific include files that are used frequently, but
+ //      are changed infrequently
+ //
+
 
 // Memory Leak Detector
 #include "JCS_vld.h"
@@ -51,16 +53,19 @@
 #include <fstream>      // for file I/O
 #include <stack>
 #include <deque>
+#include <amp.h>
 
 // Libraries
 
 
 // Local Header Files
+#include "JayCeS_PlatformMacros.h"      // include platform macro first.
 #include "JCS_Name.h"
 #include "SafePointer.h"
 #include "JayCeS_Globals.h"
 #include "JayCeS_Error.h"
 #include "JCS_Type.h"
+#include "JCS_Util.h"
 
 ////// LINKER ////////////////
 #ifdef _WIN32
@@ -71,4 +76,3 @@
 
 
 #endif // __JAYCES_STDAFX_H__
-

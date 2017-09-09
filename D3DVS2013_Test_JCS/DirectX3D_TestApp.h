@@ -1,4 +1,12 @@
 #ifndef __DRIECTX3D_TESTAPP_H__
+/**
+ * $File: Direct3D_TestApp.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __DRIECTX3D_TESTAPP_H__
 
 #include <GameTool_JCS\Application.h>

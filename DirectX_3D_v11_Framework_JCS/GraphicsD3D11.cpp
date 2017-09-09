@@ -1,16 +1,20 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
+/**
+ * $File: GraphicsD3D11.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2014 by Shen, Jen-Chieh $
+ */
 
 #include "GraphicsD3D11.h"
 
 #include <DirectXColors.h>
 
+
 namespace JCS_D3DX_v11_Engine
 {
+
     GraphicsD3D11::GraphicsD3D11()
         : m_pDevice(nullptr)
         , m_pImmediateContext(nullptr)

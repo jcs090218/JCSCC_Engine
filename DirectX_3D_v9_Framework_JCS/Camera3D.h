@@ -1,19 +1,26 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __CAMERA_3D_H__
+/**
+ * $File: Camera3D.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2016 by Shen, Jen-Chieh $
+ */
 #define __CAMERA_3D_H__
 
 #include "D3DX_v9_StdAfx.h"
 #include "GraphicsD3D9.h"
 
+
 namespace JCS_D3DX_v9_Engine
 {
-
+	
+	//====================================================================================
+	// Name : Camera3D 
+	//
+	// Description : 
+	//====================================================================================
     class Camera3D
     {
     public:
@@ -22,12 +29,12 @@ namespace JCS_D3DX_v9_Engine
 
         void Update(float32 deltaTime, GraphicsD3D9* gDevice);
 
-        // setter
+        /** setter **/
         void setCameraPosition(D3DXVECTOR3* newPosition) { this->vCamera = newPosition; }
         void setLookAtPoint(D3DXVECTOR3* newLookAtPoint) { this->vLookAt = newLookAtPoint; }
         void setUpDirection(D3DXVECTOR3* newUpVector) { this->vUpVector = newUpVector; }
 
-        // getter
+        /** getter **/
         D3DXVECTOR3* getCameraPosition() { return this->vCamera; }
         D3DXVECTOR3* getLookAtPoint() { return this->vLookAt; }
         D3DXVECTOR3* getUpDirection() { return this->vUpVector; }

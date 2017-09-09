@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __D3D11_SCENE2D_H__
+/**
+ * $File: Scene2D.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __D3D11_SCENE2D_H__
 
 
@@ -17,12 +18,12 @@ namespace JCS_D3DX_v11_Engine
 {
     class Interface2D;
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    //====================================================================================---------------------------------------------------------------
     // Name : Scene
     //
-    // Desc : Handle each interface's drawcall in order to render 
+    // Description : Handle each interface's drawcall in order to render 
     //        all the renderable object in each interface to Scene.
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    //====================================================================================---------------------------------------------------------------
     class Scene2D
         : public JCS_Scene
     {
@@ -40,9 +41,9 @@ namespace JCS_D3DX_v11_Engine
         void AddInterface(Interface2D* pInterface);
         void RemoveInterface(Interface2D* pInterface);
 
-        // setter
+        /** setter **/
 
-        // getter
+        /** getter **/
         std::vector<Interface2D*> GetInterfaces() { return this->m_interfaces; }
         Interface2D* GetInterfacePtrAt(const uint32 index) const { return this->m_interfaces.at(index); }
         Interface2D& GetInterfaceRefAt(const uint32 index) const { return *(this->m_interfaces.at(index)); }

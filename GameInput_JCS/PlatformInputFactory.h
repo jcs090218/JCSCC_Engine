@@ -1,11 +1,19 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __PLATFORMINPUTFACTORY_H__
+/**
+ * $File: PlatformInputFactory.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __PLATFORMINPUTFACTORY_H__
 
 
@@ -15,11 +23,11 @@
 
 namespace JCS_GameInput
 {
-    //------------------------------------------------------------------------------------
+    //====================================================================================
     // Name : PlatformInputFactory 
     //
-    // Desc : Create Input Controller depends on platform type
-    //------------------------------------------------------------------------------------
+    // Description : Create Input Controller depends on platform type
+    //====================================================================================
     class PlatformInputFactory
     {
     public:

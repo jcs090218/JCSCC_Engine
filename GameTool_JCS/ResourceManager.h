@@ -1,44 +1,46 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __RESOURCEMANAGER_H__
+/**
+ * $File: ResourceManager.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __RESOURCEMANAGER_H__
 
+
+#include "GameTool_StdAfx.h"
 
 
 namespace JCS_GameTool
 {
 
-    //------------------------------------------------------------------------------------
-    // Name : ResourceManager 
+    //====================================================================================
+    // Class Name : ResourceManager 
     //
-    // Desc : Take care of all the resources and are already loaded to
+    // Description : Take care of all the resources and are already loaded to
     //        memory or load instantly. 
-    //------------------------------------------------------------------------------------
+    //====================================================================================
     class ResourceManager
+		: public JCSSTL::JCSSTL_Singleton<ResourceManager>
     {
     private:
-        static ResourceManager* s_pResourceManager;
-
-        ResourceManager();
+		friend class JCSSTL::JCSSTL_Singleton<ResourceManager>;
 
     public:
-        static ResourceManager* getInstance()
-        {
-            if (!s_pResourceManager)
-                s_pResourceManager = new ResourceManager;
-            return s_pResourceManager;
-        }
+
         virtual ~ResourceManager();
 
 
-        // setter 
+        /** setter **/ 
         
-        // getter
+        /** getter **/
+
+	private:
+		// Constructor
+		ResourceManager();
+		ResourceManager(const ResourceManager& right) = delete;
 
     };
 

@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __WINDOW_H__
+/**
+ * $File: Window.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __WINDOW_H__
 
 #include "GameResourceS_StdAfx.h"
@@ -17,11 +18,11 @@ namespace JCS_GameResourceS
 
     class Application;
 
-    //------------------------------------------------------------------------------------
+    //====================================================================================
     // Name : Window 
     //
-    // Desc : 
-    //------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================
     class Window
     {
     public:
@@ -50,9 +51,9 @@ namespace JCS_GameResourceS
             std::wstring windowTitle,
             int32 x, int32 y, int32 width, int32 height);
 
-        // setter
+        /** setter **/
 
-        // getter
+        /** getter **/
         static Window* GetMainWindow() { return s_pGlobalWindow; }
         HWND GetHWND() const { return this->mhMainWndow; }
         WNDPROC getWinProc() const { return this->mhWinProc; }

@@ -1,5 +1,5 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
@@ -13,12 +13,12 @@
 namespace JCS_Allegro_Engine
 {
 
-    //------------------------------------------------------------------------------------
+    //====================================================================================
     // Name : CrashReason
     // 
-    // Desc : List of all the reason might crashed the framework
+    // Description : List of all the reason might crashed the framework
     //        and handle it with error message.
-    //------------------------------------------------------------------------------------
+    //====================================================================================
     enum class CrashReason
     {
         // Warnings
@@ -33,7 +33,7 @@ namespace JCS_Allegro_Engine
     /**
     * Function Name : JCS_CR (JCS_CrashReason)
     *
-    * Desc : Pass in the reason and Message Box the client.
+    * Description : Pass in the reason and Message Box the client.
     */
     inline void JCS_CR(CrashReason reason)
     {

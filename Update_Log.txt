@@ -1,0 +1,43 @@
+========================================================================
+$File: Update_Log.txt $
+$Creator: Jen-Chieh Shen <jcs090218@gmail.com> $
+$Date: 2016-12-01 $
+$Notice: See LICENSE.txt for modification and distribution information 
+                  Copyright (c) 2016 by Shen, Jen-Chieh $
+========================================================================
+
+
+2017-04-20
+* Update boost library version from 1.59.0 to 1.64.0. (JCSCC)
+
+2017-03-13
+* JCS_Defines implemented. (JayCeS_JCS)
+* JCS_String implemented. (JayCeS_JCS)
+* JCS_WString implemented. (JayCeS_JCS)
+
+2016-12-10
+* Update safe pointer file with pointer array 
+ function implemented. (JayCeS_JCS)
+* Random.h implemented. (GameUtility_JCS)
+* JCS_Mathf update positive and infinity util check. (JCSMath_Lib)
+
+2016-12-08
+* setup the project. (GameUtility_JCS)
+* Update box 2d util. (GameUtility_JCS)
+* Box2d contact listener implemented. (GameUtility_JCS)
+
+2016-12-05
+* Setup JCSSTL_Lib dll library. (JCSSTL_Lib)
+* Singleton pattern implemented to JCSSTL_Lib. (JCSSTL_Lib
+
+2016-12-01
+* Update JCS_GameType with more constand useage. (JayCeS_JCS)
+* Update JCS_Collision, so now the math lib provide the full concept of 
+ all 2d game. (JCSMath_Lib)
+* Modefied the JcsLib dll export setting. (JcsLib)
+* Reset some of the naming convention issue. (JcsLib, JCSMath_Lib)
+* JCS_Rect implemented. (JCSMath_Lib)
+* JCS_Circle implmented. (JCSMath_Lib)
+* JCS_Math class setup. (JCSMath_Lib)
+* JCS_Collision class setup. (JCSMath_Lib)
+* Setup the project for specific mathmatic use. (JCSMath_Lib)

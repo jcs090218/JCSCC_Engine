@@ -1,4 +1,12 @@
 ﻿#ifndef __D2D_SCENE2D_H__
+/**
+* $File: Scene2D.h $
+* $Date: $
+* $Revision: $
+* $Creator: Jen-Chieh Shen $
+* $Notice: See LICENSE.txt for modification and distribution information
+*                   Copyright (c) 2015 by Shen, Jen-Chieh $
+*/
 #define __D2D_SCENE2D_H__
 
 #include "D2D_StdAfx.h"
@@ -10,11 +18,11 @@
 namespace JCS_D2DEngine
 {
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : Scene2D
+    //====================================================================================
+    // Class Name : Scene2D
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================
     class Scene2D 
         : public JCS_Scene
     {
@@ -53,9 +61,9 @@ namespace JCS_D2DEngine
         void RemoveObjectPoolGameObject2DFromScene(ObjectPool2D<GameObject2D>* op_game_object);
         void RemoveSprite2DFromScene(Sprite2D* sprite);        
 
-        // setter
+        /** setter **/
 
-        // getter
+        /** getter **/
         std::vector<GameObject2D*> getGameObjects() const { return this->game_objects; }
         std::vector<ObjectPool2D<GameObject2D>*> getOPGameObjects() const { return this->op_game_objects; }
         GameObject2D* getGameObjectPointerWithIndex(const uint32 index) const { return this->game_objects.at(index); }

@@ -90,5 +90,8 @@
     <ClCompile Include="RenderDeviceFactory.cpp">
       <Filter>Core\Render Devices</Filter>
     </ClCompile>
+    <ClCompile Include="JCS_GameType.cpp">
+      <Filter>Support</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

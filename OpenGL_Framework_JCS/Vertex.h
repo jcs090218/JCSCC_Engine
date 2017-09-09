@@ -1,24 +1,36 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __VERTEX_H__
+/**
+ * $File: Vertex.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __VERTEX_H__
 
 
 #include "OpenGL_StdAfx.h"
 
+
 namespace JCS_OpenGLEngine
 {
+	//====================================================================================
+	// Name : Position 
+	//
+	// Description : 
+	//====================================================================================
     struct Position 
     {
         float32 x;
         float32 y;
     };
 
+	//====================================================================================
+	// Name : ColorRGBA8 
+	//
+	// Description : 
+	//====================================================================================
     struct ColorRGBA8
     {
         GLubyte r;
@@ -31,13 +43,22 @@ namespace JCS_OpenGLEngine
         { }
     };
 
+	//====================================================================================
+	// Name : UV 
+	//
+	// Description : 
+	//====================================================================================
     struct UV
     {
         float32 u;
         float32 v;
     };
 
-    //The vertex definition
+	//====================================================================================
+	// Name : Vertex
+	//
+	// Description : The vertex definition
+	//====================================================================================
     struct Vertex
     {
         //This is the position struct. When you store a struct or class

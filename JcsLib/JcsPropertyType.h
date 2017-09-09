@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __JCSPROPERTYTYPE_H__
+/**
+ * $File: JcsPropertyType.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __JCSPROPERTYTYPE_H__
 
 #undef NULL
@@ -13,11 +14,10 @@
 namespace JcsLib
 {
 
-    //------------------------------------------------------------------------------------
-    // Name : JcsPropertyType (Enum)
-    //
-    // Desc : 
-    //------------------------------------------------------------------------------------
+	/**
+	@enum JcsPropertyType (Enum)
+	@brief Jcs extension Property type list here.
+	*/
     enum class JcsPropertyType
     {
         NONE,
@@ -41,4 +41,3 @@ namespace JcsLib
 typedef JcsLib::JcsPropertyType JcsPropertyType;
 
 #endif // __JCSPROPERTYTYPE_H__
-

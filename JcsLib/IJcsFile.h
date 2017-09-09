@@ -1,32 +1,35 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __IJCSFILE_H__
+/**
+ * $File: IJcsFile.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __IJCSFILE_H__
 
 #include "IJcsObject.h"
 #include "IDisposable.h"
 
+EXTERN_C_BEGIN
+
 namespace JcsLib
 {
 
-    //------------------------------------------------------------------------------------
-    // Name : IJcsFile (Interface)
-    //
-    // Desc : 
-    //------------------------------------------------------------------------------------
-    struct IJcsFile
-        : public IJcsObject
-    {
-        virtual ~IJcsFile() { }
-    };
+	/**
+	@class IJcsFile (Interface)
+	@brief
+	*/
+	struct IJcsFile
+		: public IJcsObject
+	{
+		DECLSPEC_ACTION virtual ~IJcsFile() { }
+	};
 }
 
 typedef JcsLib::IJcsFile IJcsFile;
 
-#endif // __IJCSFILE_H__
+EXTERN_C_END
 
+#endif // __IJCSFILE_H__

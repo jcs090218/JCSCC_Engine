@@ -1,79 +1,91 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
+/**
+ * $File: JcsImage.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 
 #include "JcsImage.h"
 
 #include "IJcsImageProperty.h"
 
+EXTERN_C_BEGIN
+
 namespace JcsLib
 {
 
-    JcsImage::JcsImage()
-        : m_checksum(0)
-        , m_headerOffset(0)
-        , m_offset(0)
-        , m_parsed(false)
-        , m_properties()
-        , m_size(-1)
-    {
+	JcsImage::JcsImage()
+		: m_checksum(0)
+		, m_headerOffset(0)
+		, m_offset(0)
+		, m_parsed(false)
+		, m_properties()
+		, m_size(-1)
+	{
 
-    }
+	}
 
-    JcsImage::JcsImage(wchar_t* name)
-        : m_checksum(0)
-        , m_headerOffset(0)
-        , m_offset(0)
-        , m_parsed(false)
-        , m_properties()
-        , m_size(-1)
-    {
-        // m_name is at "IJcsObject"
-        m_name = name;
-    }
+	JcsImage::JcsImage(wchar_t* name)
+		: m_checksum(0)
+		, m_headerOffset(0)
+		, m_offset(0)
+		, m_parsed(false)
+		, m_properties()
+		, m_size(-1)
+	{
+		// m_name is at "IJcsObject"
+		m_name = name;
+	}
 
-    JcsImage::~JcsImage()
-    {
+	JcsImage::~JcsImage()
+	{
 
-    }
+	}
 
-    JcsImage* JcsImage::Clone()
-    {
-        return nullptr;
-    }
+	// Clone property.
+	JcsImage* JcsImage::Clone()
+	{
+		return nullptr;
+	}
 
-    void JcsImage::AddProperty(IJcsImageProperty prop)
-    {
+	// Add property to current property value.
+	void JcsImage::AddProperty(IJcsImageProperty prop)
+	{
 
-    }
+	}
 
-    void JcsImage::Dispose()
-    {
+	// Dispose property.
+	void JcsImage::Dispose()
+	{
 
-    }
+	}
 
-    std::wstring JcsImage::DumpBlock()
-    {
-        return L"";
-    }
+	// Dump the whole block.
+	std::wstring JcsImage::DumpBlock()
+	{
+		return L"";
+	}
 
-    void JcsImage::ParseImage()
-    {
+	// Parse the image file into readable/showable style.
+	void JcsImage::ParseImage()
+	{
 
-    }
+	}
 
-    void JcsImage::RemoveProperty(wchar_t* name)
-    {
+	// Remove the property form current node system.
+	void JcsImage::RemoveProperty(wchar_t* name)
+	{
 
-    }
+	}
 
-    void JcsImage::SaveImage(/*BinaryWriter jcsWriter*/)
-    {
+	// Save image function design here.
+	void JcsImage::SaveImage(/*BinaryWriter jcsWriter*/)
+	{
 
-    }
+	}
 
 }
 
+EXTERN_C_END

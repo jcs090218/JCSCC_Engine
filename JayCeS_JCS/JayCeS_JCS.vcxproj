@@ -39,26 +39,25 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ExecutablePath>$(SolutionDir)/Boost/boost_1_59_0_vs2013/lib/x86/;$(ExecutablePath)</ExecutablePath>
-    <IncludePath>$(SolutionDir)/Boost/boost_1_59_0_vs2013/include/;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)/Boost/boost_1_59_0_vs2013/lib/x86;$(SolutionDir)/Libraries\vld\lib\Win32;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)\Libraries\boost_1_64_0\lib\x86</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <ExecutablePath>$(SolutionDir)/Boost/boost_1_59_0_vs2013/lib/x86/;$(ExecutablePath)</ExecutablePath>
-    <IncludePath>$(SolutionDir)/Boost/boost_1_59_0_vs2013/include/;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)/Boost/boost_1_59_0_vs2013/lib/x86;$(SolutionDir)/Libraries\vld\lib\Win32;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)\Libraries\boost_1_64_0\lib\x86</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/;$(SolutionDir)\Libraries\boost_1_64_0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Libraries\boost_1_64_0\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -67,7 +66,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/;$(SolutionDir)\Libraries\boost_1_64_0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -75,10 +74,15 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Libraries\boost_1_64_0\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="JayCeS_Defines.h" />
     <ClInclude Include="JayCeS_Globals.h" />
     <ClInclude Include="JayCeS.h" />
+    <ClInclude Include="JayCeS_PlatformMacros.h" />
     <ClInclude Include="JayCes_StdAfx.h" />
     <ClInclude Include="JayCeS_Error.h" />
     <ClInclude Include="JcsMessageBox.h" />
@@ -89,9 +93,12 @@
     <ClInclude Include="JayCeS_Debug.h" />
     <ClInclude Include="JCS_FileDialogs.h" />
     <ClInclude Include="JCS_Name.h" />
+    <ClInclude Include="JCS_String.h" />
     <ClInclude Include="JCS_StringBuilder.h" />
     <ClInclude Include="JCS_Type.h" />
+    <ClInclude Include="JCS_Util.h" />
     <ClInclude Include="JCS_vld.h" />
+    <ClInclude Include="JCS_WString.h" />
     <ClInclude Include="OS_Type.h" />
     <ClInclude Include="SafePointer.h" />
   </ItemGroup>
@@ -102,7 +109,12 @@
     <ClCompile Include="JCS_Buffer.cpp" />
     <ClCompile Include="JCS_BufferBuilder.cpp" />
     <ClCompile Include="JCS_FileDialogs.cpp" />
+    <ClCompile Include="JCS_String.cpp" />
     <ClCompile Include="JCS_StringBuilder.cpp" />
+    <ClCompile Include="JCS_WString.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayCeS_JCS.aps" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

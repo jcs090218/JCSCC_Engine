@@ -6,7 +6,6 @@
 ########################
 /Libraries
 /Allegro_Framework_JCS/Allegro
-/Boost
 /Box2D
 /DirectX_3D_v9_Framework_JCS/DirectX SDK
 /DirectXTK
@@ -16,6 +15,7 @@
 /OpenGL_Framework_JCS/OpenGL
 /SDL_Framework_JCS/SDL
 /SFML_Framework_JCS/SFML
+/Vulkan_Framework_JCS/VulkanSDK
 
 
 #################

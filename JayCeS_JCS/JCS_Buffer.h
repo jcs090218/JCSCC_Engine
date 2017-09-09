@@ -1,11 +1,19 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __JCS_BUFFER_H__
+/**
+ * $File: JCS_Buffer.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __JCS_BUFFER_H__
 
 
@@ -14,11 +22,11 @@
 namespace JayCeS
 {
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    //====================================================================================---------------------------------------------------------------
     // Name : JCS_Buffer
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================---------------------------------------------------------------
     class JCS_Buffer
     {
     private:
@@ -44,9 +52,9 @@ namespace JayCeS
 
         void ClearBuffer();
 
-        // setter
+        /** setter **/
 
-        // getter
+        /** getter **/
         std::queue<byte>& GetBuffer() { return this->m_buffer; }
         size_t GetLength() const { return this->m_buffer.size(); }
 

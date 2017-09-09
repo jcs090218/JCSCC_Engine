@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __IDENTIFIER_H__
+/**
+* $File: Identifier.h $
+* $Date: $
+* $Revision: $
+* $Creator: Jen-Chieh Shen $
+* $Notice: See LICENSE.txt for modification and distribution information
+*                   Copyright (c) 2016 by Shen, Jen-Chieh $
+*/
 #define __IDENTIFIER_H__
 
 
@@ -15,4 +16,3 @@
 
 
 #endif // __IDENTIFIER_H__
-

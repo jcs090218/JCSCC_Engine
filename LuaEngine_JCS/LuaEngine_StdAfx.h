@@ -1,17 +1,18 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
-// LuaEngine_StdAfx.h : include file for standard system include files,
-//  or project specific include files that are used frequently, but
-//      are changed infrequently
-//
-
 #ifndef __LUAENGINE_STDAFX_H__
+/**
+ * $File: LuaEngine_StdAfx.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __LUAENGINE_STDAFX_H__
+
+ // LuaEngine_StdAfx.h : include file for standard system include files,
+ //  or project specific include files that are used frequently, but
+ //      are changed infrequently
+ //
 
 
 #include <GameTool_JCS\GameTool_StdAfx.h>

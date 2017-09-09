@@ -1,11 +1,19 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *               Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __JCS_DEFAULTCODECFACTORY_H__
+/**
+ * $File: JCS_DefaultCodecFactory.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __JCS_DEFAULTCODECFACTORY_H__
 
 
@@ -15,6 +23,11 @@
 namespace JCS_Network
 {
 
+	//====================================================================================
+    // Name : JCS_DefaultCodecFactory 
+    //
+    // Description : 
+    //====================================================================================
     class JCS_DefaultCodecFactory
         : public JCS_CodecFactory
     {

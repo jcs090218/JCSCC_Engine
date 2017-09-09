@@ -1,11 +1,19 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __GAMEPAD_H__
+/**
+ * $File: GamePad.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __GAMEPAD_H__
 
 
@@ -13,11 +21,11 @@
 
 namespace JCS_GameInput
 {
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    //====================================================================================---------------------------------------------------------------
     // Name : GamePad
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================---------------------------------------------------------------
     class GamePad
         : public JCS_Input
     {
@@ -36,7 +44,7 @@ namespace JCS_GameInput
         bool isButtonPressed(ulong32 button);
         void Vibrate(int32 leftVal = 0, int32 rightVal = 0);
 
-        // getter
+        /** getter **/
         XINPUT_STATE GetState();
         XINPUT_GAMEPAD GetGamePad() const { return this->m_controllerState.Gamepad; }
     };

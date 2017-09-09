@@ -1,11 +1,19 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __JCS_BUFFERBUILDER_H__
+/**
+ * $File: JCS_BufferBuilder.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __JCS_BUFFERBUILDER_H__
 
 
@@ -14,11 +22,11 @@
 namespace JayCeS
 {
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    //====================================================================================---------------------------------------------------------------
     // Name : JCS_BufferBuilder
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================---------------------------------------------------------------
     class JCS_BufferBuilder
     {
     private:
@@ -55,9 +63,9 @@ namespace JayCeS
         void PeekBuffer();
 #endif // _WIN32
 
-        // setter 
+        /** setter **/ 
 
-        // getter
+        /** getter **/
         size_t GetLength() const { return this->m_jcsBuf->GetLength(); }
         JCS_Buffer* GetJcsBuffer() const { return this->m_jcsBuf; }
         JCS_Buffer& GetJcsBufferRef() const { return *(this->m_jcsBuf); }

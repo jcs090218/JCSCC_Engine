@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{f82210e0-be04-4364-9925-6892256ca91f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Support">
+      <UniqueIdentifier>{d40bfe96-69b6-4ab2-ba9c-115703f90124}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Vulkan_StdAfx.h" />
+    <ClInclude Include="GraphicsVulkan.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Vulkan_CrashReason.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="VulkanWindow.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="VulkanApplication.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GraphicsVulkan.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="VulkanWindow.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="VulkanApplication.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

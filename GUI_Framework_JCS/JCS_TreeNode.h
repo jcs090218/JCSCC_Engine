@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __JCS_TREENODE_H__
+/**
+ * $File: JCS_TreeNode.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2016 by Shen, Jen-Chieh $
+ */
 #define __JCS_TREENODE_H__
 
 #ifdef _WIN32
@@ -18,25 +19,32 @@ namespace JCS_GUI
 {
     class JCS_TreeView;
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : JCS_TreeNode
+    //====================================================================================---------------------------------------------------------------
+    // Class Name : JCS_TreeNode
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================---------------------------------------------------------------
     class JCS_TreeNode
         : public JCS_WindowHandle
     {
     private:
-        HTREEITEM m_node;
+        HTREEITEM m_node;   // 
 
     public:
         JCS_TreeNode();
         ~JCS_TreeNode();
 
+        /**
+            
+        */
         void Create(const HWND treeView, const LPWSTR name, const HTREEITEM node = nullptr);
+        /**
+            
+        */
         void Create(const JCS_TreeView treeView, const LPWSTR name, const JCS_TreeNode* node = nullptr);
 
-        // getter
+        /** getter **/
+        /**  */
         HTREEITEM GetNode() const { return this->m_node; }
 
     };

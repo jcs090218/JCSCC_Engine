@@ -1,5 +1,5 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
@@ -16,11 +16,11 @@
 namespace JCS_OpenGLEngine
 {
 
-    //-----------------------------------------------------------------------------------------------------------
+    //====================================================================================-----------------------
     // Name : Camera2D
     // 
-    // Desc : 
-    //-----------------------------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================-----------------------
     class Camera2D
     {
     public:
@@ -30,11 +30,11 @@ namespace JCS_OpenGLEngine
         void init(int32 screenWidth, int32 screenHeight);
         void update();
 
-        // setter
+        /** setter **/
         void setPosition(const glm::vec2& newPosition) { this->m_position = newPosition; this->m_needsMatrixUpdate = true; }
         void setScale(float32 newScale) { this->m_scale = newScale; this->m_needsMatrixUpdate = true; }
 
-        // getter
+        /** getter **/
         glm::vec2 getPosition() { return this->m_position; }
         float32 getScale() { return this->m_scale; }
         glm::mat4 getCameraMatrix() { return this->m_cameraMatrix; }

@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __APPLICATION_H__
+/**
+ * $File: Application.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __APPLICATION_H__
 
 
@@ -15,11 +16,11 @@ namespace JCS_GameResourceS
 {
     class Window;
 
-    //------------------------------------------------------------------------------------
+    //====================================================================================
     // Name : Application 
     //
-    // Desc : 
-    //------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================
     class Application
     {
     private:

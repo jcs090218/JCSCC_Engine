@@ -1,11 +1,19 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __JCS_NAME_H__
+/**
+ * $File: JCS_Name.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __JCS_NAME_H__
 
 #include <stdint.h>
@@ -20,10 +28,15 @@ typedef uint16_t uint16;
 typedef uint32_t uint32;
 typedef uint64_t uint64;
 
+// sometime if u just want the result 1 or 0, 
+// u can use this so CPU will keep on stacking with 
+// 4 bytes and not break the order.
 typedef int32 bool32;
 
 typedef float float32;
 typedef double float64;
+
+typedef long double ld64;
 
 typedef long long32;
 typedef long long long64;

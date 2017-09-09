@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __D2D_POLYGON2D_H__
+/**
+ * $File: Polygon2D.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __D2D_POLYGON2D_H__
 
 #include "Shape2D.h"
@@ -13,11 +14,11 @@
 namespace JCS_D2DEngine
 {
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : Polygon2D
+    //====================================================================================
+    // Class Name : Polygon2D
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : Polygon shape render using Direct 2D device.
+    //====================================================================================
     class Polygon2D 
         : public Shape2D
     {
@@ -48,9 +49,9 @@ namespace JCS_D2DEngine
         bool PolygontoRectangle(Rectangle2D& obj);
         bool PolygontoCapsule(Capsule2D& obj);
 
-        // setter
+        /** setter **/
 
-        // getter
+        /** getter **/
 
     };
 }

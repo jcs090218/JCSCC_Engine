@@ -1,22 +1,26 @@
-﻿/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
+﻿/**
+ * $File: IEMath3D.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2014 by Shen, Jen-Chieh $
+ */
 
 #include "IEMath3D.h"
 
 
 namespace JCS_D3DX_v9_Engine
 {
+
     IEMath3D::IEMath3D()
     {
-    }
 
+    }
 
     IEMath3D::~IEMath3D()
     {
+
     }
 
     /**

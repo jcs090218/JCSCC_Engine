@@ -1,11 +1,19 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __JCS_STRINGBUILDER_H__
+/**
+ * $File: JCS_StringBuilder.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __JCS_STRINGBUILDER_H__
 
 
@@ -14,11 +22,12 @@
 namespace JayCeS
 {
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : JCS_StringBuilder
+    //====================================================================================---------------------------------------------------------------
+    // Class Name : JCS_StringBuilder
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : Simulate the StringBuilder on 
+    // Java programming language.
+    //====================================================================================---------------------------------------------------------------
     class JCS_StringBuilder
     {
     private:
@@ -45,6 +54,12 @@ namespace JayCeS
 #else
         char* ToString();
 #endif // _UNICODE
+
+        
+        /** setter **/
+
+        /** getter **/
+
     };
 
 }

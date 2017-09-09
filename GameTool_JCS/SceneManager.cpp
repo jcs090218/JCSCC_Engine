@@ -1,9 +1,11 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
+/**
+ * $File: SceneManager.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 
 #include "SceneManager.h"
 
@@ -12,7 +14,6 @@
 
 namespace JCS_GameTool
 {
-    SceneManager* SceneManager::_instance = nullptr;
 
     SceneManager::SceneManager(API_Type api, SceneType scene)
         : m_pScene(nullptr)
@@ -26,7 +27,6 @@ namespace JCS_GameTool
     SceneManager::~SceneManager()
     {
         SafeDeleteObject(m_pScene);
-        _instance = nullptr;
     }
 
     void SceneManager::update(float32 deltaTime)
@@ -40,4 +40,3 @@ namespace JCS_GameTool
     }
 
 }// end namespace "JCS_GameTool"
-

@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __JCS_TREEVIEW_H__
+/**
+ * $File: JCS_TreeView.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2016 by Shen, Jen-Chieh $
+ */
 #define __JCS_TREEVIEW_H__
 
 
@@ -14,11 +15,11 @@
 namespace JCS_GUI
 {
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : JCS_TreeView
+    //====================================================================================---------------------------------------------------------------
+    // Class Name : JCS_TreeView
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================---------------------------------------------------------------
     class JCS_TreeView
         : public JCS_WindowHandle
     {
@@ -30,21 +31,40 @@ namespace JCS_GUI
         ~JCS_TreeView();
 
 #ifdef _WIN32
+
+        /**
+            Create GUI.
+
+            @param hWnd
+            @param word
+            @param x
+            @param y
+            @param width
+            @param height
+            @param identifier
+        */
         void Create(const HWND hWnd,
             const LPCWSTR word,
             const int32 x, const int32 y,
             const int32 width, const int32 height,
             const int32 identifier = IDC_NONE);
+
 #endif // _WIN32
 
-        // setter
+        /** setter **/
+        /**  */
         const void SetCheckBox(const bool check = false) { this->m_checkBox = check; }
 
-        // getter
+        /** getter **/
+        /**  */
         const bool GetCheckBox() const { return this->m_checkBox; }
 
     private:
 #ifdef _WIN32
+
+        /**
+            Enable the check box?
+        */
         void EnableCheckBox();
 #endif // _WIN32
 

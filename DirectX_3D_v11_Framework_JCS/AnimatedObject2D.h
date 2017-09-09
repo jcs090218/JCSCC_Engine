@@ -1,5 +1,5 @@
 ﻿/*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
@@ -18,14 +18,14 @@ namespace JCS_D3DX_v11_Engine
 {
     class Animation2D;
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    //====================================================================================---------------------------------------------------------------
     // Name : AnimatedObject2D
     //
-    // Desc : AnimatedObject is a 2D object holding one "Animation2D".
+    // Description : AnimatedObject is a 2D object holding one "Animation2D".
     //        In order to display and have control with it with "Transform".
     //        (試著做一個class一個責任. 所以"Animation2D"只負責專心做Animation的工作.
     //        "AnimatedObject2D"則會專心在於控制Animation2D物件.)
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    //====================================================================================---------------------------------------------------------------
     class AnimatedObject2D
         : public RenderableObject
     {

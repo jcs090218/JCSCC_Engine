@@ -1,4 +1,12 @@
 #ifndef __HELPERS_H__
+/**
+ * $File: Helpers.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2016 by Shen, Jen-Chieh $
+ */
 #define __HELPERS_H__
 
 #include "LuaEngine_StdAfx.h"
@@ -39,4 +47,3 @@ void stringToUpper(std::string &s);
 
 
 #endif // __HELPERS_H__
-

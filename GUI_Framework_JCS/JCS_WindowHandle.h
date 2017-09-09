@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __JCS_WINDOWHANDLE_H__
+/**
+ * $File: JCS_WindowHandle.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2016 by Shen, Jen-Chieh $
+ */
 #define __JCS_WINDOWHANDLE_H__
 
 
@@ -15,20 +16,21 @@ namespace JCS_GUI
 {
 
 #ifdef _WIN32
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : JCS_WindowHandle (Abstract class)
+    //====================================================================================---------------------------------------------------------------
+    // Class Name : JCS_WindowHandle (Abstract class)
     //
-    // Desc : List of all the components...
+    // Description : List of all the components...
     //        URL: https://msdn.microsoft.com/en-us/library/windows/desktop/ms632679(v=vs.85).aspx
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    //====================================================================================---------------------------------------------------------------
     class JCS_WindowHandle
     {
     protected:
-        HWND m_ownWindow = NULL;
+        HWND m_ownWindow = NULL;    // window handle object.
 
     public:
         virtual ~JCS_WindowHandle() { }
 
+        /** Return Window handle object. */
         HWND GetOwnWindowHandle() const { return this->m_ownWindow; }
     };
 #endif // _WIN32
@@ -36,4 +38,3 @@ namespace JCS_GUI
 }
 
 #endif // __JCS_WINDOWHANDLE_H__
-

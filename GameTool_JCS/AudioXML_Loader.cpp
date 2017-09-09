@@ -1,15 +1,18 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
+/**
+ * $File: AudioXML_Loader.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 
 #include "AudioXML_Loader.h"
 
 
 namespace JCS_GameTool
 {
+
     AudioXML_Loader::AudioXML_Loader()
     {
         
@@ -20,6 +23,7 @@ namespace JCS_GameTool
 
     }
 
+    // Load XML data in to program in JCSCC audio xml format.
     void AudioXML_Loader::LoadXML(const wchar_t* filename, const wchar_t* basename)
     {
         // set file path

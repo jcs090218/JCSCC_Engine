@@ -28,14 +28,14 @@
     <Filter Include="Shader">
       <UniqueIdentifier>{c12739ee-6239-48e8-9c73-0bf46c6ba639}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Scirpt">
-      <UniqueIdentifier>{2c1819ac-1e04-4e10-bee6-57bd80e6f055}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Shader\HLSL">
       <UniqueIdentifier>{c7e64c2a-d42d-42b2-829e-c7a54aab9f97}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shader\GLSL">
       <UniqueIdentifier>{f614a76f-f5df-4a25-a785-91270f18d540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scirpts">
+      <UniqueIdentifier>{2c1819ac-1e04-4e10-bee6-57bd80e6f055}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -103,7 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Player.lua">
-      <Filter>Scirpt</Filter>
+      <Filter>Scirpts</Filter>
     </None>
     <None Include="Shader\colorShading.vert">
       <Filter>Shader\GLSL</Filter>

@@ -1,9 +1,11 @@
-﻿/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
+﻿/**
+ * $File: Capsule2D.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 
 #include "Capsule2D.h"
 
@@ -43,6 +45,7 @@ namespace JCS_D2DEngine
         
     }
 
+    // do logic
     void Capsule2D::update(const float32 deltaTime)
     {
         Shape2D::update(deltaTime);
@@ -67,6 +70,7 @@ namespace JCS_D2DEngine
 
     }
 
+    // Do render
     void Capsule2D::draw()
     {
         //// 上面的圓

@@ -631,9 +631,9 @@ static void CreateInputLayout(_In_ ID3D11Device* device, _In_ IEffect* effect, s
 }
 
 
-//======================================================================================
+//------------------------------------------------------------------------------------==
 // Model Loader
-//======================================================================================
+//------------------------------------------------------------------------------------==
 
 _Use_decl_annotations_
 std::unique_ptr<Model> DirectX::Model::CreateFromSDKMESH( ID3D11Device* d3dDevice, const uint8_t* meshData, size_t dataSize, IEffectFactory& fxFactory, bool ccw, bool pmalpha )

@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __D2D_ANIMATION2D_H__
+/**
+ * $File: Animation2D.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __D2D_ANIMATION2D_H__
 
 #include "D2D_StdAfx.h"
@@ -17,11 +18,11 @@ namespace JCS_D2DEngine
     class Sprite2D;
     class Graphics2D;
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : Animation2D
+    //====================================================================================
+    // Class Name : Animation2D
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================
     class Animation2D
     {
     private:
@@ -49,12 +50,12 @@ namespace JCS_D2DEngine
 
         void DrawAnimation(bool loop = true);
 
-        // setter
+        /** setter **/
         void SetAnimationOrigin(const JCS_VECTOR2F origin) { this->m_origin = origin; }
         void SetDelay(const uint32 delay) { this->m_delay = delay; }
         void SetFrame(const uint32 frame) { this->m_frame = frame; }
 
-        // getter
+        /** getter **/
         JCS_VECTOR2F GetAnimationOrigin() const { return this->m_origin; }
         uint32 GetDelay() const { return this->m_delay; }
         uint32 GetFrame() const { return this->m_frame; }

@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __JCS_LISTBOX_H__
+/**
+ * $File: JCS_ListBox.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2016 by Shen, Jen-Chieh $
+ */
 #define __JCS_LISTBOX_H__
 
 
@@ -14,12 +15,12 @@
 namespace JCS_GUI
 {
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : JCS_ListBox
+    //====================================================================================---------------------------------------------------------------
+    // Class Name : JCS_ListBox
     //
-    // Desc : Features.
+    // Description : Features.
     //          URL: https://msdn.microsoft.com/en-us/library/windows/desktop/bb775146(v=vs.85).aspx
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    //====================================================================================---------------------------------------------------------------
     class JCS_ListBox
         : public JCS_WindowHandle
     {

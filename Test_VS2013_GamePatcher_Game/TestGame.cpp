@@ -1,5 +1,5 @@
 ﻿/*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
@@ -10,7 +10,7 @@
 
 TestGame::TestGame(KeyboardServer* kServer, MouseServer* mServer)
 {
-    im = JCS_GameTool::InputManager::getInstance();
+    im = JCS_GameTool::InputManager::GetInstance();
     im->setKeyboard(kServer);
     im->setMouse(mServer);
 }
@@ -20,20 +20,20 @@ TestGame::~TestGame()
     SafeDeleteObject(m_pInterface);
     SafeDeleteObject(m_pAnimation);
 
-    SafeDeleteObject(gm);
-    SafeDeleteObject(sem);        // 這個目前必須在 Managers 上面
-    SafeDeleteObject(sm);
-    SafeDeleteObject(im);
-    SafeDeleteObject(dm);
+	JCS_GameTool::GameManager::DestroyInstance();
+	JCS_GameTool::SceneManager::DestroyInstance();        // 這個目前必須在 Managers 上面
+	JCS_GameTool::SoundManager::DestroyInstance();
+	JCS_GameTool::InputManager::DestroyInstance();
+	JCS_GameTool::DeviceManager::DestroyInstance();
 }
 
 bool TestGame::Initialize(HWND hWnd)
 {
-    sm = JCS_GameTool::SoundManager::getInstance(hWnd);
-    gm = JCS_GameTool::GameManager::getInstance();
-    dm = JCS_GameTool::DeviceManager::getInstance();
+    sm = JCS_GameTool::SoundManager::GetInstance(hWnd);
+    gm = JCS_GameTool::GameManager::GetInstance();
+    dm = JCS_GameTool::DeviceManager::GetInstance();
     dm->CreateDevice(API_Type::DIRECTX3D_11, hWnd);
-    sem = JCS_GameTool::SceneManager::getInstance(API_Type::DIRECTX3D_11, SceneType::SCENE_2D);
+    sem = JCS_GameTool::SceneManager::GetInstance(API_Type::DIRECTX3D_11, SceneType::SCENE_2D);
 
     sm->playBGM(static_cast<TCHAR*>(L"data/test.wav"));
 
@@ -57,7 +57,7 @@ bool TestGame::Initialize(HWND hWnd)
 
 void TestGame::Run(float deltaTime)
 {
-    if (!gm->isGamePause())
+    if (!gm->IsGamePause())
     {
         Update(deltaTime);
         Draw();

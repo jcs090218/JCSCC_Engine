@@ -1,9 +1,20 @@
-﻿/*******************************************************************
-*                   JCSCC_Framework Version 1.0
+﻿#ifdef _WIN32
+
+/*******************************************************************
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
+
+/**
+ * $File: WinSock2_Socket.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 
 #include "Winsock2_Socket.h"
 
@@ -31,8 +42,9 @@ namespace JCS_Network
     }
 
     /**
-    *  初使化異同步客戶端...
-    */
+     *  初使化異同步客戶端...
+     * Create the connect socket. (CLIENT)
+     */
     bool WinSock2_Socket::Create(const char* pszServerIP, int32 nServerPort, int nBlockSec, bool bKeepAlive)
     {
         // 检查参数  
@@ -354,8 +366,9 @@ namespace JCS_Network
     }
 
     /**
-    *   ? 如果 OUTBUF > SENDBUF 则需要多次SEND（）
-    */
+     *   ? 如果 OUTBUF > SENDBUF 则需要多次SEND（）
+     */
+    // Trigger send out the data.
     bool WinSock2_Socket::Flush(void)
     {
         if (m_sockClient == INVALID_SOCKET)
@@ -390,6 +403,7 @@ namespace JCS_Network
         return true;
     }
 
+    // Check if the server still alive.
     bool WinSock2_Socket::Check(void)
     {
         // 檢查狀態  
@@ -423,6 +437,8 @@ namespace JCS_Network
         return true;
     }
 
+    // Destroy the connect socket (CLIENT), and do 
+    // socket descriptor cleanup.
     void WinSock2_Socket::Destroy(void)
     {
         // 關閉  
@@ -443,14 +459,14 @@ namespace JCS_Network
     }
 
     /**
-    * 檢查用戶是否點擊"是"
-    * 相關文章: http://robbiem01.tripod.com/Tutorials/MessageBox_Demos.html
-    * 相關文章: http://c.biancheng.net/cpp/html/2846.html
-    * 相關文章: http://www.cplusplus.com/forum/general/92220/
-    *
-    * if 是: 連上官網
-    * if 不是: 不做任何動作
-    */
+     * 檢查用戶是否點擊"是"
+     * 相關文章: http://robbiem01.tripod.com/Tutorials/MessageBox_Demos.html
+     * 相關文章: http://c.biancheng.net/cpp/html/2846.html
+     * 相關文章: http://www.cplusplus.com/forum/general/92220/
+     *
+     * if 是: 連上官網
+     * if 不是: 不做任何動作
+     */
     void WinSock2_Socket::ConnectToOfficialWebsite()
     {
 #ifdef _WIN32
@@ -477,3 +493,4 @@ namespace JCS_Network
 
     }
 
+#endif // _WIN32

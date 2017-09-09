@@ -14,13 +14,26 @@
     <ClInclude Include="Mouse.h">
       <Filter>Input</Filter>
     </ClInclude>
-    <ClInclude Include="Window.h" />
-    <ClInclude Include="Application.h" />
     <ClInclude Include="BitmapFont.h">
       <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="SDL_CrashReason.h">
       <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_Sprite.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_Animation.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_Animator.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -33,9 +46,22 @@
     <ClCompile Include="Mouse.cpp">
       <Filter>Input</Filter>
     </ClCompile>
-    <ClCompile Include="Window.cpp" />
-    <ClCompile Include="Application.cpp" />
     <ClCompile Include="BitmapFont.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_Sprite.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_Animation.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_Animator.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
       <Filter>Core</Filter>
     </ClCompile>
   </ItemGroup>

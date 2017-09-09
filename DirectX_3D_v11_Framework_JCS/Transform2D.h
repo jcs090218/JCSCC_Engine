@@ -1,5 +1,5 @@
 ﻿/*******************************************************************
- *                   JCSCC_Framework Version 1.0
+ *                   JCSCC_Framework Version 0.2.7
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *   See LICENSE.txt for modification and distribution information
  *              Copyright (c) 2016 by Shen, Jen-Chieh
@@ -15,15 +15,15 @@
 namespace JCS_D3DX_v11_Engine
 {
     
-    //-----------------------------------------------------------------------------------------------------------
+    //====================================================================================-----------------------
     // Name : Transform2D
     //
-    // Desc : "Transform2D" is also the node itself.
+    // Description : "Transform2D" is also the node itself.
     //        Record 3 Types of Vector
     //         (1) Position     (位置)
     //         (2) Rotation     (旋轉)
     //         (3) Scale        (大小)
-    //-----------------------------------------------------------------------------------------------------------
+    //====================================================================================-----------------------
     class Transform2D
         : public JCS_Transform
     {

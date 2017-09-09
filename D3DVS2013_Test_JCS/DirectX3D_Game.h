@@ -1,4 +1,12 @@
 #ifndef __DIRECTX3D_GAME_H__
+/**
+ * $File: DirectX3D_Game.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __DIRECTX3D_GAME_H__
 
 #include <GameInput_JCS\DirectInput\Keyboard.h>

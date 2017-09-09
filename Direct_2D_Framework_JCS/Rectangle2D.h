@@ -1,11 +1,12 @@
-﻿/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
-#ifndef __D2D_RECTANGLE2D_H__
+﻿#ifndef __D2D_RECTANGLE2D_H__
+/**
+ * $File: Rectangle2D.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __D2D_RECTANGLE2D_H__
 
 #include "D2D_StdAfx.h"
@@ -15,11 +16,11 @@
 namespace JCS_D2DEngine
 {
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : Rectangle2D
+    //====================================================================================
+    // Class Name : Rectangle2D
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : Rectangle shape render using Direct 2D device.
+    //====================================================================================
     class Rectangle2D 
         : public Shape2D
     {
@@ -47,7 +48,7 @@ namespace JCS_D2DEngine
         bool RectangletoCapsule(Capsule2D& obj);
         bool RectangletoPolygon(Polygon2D& obj);
 
-        // setter
+        /** setter **/
         void setPosition(const float32 x, const float32 y);
         void resetRotation(const float32 angle = 0.0f);
         void setWidth(float32 newWidth) { this->width = newWidth; }
@@ -57,7 +58,7 @@ namespace JCS_D2DEngine
         void setBottomEdge(float32 num);
         void setTopEdge(float32 num);
 
-        // getter
+        /** getter **/
         float32 getWidth() { return this->width; }
         float32 getHeight() { return this->height; }
         float32 getRightEdge();

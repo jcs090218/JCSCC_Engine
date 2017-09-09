@@ -71,6 +71,8 @@
     <ClCompile Include="JcsTools.cpp">
       <Filter>JcsLib</Filter>
     </ClCompile>
-    <ClCompile Include="JcsKey.cpp" />
+    <ClCompile Include="JcsKey.cpp">
+      <Filter>JcsLib</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

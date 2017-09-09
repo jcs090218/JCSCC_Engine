@@ -1,8 +1,18 @@
-﻿#include "Mouse.h"
+﻿/**
+ * $File: Mouse.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
+
+#include "Mouse.h"
 
 
 namespace JCS_GameInput
 {
+
     MouseClient::MouseClient(const MouseServer* server)
         : server(server)
     {

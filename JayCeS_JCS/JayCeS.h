@@ -1,15 +1,17 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __JAYCES_H__
+/**
+ * $File: JayCeS.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __JAYCES_H__
 
 
-// 
+// defines, headers.
+#include "JayCeS_Defines.h"
 #include "JayCeS_StdAfx.h"
 
 // Enum
@@ -30,6 +32,8 @@
 #include "JCS_BufferBuilder.h"
 
 // String
+#include "JCS_String.h"
+#include "JCS_WString.h"
 #include "JCS_StringBuilder.h"
 
 

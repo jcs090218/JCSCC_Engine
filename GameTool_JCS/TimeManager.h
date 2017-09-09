@@ -1,42 +1,47 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __TIMEMANAGER_H__
+/**
+ * $File: TimeManager.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __TIMEMANAGER_H__
 
+#include "GameTool_StdAfx.h"
 
 namespace JCS_GameTool
 {
 
-    //------------------------------------------------------------------------------------
-    // Name : TimeManager 
+    //====================================================================================
+    // Class Name : TimeManager 
     //
-    // Desc : 
-    //------------------------------------------------------------------------------------
+    // Description : Manager manage all the time in the application.
+    // Especially the time between the packet receive (OS/Networl Layer).
+    // Once it receive the packet we manage to check logger and manage
+    // the packet correction between the client and server.
+    //====================================================================================
     class TimeManager
+		: public JCSSTL::JCSSTL_Singleton<TimeManager>
     {
     private:
-        static TimeManager* s_pTimeManager;
-        TimeManager();
+		friend class JCSSTL::JCSSTL_Singleton<TimeManager>;
 
     public:
-        static TimeManager* getInstance()
-        {
-            if (!s_pTimeManager)
-                s_pTimeManager = new TimeManager;
-            return s_pTimeManager;
-        }
+
         virtual ~TimeManager();
 
 
 
-        // setter
+        /** setter **/
 
-        // getter
+        /** getter **/
+
+	private:
+		// Constructor
+		TimeManager();
+		TimeManager(const TimeManager& right) = delete;
 
     };
 }

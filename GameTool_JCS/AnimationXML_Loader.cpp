@@ -1,9 +1,11 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
+/**
+* $File: AnimationXML_Loader.cpp $
+* $Date: $
+* $Revision: $
+* $Creator: Jen-Chieh Shen $
+* $Notice: See LICENSE.txt for modification and distribution information
+*                   Copyright (c) 2015 by Shen, Jen-Chieh $
+*/
 
 #include "AnimationXML_Loader.h"
 
@@ -23,9 +25,11 @@ namespace JCS_GameTool
 
     AnimationXML_Loader::~AnimationXML_Loader()
     {
-
+        
     }
 
+
+    // Load XML data in to program in JCSCC animation/sprite xml format.
     void AnimationXML_Loader::LoadXML(const wchar_t* filename, const wchar_t* basename)
     {
         // set file path

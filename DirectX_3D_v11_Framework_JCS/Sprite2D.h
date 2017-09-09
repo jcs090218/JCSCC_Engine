@@ -1,5 +1,5 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
@@ -17,11 +17,11 @@ namespace JCS_D3DX_v11_Engine
 {
     class GraphicsD3D11;
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    //====================================================================================---------------------------------------------------------------
     // Name : Sprite2D
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================---------------------------------------------------------------
     class Sprite2D
         : public RenderableObject
     {
@@ -40,12 +40,12 @@ namespace JCS_D3DX_v11_Engine
 
         virtual void draw(DirectX::SpriteBatch& sprite_batch) override;
 
-        // setter
+        /** setter **/
         void SetOrigin(const DirectX::SimpleMath::Vector2& origin) { this->m_origin = origin; }
         void SetOrigin(const float32 x, const float32 y) { this->SetOrigin(DirectX::SimpleMath::Vector2(x, y)); }
         void SetOrigin(const JCS_VECTOR2F& vec) { this->SetOrigin(DirectX::SimpleMath::Vector2(vec.x, vec.y)); }
 
-        // getter
+        /** getter **/
         DirectX::SimpleMath::Vector2 GetOrigin() const { return this->m_origin; }
 
     };

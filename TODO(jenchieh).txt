@@ -1,0 +1,20 @@
+========================================================================
+$File: TODO(jenchieh).txt $
+$Creator: Jen-Chieh Shen <jcs090218@gmail.com> $
+$Date: 2016-12-01 $
+$Notice: See LICENSE.txt for modification and distribution information 
+                  Copyright (c) 2016 by Shen, Jen-Chieh $
+========================================================================
+
+
+//-- General --//
+Network Packet
+Asio Socket
+
+//-- Feature --//
+Tab Window system.
+Multi-window handler for Window specific platform.
+
+//-- System --//
+
+Finish the thread system for game engine rendering and game logic.

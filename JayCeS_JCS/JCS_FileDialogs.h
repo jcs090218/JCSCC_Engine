@@ -1,11 +1,19 @@
 /*******************************************************************
-*                   JCSCC_Framework Version 1.0
+*                   JCSCC_Framework Version 0.2.7
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *   See LICENSE.txt for modification and distribution information
 *                Copyright (c) 2016 by Shen, Jen-Chieh
 ******************************************************************/
 
 #ifndef __JCS_FILEDIALOGS_H__
+/**
+ * $File: JCS_FileDialog.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __JCS_FILEDIALOGS_H__
 
 #include "JayCeS_StdAfx.h"
@@ -13,11 +21,11 @@
 namespace JayCeS
 {
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : JCS_FileDialog
+    //====================================================================================---------------------------------------------------------------
+    // Class Name : JCS_FileDialog
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : Provide cross platform dialog type.
+    //====================================================================================---------------------------------------------------------------
     class JCS_FileDialog
     {
     public:

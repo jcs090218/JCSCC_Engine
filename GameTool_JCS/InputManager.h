@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __INPUTMANAGER_H__
+/**
+ * $File: InputManager.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __INPUTMANAGER_H__
 
 
@@ -17,17 +18,16 @@
 namespace JCS_GameTool
 {
     
-    //------------------------------------------------------------------------------------
-    // Name : InputManager 
+    //====================================================================================
+    // Class Name : InputManager 
     //
-    // Desc : 
-    //------------------------------------------------------------------------------------
+    // Description : Manage the input of the application layer.
+    //====================================================================================
     class InputManager
+		: public JCSSTL::JCSSTL_Singleton<InputManager>
     {
     private:
-        static InputManager* s_pInputManager;
-        InputManager();
-
+		friend class JCSSTL::JCSSTL_Singleton<InputManager>;
 
         JCS_GameInput::KeyboardClient* m_pKeyboardClient;        // for keyboard input
         JCS_GameInput::MouseClient* m_pMouseClient;        // for mouse input
@@ -37,33 +37,40 @@ namespace JCS_GameTool
     public:
         virtual ~InputManager();
 
-        static InputManager* getInstance()
-        {
-            if (!s_pInputManager)
-                s_pInputManager = new InputManager();
-            return s_pInputManager;
-        }
-
+        /** Set the keyboard devices. */
         void setKeyboard(KeyboardServer* kServer);
+        /** Set the mouse devices. */
         void setMouse(const MouseServer* mServer);
+        /**  */
         void setInput(JCS_Input* pInput) { this->m_pInput = pInput; }
 
 
-        // getter
+        /** getter **/
+        /** Get the keyboard device by pointer. */
         JCS_GameInput::KeyboardClient* getKeyboard() const { return this->m_pKeyboardClient; }
+        /** Get the keyboard device by reference. */
         JCS_GameInput::MouseClient* getMouse() const { return this->m_pMouseClient; }
+        /**  */
         JCS_Input* getInputAsPtr() const { return this->m_pInput; }
+        /**  */
         JCS_Input& getInputAsRef() const { return *(this->m_pInput); }
 
         // PS4
         // ...
 
         // XBox 360
+        /** Get the XBOX 360 GamePad hardware api device by pointer. */
         GamePad* getGamePad_XBox360_AsPtr() const { return dynamic_cast<GamePad*>(m_pInput); }
+        /** Get the XBOX 360 GamePad hardware api device by reference. */
         GamePad& getGamePad_XBox360_AsRef() const { return *(dynamic_cast<GamePad*>(m_pInput)); }
 
         // XBox One
         // ...
+
+	private:
+		// Constructor
+		InputManager();
+		InputManager(const InputManager& right) = delete;
     };
 
 }

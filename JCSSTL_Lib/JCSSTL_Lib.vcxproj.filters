@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="JCSSTL_Lib.h" />
+    <ClInclude Include="Core\JCSSTL_Singleton.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="JCSSTL_Lib_StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{413df042-147b-4603-a57a-08059788458e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Support">
+      <UniqueIdentifier>{34398e85-c66a-4522-92c4-3ec2cfd3ac2c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\JCSSTL_Singleton.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

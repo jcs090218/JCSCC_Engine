@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __JCS_SCRIPT_H__
+/**
+ * $File: JCS_Script.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __JCS_SCRIPT_H__
 
 
@@ -13,11 +14,11 @@
 
 namespace JCS_GameInterface
 {
-    //------------------------------------------------------------------------------------
+    //====================================================================================
     // JCS_Script (Interface)
     //
-    // Desc : interface for all the script sub-classes.
-    //------------------------------------------------------------------------------------
+    // Description : interface for all the script sub-classes.
+    //====================================================================================
     struct JCS_Script
     {
         virtual ~JCS_Script() { }

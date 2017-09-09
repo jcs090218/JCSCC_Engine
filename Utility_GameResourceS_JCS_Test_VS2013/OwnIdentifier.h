@@ -1,4 +1,12 @@
 #ifndef __OWNIDENTIFIER_H__
+/**
+ * $File: OwnIdentifier.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __OWNIDENTIFIER_H__
 
 

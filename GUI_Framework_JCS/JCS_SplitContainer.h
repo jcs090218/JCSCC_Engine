@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __JCS_SPLITCONTAINER_H__
+/**
+ * $File: JCS_SplitContainer.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2016 by Shen, Jen-Chieh $
+ */
 #define __JCS_SPLITCONTAINER_H__
 
 
@@ -15,11 +16,11 @@
 namespace JCS_GUI
 {
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : JCS_SplitContainer
+    //====================================================================================---------------------------------------------------------------
+    // Class Name : JCS_SplitContainer
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : JCSCC Splite Contianer GUI.
+    //====================================================================================---------------------------------------------------------------
     class JCS_SplitContainer
         : public JCS_WindowHandle
     {
@@ -39,4 +40,3 @@ namespace JCS_GUI
 typedef JCS_GUI::JCS_SplitContainer JCS_SplitContainer;
 
 #endif // __JCS_SPLITCONTAINER_H__
-

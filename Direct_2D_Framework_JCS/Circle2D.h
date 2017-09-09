@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __D2D_CIRCLE2D_H__
+/**
+ * $File: Circle2D.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __D2D_CIRCLE2D_H__
 
 #include "Shape2D.h"
@@ -14,11 +15,11 @@
 namespace JCS_D2DEngine
 {
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : Circle2D
+    //====================================================================================
+    // Class Class Name : Circle2D
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : Circle shape render using Direct 2D device.
+    //====================================================================================
     class Circle2D 
         : public Shape2D
     {
@@ -49,12 +50,12 @@ namespace JCS_D2DEngine
         bool CircletoCapsule(Capsule2D& obj);
         bool CircletoPolygon(Polygon2D& obj);
 
-        // setter 
+        /** setter **/ 
         void resetRotation(const float32 angle = 0.0f);
         void setPosition(const float32 x, const float32 y);
         void setRadius(float32 newRadius) { this->radius = newRadius; }
 
-        // getter
+        /** getter **/
         float32 getRadius() { return this->radius; }
 
     };

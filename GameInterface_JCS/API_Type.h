@@ -1,11 +1,12 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __API_Type_H__
+/**
+ * $File: API_Type.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __API_Type_H__
 
 
@@ -14,19 +15,21 @@
 //-------------------------------------------------------------------------
 namespace JCS_GameInterface
 {
-    //------------------------------------------------------------------------------------
-    // Name : API_Type 
+    //====================================================================================
+    // Enum Name : API_Type 
     //
-    // Desc : 
-    //------------------------------------------------------------------------------------
+    // Description : API in JCSCC.
+    //====================================================================================
     enum class API_Type
     {
         NONE,
+
         DIRECT2D,
         DIRECTX3D_9,
         DIRECTX3D_11,
         OPENGL,
-        SDL
+        SDL,
+        VULKAN
     };
 
 }

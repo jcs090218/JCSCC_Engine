@@ -1,9 +1,11 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
+/**
+ * $File: Box.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 
 #include "Box.h"
 
@@ -25,7 +27,8 @@ namespace JCS_D2DEngine
         SafeDeleteObject(m_rect);
     }
 
-    void Box::initialize(b2World& world, const JCS_VECTOR2F& position, const JCS_VECTOR2F& dimension)
+    // Initialize the shap itself.
+    void Box::Initialize(b2World& world, const JCS_VECTOR2F& position, const JCS_VECTOR2F& dimension)
     {
         // Make the body
         b2BodyDef bodyDef;

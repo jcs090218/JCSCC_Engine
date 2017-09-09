@@ -31,6 +31,9 @@
     <Filter Include="FMOD\include">
       <UniqueIdentifier>{66c18ea8-b193-4c13-9ce2-794eaa6ab272}</UniqueIdentifier>
     </Filter>
+    <Filter Include="mpg123">
+      <UniqueIdentifier>{1a5b037f-670c-4158-913b-0b10e9beeb81}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameSound_StdAfx.h" />

@@ -50,6 +50,9 @@
     <ClInclude Include="JCS_CodecFactory.h">
       <Filter>Core\Interfaces</Filter>
     </ClInclude>
+    <ClInclude Include="SDLNet_Socket.h">
+      <Filter>Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Winsock2_Socket.cpp">
@@ -66,6 +69,9 @@
     </ClCompile>
     <ClCompile Include="JCS_DefaultCodecFactory.cpp">
       <Filter>Core\net</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLNet_Socket.cpp">
+      <Filter>Core</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,4 +1,12 @@
 #ifndef __SCRIPT_H__
+/**
+ * $File: Script.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __SCRIPT_H__
 
 
@@ -28,9 +36,9 @@ namespace JCS_LuaEngine
         void update(float32 delta);
         void destroy();
 
-        // setter
+        /** setter **/
 
-        // getter
+        /** getter **/
         std::string GetSource() const { return this->m_source; }
         LuaEngine& GetLuaEngineRef() const { return this->m_luaEngine; }
     };
@@ -38,4 +46,3 @@ namespace JCS_LuaEngine
 }
 
 #endif // __SCRIPT_H__
-

@@ -1,22 +1,22 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __JCSOBJECTTYPE_H__
+/**
+ * $File: JcsObjectType.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __JCSOBJECTTYPE_H__
 
 
 namespace JcsLib
 {
 
-    //------------------------------------------------------------------------------------
-    // Name : JcsObjectType (Enum)
-    //
-    // Desc : 
-    //------------------------------------------------------------------------------------
+	/**
+	@enum JcsObjectType (Enum)
+	@brief File format organize here.
+	*/
     enum class JcsObjectType
     {
         NONE,
@@ -30,4 +30,3 @@ namespace JcsLib
 typedef JcsLib::JcsObjectType JcsObjectType;
 
 #endif // __JCSOBJECTTYPE_H__
-

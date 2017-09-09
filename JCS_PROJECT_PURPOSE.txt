@@ -26,8 +26,11 @@
 * GameResourceS_JCS                           , contain all the code structures
 * GameSound_JCS                               , contain all the audio code (different api and cross platform)
 * GameTool_JCS                                , contain all the tool for creating the game
+* GameUtility_JCS                             , contain all the library utility/helper function and class.
 * JayCeS_JCS                                  , operating system layer code for conviences and tool for creating games
 * JcsLib                                      , game data structure lib
+* JCSMath_Lib                                 , library for jcs math
+* JCSSTL_Lib                                  , library for standard template
 
 //==========================
 //-- Contain Program

@@ -1,19 +1,28 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __GRAPHICSD3D9_H__
+/**
+ * $File: GraphicsD3D9.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2014 by Shen, Jen-Chieh $
+ */
 #define __GRAPHICSD3D9_H__
+
 
 #include "D3DX_v9_StdAfx.h"
 
 #include <GameInterface_JCS\RenderDevice.h>
 
+
 namespace JCS_D3DX_v9_Engine
 {
+
+	//====================================================================================
+	// Name : GraphicsD3D9 
+	//
+	// Description : 
+	//====================================================================================
     class GraphicsD3D9
         : public JCS_GameInterface::RenderDevice
     {
@@ -35,13 +44,12 @@ namespace JCS_D3DX_v9_Engine
         void ClearDepth();
         void RenderPresent();
 
-        // setter
+        /** setter **/
 
-        // getter
+        /** getter **/
         LPDIRECT3DDEVICE9 GetDevice() const { return this->m_d3ddev; }
     };
 
 }
 
 #endif // __GRAPHICSD3D9_H__
-

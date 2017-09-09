@@ -10,11 +10,11 @@ namespace JCS_GameSound
 {
     class MP3SoundServer;
 
-    //------------------------------------------------------------------------------------
+    //====================================================================================
     // Name : MP3SoundClient 
     //
-    // Desc : 
-    //------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================
     class MP3SoundClient
     {
     public:
@@ -24,7 +24,9 @@ namespace JCS_GameSound
         bool play_mp3(char* filePath, bool bLoop = false);
         bool PlayOneShot(char* filePath);
 
-        // getter/setter
+        /** setter **/
+
+        /** getter **/
         MP3SoundServer &getServer() { return server; }
 
     private:
@@ -32,11 +34,11 @@ namespace JCS_GameSound
         MP3SoundServer &server;
     };
 
-    //------------------------------------------------------------------------------------
+    //====================================================================================
     // Name : MP3SoundServer 
     //
-    // Desc : 
-    //------------------------------------------------------------------------------------
+    // Description : 
+    //====================================================================================
     class MP3SoundServer
     {
         friend class MP3SoundClient;    // this will make "MP3SoundClient" direct access this class!
@@ -49,7 +51,9 @@ namespace JCS_GameSound
         bool PlayOneShot(char* filePath);
         void OnFlag(void);
 
-        // getter/setter
+        /** setter **/
+
+        /** getter **/
         IGraphBuilder* getGraphBuilder() { return g_pGraphBuilder; }
         IMediaControl* getMediaControl() { return g_pMediaCtrl; }
         IMediaEventEx* getMediaEvent() { return g_pMediaEvent; }

@@ -46,6 +46,17 @@
       <Filter>Support</Filter>
     </ClInclude>
     <ClInclude Include="JayCes_StdAfx.h" />
+    <ClInclude Include="JCS_Util.h">
+      <Filter>Support</Filter>
+    </ClInclude>
+    <ClInclude Include="JayCeS_PlatformMacros.h" />
+    <ClInclude Include="JCS_WString.h">
+      <Filter>Core\String</Filter>
+    </ClInclude>
+    <ClInclude Include="JCS_String.h">
+      <Filter>Core\String</Filter>
+    </ClInclude>
+    <ClInclude Include="JayCeS_Defines.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="JcsMessageBox.cpp">
@@ -69,6 +80,12 @@
     <ClCompile Include="JCS_StringBuilder.cpp">
       <Filter>Core\String</Filter>
     </ClCompile>
+    <ClCompile Include="JCS_WString.cpp">
+      <Filter>Core\String</Filter>
+    </ClCompile>
+    <ClCompile Include="JCS_String.cpp">
+      <Filter>Core\String</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Core">
@@ -83,5 +100,8 @@
     <Filter Include="Core\String">
       <UniqueIdentifier>{648f35bd-040a-4359-8675-230ac31a0ce8}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayCeS_JCS.aps" />
   </ItemGroup>
 </Project>

@@ -1,23 +1,25 @@
-/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
 #ifndef __D2D_CAPSULE2D_H__
+/**
+ * $File: Capsule2D.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __D2D_CAPSULE2D_H__
 
 #include "Shape2D.h"
 
+
 namespace JCS_D2DEngine
 {
 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
-    // Name : Capsule2D
+    //====================================================================================
+    // Class Name : Capsule2D
     //
-    // Desc : 
-    //---------------------------------------------------------------------------------------------------------------------------------------------------
+    // Description : Capsule shape render using Direct 2D device.
+    //====================================================================================
     class Capsule2D 
         : public Shape2D
     {
@@ -45,12 +47,12 @@ namespace JCS_D2DEngine
         bool CapsuletoRectangle(Rectangle2D& obj);
         bool CapsuletoPolygon(Polygon2D& obj);
 
-        // setter
+        /** setter **/
         virtual void resetRotation(const float32 angle = 0.0f) override;
         virtual void setPosition(const float32 x, const float32 y) override;
         void setRadius(const float32 newRadius) { this->radius = newRadius; }
 
-        // getter
+        /** getter **/
         float32 getRadius() { return this->radius; }
         float32 getHeight() { return this->height; }
     };

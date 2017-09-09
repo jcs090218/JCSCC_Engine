@@ -1,11 +1,12 @@
-﻿/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
-
-#ifndef __GRAPHICS_2D_H__
+﻿#ifndef __GRAPHICS_2D_H__
+/**
+ * $File: Graphics2D.h $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 #define __GRAPHICS_2D_H__
 
 #include "D2D_StdAfx.h"
@@ -14,6 +15,12 @@
 
 namespace JCS_D2DEngine
 {
+
+    //====================================================================================
+    // Class Name : Graphics2D
+    //
+    // Description : Render device for Direct 2D API.
+    //====================================================================================
     class Graphics2D
         : public JCS_GameInterface::RenderDevice
     {
@@ -90,10 +97,10 @@ namespace JCS_D2DEngine
             float r = 1.0f, float g = 1.0f, float b = 1.0f, float a = 1.0f,
             float strokeWidth = 1.0f, ID2D1StrokeStyle* strokeStyle = nullptr);
 
-        // setter
+        /** setter **/
         void SetBrushColor(float r = 1.0f, float g = 1.0f, float b = 1.0f, float a = 1.0f);
 
-        // getter
+        /** getter **/
         ID2D1Factory* getFactory() { return this->m_pDirect2dFactory; }
         ID2D1HwndRenderTarget* getRenderTarget() { return this->m_pRenderTarget; }
         ID2D1SolidColorBrush* getBrush() { return this->m_pBrush; }

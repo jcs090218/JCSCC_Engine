@@ -6,12 +6,12 @@
 namespace JCS_OpenGLEngine
 {
 
-    //-----------------------------------------------------------------------------------------------------------
+    //====================================================================================-----------------------
     // Name : GLSLProgram
     // 
-    // Desc : This class handles the compilation, linking, and usage of a GLSL shader program.
+    // Description : This class handles the compilation, linking, and usage of a GLSL shader program.
     //        Reference: http://www.opengl.org/wiki/Shader_Compilation
-    //-----------------------------------------------------------------------------------------------------------
+    //====================================================================================-----------------------
     class GLSLProgram
     {
     private:

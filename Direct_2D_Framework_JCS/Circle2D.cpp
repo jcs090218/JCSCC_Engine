@@ -1,9 +1,11 @@
-﻿/*******************************************************************
-*                   JCSCC_Framework Version 1.0
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-*   See LICENSE.txt for modification and distribution information
-*                Copyright (c) 2016 by Shen, Jen-Chieh
-******************************************************************/
+﻿/**
+ * $File: Circle2D.cpp $
+ * $Date: $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2015 by Shen, Jen-Chieh $
+ */
 
 #include "Circle2D.h"
 
@@ -13,8 +15,10 @@
 #include "Polygon2D.h"
 #include "Triangle2D.h"
 
+
 namespace JCS_D2DEngine
 {
+
     Circle2D::Circle2D(float32 radius, Graphics2D& gfx, bool autoPivot)
         : radius(radius)
         , Shape2D(gfx, autoPivot)

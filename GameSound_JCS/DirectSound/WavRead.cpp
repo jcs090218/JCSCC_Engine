@@ -10,7 +10,7 @@
 //-----------------------------------------------------------------------------
 // File: WavRead.cpp
 //
-// Desc: Wave file support for loading and playing Wave files using DirectSound 
+// Description: Wave file support for loading and playing Wave files using DirectSound 
 //       buffers.
 //
 // Copyright (c) 1999 Microsoft Corp. All rights reserved.
@@ -32,7 +32,7 @@
 
 //-----------------------------------------------------------------------------
 // Name: ReadMMIO()
-// Desc: Support function for reading from a multimedia I/O stream
+// Description: Support function for reading from a multimedia I/O stream
 //-----------------------------------------------------------------------------
 HRESULT ReadMMIO(HMMIO hmmioIn, MMCKINFO* pckInRIFF, WAVEFORMATEX** ppwfxInfo)
 {
@@ -115,7 +115,7 @@ HRESULT ReadMMIO(HMMIO hmmioIn, MMCKINFO* pckInRIFF, WAVEFORMATEX** ppwfxInfo)
 
 //-----------------------------------------------------------------------------
 // Name: WaveOpenFile()
-// Desc: This function will open a wave input file and prepare it for reading,
+// Description: This function will open a wave input file and prepare it for reading,
 //       so the data can be easily read with WaveReadFile. Returns 0 if
 //       successful, the error code if not.
 //-----------------------------------------------------------------------------
@@ -144,7 +144,7 @@ HRESULT WaveOpenFile(TCHAR* strFileName, HMMIO* phmmioIn, WAVEFORMATEX** ppwfxIn
 
 //-----------------------------------------------------------------------------
 // Name: WaveStartDataRead()
-// Desc: Routine has to be called before WaveReadFile as it searches for the
+// Description: Routine has to be called before WaveReadFile as it searches for the
 //       chunk to descend into for reading, that is, the 'data' chunk.  For
 //       simplicity, this used to be in the open routine, but was taken out and
 //       moved to a separate routine so there was more control on the chunks
@@ -171,7 +171,7 @@ HRESULT WaveStartDataRead(HMMIO* phmmioIn, MMCKINFO* pckIn,
 
 //-----------------------------------------------------------------------------
 // Name: WaveReadFile()
-// Desc: Reads wave data from the wave file. Make sure we're descended into
+// Description: Reads wave data from the wave file. Make sure we're descended into
 //       the data chunk before calling this function.
 //          hmmioIn      - Handle to mmio.
 //          cbRead       - # of bytes to read.   
@@ -223,7 +223,7 @@ HRESULT WaveReadFile(HMMIO hmmioIn, UINT cbRead, BYTE* pbDest,
 
 //-----------------------------------------------------------------------------
 // Name: CWaveSoundRead()
-// Desc: Constructs the class
+// Description: Constructs the class
 //-----------------------------------------------------------------------------
 CWaveSoundRead::CWaveSoundRead()
 {
@@ -235,7 +235,7 @@ CWaveSoundRead::CWaveSoundRead()
 
 //-----------------------------------------------------------------------------
 // Name: ~CWaveSoundRead()
-// Desc: Destructs the class
+// Description: Destructs the class
 //-----------------------------------------------------------------------------
 CWaveSoundRead::~CWaveSoundRead()
 {
@@ -248,7 +248,7 @@ CWaveSoundRead::~CWaveSoundRead()
 
 //-----------------------------------------------------------------------------
 // Name: Open()
-// Desc: Opens a wave file for reading
+// Description: Opens a wave file for reading
 //-----------------------------------------------------------------------------
 HRESULT CWaveSoundRead::Open(TCHAR* strFilename)
 {
@@ -270,7 +270,7 @@ HRESULT CWaveSoundRead::Open(TCHAR* strFilename)
 
 //-----------------------------------------------------------------------------
 // Name: Reset()
-// Desc: Resets the internal m_ckIn pointer so reading starts from the 
+// Description: Resets the internal m_ckIn pointer so reading starts from the 
 //       beginning of the file again 
 //-----------------------------------------------------------------------------
 HRESULT CWaveSoundRead::Reset()
@@ -283,7 +283,7 @@ HRESULT CWaveSoundRead::Reset()
 
 //-----------------------------------------------------------------------------
 // Name: Read()
-// Desc: Reads a wave file into a pointer and returns how much read
+// Description: Reads a wave file into a pointer and returns how much read
 //       using m_ckIn to determine where to start reading from
 //-----------------------------------------------------------------------------
 HRESULT CWaveSoundRead::Read(UINT nSizeToRead, BYTE* pbData, UINT* pnSizeRead)
@@ -296,7 +296,7 @@ HRESULT CWaveSoundRead::Read(UINT nSizeToRead, BYTE* pbData, UINT* pnSizeRead)
 
 //-----------------------------------------------------------------------------
 // Name: Close()
-// Desc: Closes an open wave file 
+// Description: Closes an open wave file 
 //-----------------------------------------------------------------------------
 HRESULT CWaveSoundRead::Close()
 {
