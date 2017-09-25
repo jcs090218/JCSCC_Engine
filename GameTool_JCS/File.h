@@ -10,7 +10,9 @@
 #ifndef __FILE_H__
 #define __FILE_H__
 
+#if _WIN32
 #include <windows.h>
+#endif
 #include <assert.h>
 
 #include <queue>
