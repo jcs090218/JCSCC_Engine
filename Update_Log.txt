@@ -7,6 +7,9 @@ $Notice: See LICENSE.txt for modification and distribution information
 ========================================================================
 
 
+2017-09-25
+* Enable Open Mult-threading Processing library in Visual Studio. (JCSCC)
+
 2017-04-20
 * Update boost library version from 1.59.0 to 1.64.0. (JCSCC)
 
