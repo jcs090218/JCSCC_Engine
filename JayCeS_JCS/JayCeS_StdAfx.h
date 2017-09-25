@@ -54,6 +54,7 @@
 #include <stack>
 #include <deque>
 #include <amp.h>
+#include <omp.h>        // OpenMP - Open Multi-Processing
 
 // Libraries
 
