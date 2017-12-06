@@ -12,7 +12,7 @@ can be found in 'JCS_VERSION' file at the root directory of this project.
 In other word, this project does not help learning how to build your own 
 graphic, sound, socket, all kind of API.
 
-### Features ###
+## Features ##
 * Animation System - Sprite base animation system.
 * GUI Interface - simple MVC GUI interface implementation.
 * Network/Socket - Very basic TCP/UDP client socket.
