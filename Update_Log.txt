@@ -9,6 +9,7 @@ $Notice: See LICENSE.txt for modification and distribution information
 
 2017-12-06
 * Remove empty line from gitignore file. (JCSCC)
+* Add CMake system to all projects. (JCSCC)
 
 2017-09-25
 * Enable Open Mult-threading Processing library in Visual Studio. (JCSCC)
