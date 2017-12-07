@@ -43,6 +43,9 @@
     <ClInclude Include="Sphere3D.h" />
     <ClInclude Include="Sprite3D.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{BED0B48C-723E-40CC-8AC5-20B172304749}</ProjectGuid>
     <RootNamespace>DirectX_3D_v9_Framework_JCS</RootNamespace>

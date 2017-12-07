@@ -95,6 +95,9 @@
     <ClCompile Include="JCS_TreeNode.cpp" />
     <ClCompile Include="JCS_TreeView.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

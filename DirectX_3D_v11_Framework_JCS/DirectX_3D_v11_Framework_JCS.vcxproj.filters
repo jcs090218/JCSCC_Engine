@@ -160,4 +160,7 @@
       <UniqueIdentifier>{96e23b82-7ed4-4180-885e-5e9da07a560c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
 </Project>

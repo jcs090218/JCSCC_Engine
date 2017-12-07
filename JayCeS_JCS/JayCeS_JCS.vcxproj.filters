@@ -104,4 +104,7 @@
   <ItemGroup>
     <None Include="JayCeS_JCS.aps" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
 </Project>

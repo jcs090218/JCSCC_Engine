@@ -20,6 +20,9 @@
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6653903B-E611-4260-A10D-1C238F77B57A}</ProjectGuid>
     <RootNamespace>SFML_Framework_JCS</RootNamespace>

@@ -161,6 +161,9 @@
     <None Include="Shader\colorShading.vert" />
     <None Include="Shader\Shaders.shader" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

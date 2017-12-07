@@ -133,6 +133,9 @@
     <ClCompile Include="core\shape\2d\JCS_Circle.cpp" />
     <ClCompile Include="core\shape\2d\JCS_Rect.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

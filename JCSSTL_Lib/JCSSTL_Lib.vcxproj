@@ -26,6 +26,9 @@
   <ItemGroup>
     <ClCompile Include="Core\JCSSTL_Singleton.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6F31661E-F401-4014-865A-F45245BF2B39}</ProjectGuid>
     <RootNamespace>JCSSTL_Lib</RootNamespace>
