@@ -10,3 +10,6 @@
 
 # Set default behavior to automatically normalize line endings.
 * text=auto
+
+*.c diff=cpp
+*.h diff=cpp
