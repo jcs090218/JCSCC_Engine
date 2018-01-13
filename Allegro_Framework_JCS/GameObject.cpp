@@ -23,4 +23,3 @@ namespace JCS_Allegro_Engine
     }
 
 }
-
