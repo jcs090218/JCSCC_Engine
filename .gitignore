@@ -1,9 +1,7 @@
 # ignore the following folders
 /.git
 
-########################
-# Out source Libraries #
-########################
+# Out source Libraries
 /Libraries
 /Allegro_Framework_JCS/Allegro
 /Box2D
@@ -18,20 +16,14 @@
 /Vulkan_Framework_JCS/VulkanSDK
 
 
-#################
-# Build results #
-#################
+# Build results
 /Build
 
-#############
-# Lib files #
-#############
+# Lib files
 Debug/
 Release/
 
-######################
-# common ignore type #
-######################
+# common ignore type
 *_i.c
 *_p.c
 *_i.h
@@ -58,45 +50,31 @@ Release/
 *.svclog
 *.scc
 
-##########################
-# Visual Studio profiler #
-##########################
+# Visual Studio profiler
 *.psess
 *.vsp
 *.vspx
 *.sap
 
-##############################################
-# Visual Studio 2015 cache/options directory #
-##############################################
+# Visual Studio 2015 cache/options directory
 /.vs
 
-#######################
-# User-specific files #
-#######################
+# User-specific files
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
 
-####################################################
-# User-specific files (MonoDevelop/Xamarin Studio) #
-####################################################
+# User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
-#############################
-# Visual Studio 6 build log #
-#############################
+# Visual Studio 6 build log
 *.plg
 
-##########################################
-# Visual Studio 6 workspace options file #
-##########################################
+# Visual Studio 6 workspace options file
 *.opt
 
-##########################
-# Visual C++ cache files #
-##########################
+# Visual C++ cache files
 ipch/
 *.aps
 *.ncb
@@ -107,56 +85,45 @@ ipch/
 *.VC.db
 *.VC.VC.opendb
 
-####################
-# SQL Server files #
-####################
+# SQL Server files
 *.mdf
 *.ldf
 
-#############################
-# Compiled Static libraries #
-#############################
+# Compiled Static libraries
 *.lib
 *.lai
 *.la
 *.a
 
-#########################
-# Compiled Object files #
-#########################
+# Compiled Object files
 *.slo
 *.lo
 *.o
 *.obj
 
-#######################
-# Precompiled Headers #
-#######################
+# Precompiled Headers
 *.gch
 *.pch
 
-###############
-# Executables #
-###############
+# Executables
 *.exe
 *.out
 *.app
 
-##################
-# resource files #
-##################
+# resource files
 *.jcs
 *.ico
 
-##############################
-# Compiled Dynamic libraries #
-##############################
+# Compiled Dynamic libraries
 *.dll
 *.so
 *.dylib
 
-########################
-# Fortran module files #
-########################
+# Fortran module files
 *.mod
 
+# gnu global files
+GPATH
+GRTAGS
+GSYMS
+GTAGS
