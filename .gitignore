@@ -23,6 +23,12 @@
 Debug/
 Release/
 
+# gnu global files
+GPATH
+GRTAGS
+GSYMS
+GTAGS
+
 # common ignore type
 *_i.c
 *_p.c
@@ -121,9 +127,3 @@ ipch/
 
 # Fortran module files
 *.mod
-
-# gnu global files
-GPATH
-GRTAGS
-GSYMS
-GTAGS
