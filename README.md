@@ -1,5 +1,8 @@
 # JCSCC Engine #
 
+[![Build Status](https://travis-ci.com/jcs090218/JCSCC_Engine.svg?branch=master)](https://travis-ci.com/jcs090218/JCSCC_Engine)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 JCSCC is a C/C++ game engine that provide a simple programming interface
 to do a cross-platform native code game. Include resource manager with
 secure deocode and encode algorithm. The purpose of the project is to 
