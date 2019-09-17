@@ -18,7 +18,7 @@ JCSCC is a C/C++ game engine that provide a simple programming interface
 to do a cross-platform native code game. Include resource manager with
 secure deocode and encode algorithm. The purpose of the project is to
 learn how a game engine were made, knowing the game engine architecture
-and able to use it knowledge apply to all other modern game engine.<br/><br/>
+and able to use it knowledge apply to all other modern game engine.
 
 
 ## Notice
