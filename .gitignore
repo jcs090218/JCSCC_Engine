@@ -15,6 +15,9 @@
 /SFML_Framework_JCS/SFML
 /Vulkan_Framework_JCS/VulkanSDK
 
+# ignore todo's and log files.
+Update_Log.txt
+TODO(jenchieh).txt
 
 # Build results
 /Build
