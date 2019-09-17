@@ -7,6 +7,10 @@ $Notice: See LICENSE.txt for modification and distribution information
 ========================================================================
 
 
+2019-09-17
+* Fixed mix used of certain document files. (JCSCC)
+* Update readme's badges. (JCSCC)
+
 2018-01-13
 * Add gtags configuration for unix-like programmers. (JCSCC)
 * Add makefile for gcc/unix-like OS. (JCSCC)
