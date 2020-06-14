@@ -11,7 +11,6 @@
 [![Release Tag](https://img.shields.io/github/tag/jcs090218/JCSCC_Engine.svg?label=release)](https://github.com/jcs090218/JCSCC_Engine/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-
 # JCSCC Engine
 
 JCSCC is a C/C++ game engine that provide a simple programming interface
@@ -20,7 +19,6 @@ secure deocode and encode algorithm. The purpose of the project is to
 learn how a game engine were made, knowing the game engine architecture
 and able to use it knowledge apply to all other modern game engine.
 
-
 ## Notice
 
 JCSCC Engine uses many kind of API/Libraries, for more detail information
@@ -28,14 +26,18 @@ can be found in 'JCS_VERSION' file at the root directory of this project.
 In other word, this project does not help learning how to build your own
 graphic, sound, socket, all kind of API.
 
-
 ## Features
 
 * Animation System - Sprite base animation system.
 * GUI Interface - simple MVC GUI interface implementation.
 * Network/Socket - Very basic TCP/UDP client socket.
-* Resource Manager - manage all resources by it own structure, include decode
-and encode.
+* Resource Manager - manage all resources by it own structure, include decode and encode.
 * Scripting Interface - Lua scripting interface.
 * Sound System - Simple audio manager.
 * Input System - Simple cross-platform input managers.
+
+## Todo List
+
+- [ ] Tab Window system.
+- [ ] Multi-window handler for Window specific platform.
+- [ ] Finish the thread system for game engine rendering and game logic.
